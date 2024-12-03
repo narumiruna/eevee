@@ -1,10 +1,10 @@
 import pytest
 import yaml
-
+from pathlib import Path
 from eevee.utils import load_yaml
 
 
-def test_load_yaml_with_valid_file(tmp_path):
+def test_load_yaml_with_valid_file(tmp_path: Path) -> None:
     yaml_content = """
     key1: value1
     key2: value2
@@ -16,7 +16,7 @@ def test_load_yaml_with_valid_file(tmp_path):
     assert result == {"key1": "value1", "key2": "value2"}
 
 
-def test_load_yaml_with_invalid_file(tmp_path):
+def test_load_yaml_with_invalid_file(tmp_path: Path) -> None:
     yaml_file = tmp_path / "test.yaml"
     yaml_file.write_text("invalid: [unclosed")
 
@@ -24,6 +24,6 @@ def test_load_yaml_with_invalid_file(tmp_path):
         load_yaml(yaml_file)
 
 
-def test_load_yaml_with_nonexistent_file():
+def test_load_yaml_with_nonexistent_file() -> None:
     with pytest.raises(FileNotFoundError):
         load_yaml("nonexistent.yaml")

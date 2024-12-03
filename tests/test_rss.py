@@ -1,11 +1,12 @@
 import feedparser
 import httpx
 import pytest
+from pytest_httpx import HTTPXMock
 
 from eevee.rss import fetch_feed
 
 
-def test_fetch_feed_success(httpx_mock):
+def test_fetch_feed_success(httpx_mock: HTTPXMock) -> None:
     url = "https://example.com/feed"
     httpx_mock.add_response(
         method="GET",
@@ -18,7 +19,7 @@ def test_fetch_feed_success(httpx_mock):
     assert feed["feed"]["title"] == "Example Feed"
 
 
-def test_fetch_feed_http_error(httpx_mock):
+def test_fetch_feed_http_error(httpx_mock: HTTPXMock) -> None:
     url = "https://example.com/feed"
     httpx_mock.add_response(
         method="GET",
