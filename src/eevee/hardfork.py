@@ -20,6 +20,8 @@ class Hardfork(BaseModel):
     upgrade_deadline: str | None = Field(
         None, description="The specific date and time by which the upgrade must be completed (ISO8601 format)."
     )
+    breaking_change: bool = Field(..., description="Indicates if this is a breaking change.")
+    impact_score: float = Field(..., description="Indicates the impact score of the change, from 0 to 1.")
 
     def to_markdown(self) -> str:
         hardfork_emoji = "🔴" if self.hardfork else "🟢"
@@ -31,6 +33,8 @@ class Hardfork(BaseModel):
             f"- ⬆️ Must Upgrade: {self.must_upgrade}",
             f"- 🌐 Testnet Names: {', '.join(self.testnet_names)}",
             f"- 📅 Upgrade Deadline: {self.upgrade_deadline}",
+            f"- ⚠️ Breaking Change: {self.breaking_change}",
+            f"- 💥 Impact Score: {self.impact_score * 100}%",
         ]
         return "\n".join(lines)
 
