@@ -11,13 +11,14 @@ class Hardfork(BaseModel):
     confidence: float = Field(..., description="Confidence in the prediction, between 0 and 1")
     explanation: str = Field(..., description="Explanation why this is a hardfork or not in Traditional Chinese")
 
-    def __str__(self) -> str:
+    def to_markdown(self) -> str:
         hardfork_emoji = "🔴" if self.hardfork else "🟢"
-        return (
-            f"\n{hardfork_emoji} Hardfork: {self.hardfork}\n"
-            f"📊 Confidence: {self.confidence * 100:.1f}%\n"
-            f"📝 Explanation:\n{self.explanation}\n"
-        )
+        lines = [
+            f"- {hardfork_emoji} Hardfork: {self.hardfork}",
+            f"- 📊 Confidence: {self.confidence * 100}%",
+            f"- 📝 Explanation: {self.explanation}",
+        ]
+        return "\n".join(lines)
 
 
 @functools.cache

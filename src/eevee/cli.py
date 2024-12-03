@@ -40,9 +40,7 @@ class EntryResult(BaseModel):
         lines = [
             f"### {self.title} ({self.updated})",
             f"- 🔗 Link: {self.link}",
-            f"- {'🔴' if self.hardfork.hardfork else '🟢'} Hardfork: {self.hardfork.hardfork}",
-            f"- 📊 Confidence: {self.hardfork.confidence * 100}%",
-            f"- 📝 Explanation: {self.hardfork.explanation}",
+            self.hardfork.to_markdown(),
             "",
         ]
         return "\n".join(lines)
