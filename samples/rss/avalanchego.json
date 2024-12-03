@@ -1,0 +1,619 @@
+{
+    "bozo": false,
+    "entries": [
+        {
+            "id": "tag:github.com,2008:Repository/246387644/v1.12.0-rc.1",
+            "guidislink": true,
+            "link": "https://github.com/ava-labs/avalanchego/releases/tag/v1.12.0-rc.1",
+            "updated": "2024-12-02T04:05:39Z",
+            "updated_parsed": [
+                2024,
+                12,
+                2,
+                4,
+                5,
+                39,
+                0,
+                337,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/ava-labs/avalanchego/releases/tag/v1.12.0-rc.1"
+                }
+            ],
+            "title": "v1.12.0-rc.1",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.12.0-rc.1"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>Merge branch 'master' into update-versions-v1.12.0</p>"
+                }
+            ],
+            "summary": "<p>Merge branch 'master' into update-versions-v1.12.0</p>",
+            "authors": [
+                {
+                    "name": "StephenButtolph"
+                }
+            ],
+            "author_detail": {
+                "name": "StephenButtolph"
+            },
+            "author": "StephenButtolph",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/22109487?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/246387644/v1.12.0-rc.0",
+            "guidislink": true,
+            "link": "https://github.com/ava-labs/avalanchego/releases/tag/v1.12.0-rc.0",
+            "updated": "2024-12-02T03:24:53Z",
+            "updated_parsed": [
+                2024,
+                12,
+                2,
+                3,
+                24,
+                53,
+                0,
+                337,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/ava-labs/avalanchego/releases/tag/v1.12.0-rc.0"
+                }
+            ],
+            "title": "v1.12.0-rc.0",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.12.0-rc.0"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>Update versions for v1.12.0</p>"
+                }
+            ],
+            "summary": "<p>Update versions for v1.12.0</p>",
+            "authors": [
+                {
+                    "name": "StephenButtolph"
+                }
+            ],
+            "author_detail": {
+                "name": "StephenButtolph"
+            },
+            "author": "StephenButtolph",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/22109487?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/246387644/v1.12.0-fuji",
+            "guidislink": true,
+            "link": "https://github.com/ava-labs/avalanchego/releases/tag/v1.12.0-fuji",
+            "updated": "2024-11-19T02:31:48Z",
+            "updated_parsed": [
+                2024,
+                11,
+                19,
+                2,
+                31,
+                48,
+                1,
+                324,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/ava-labs/avalanchego/releases/tag/v1.12.0-fuji"
+                }
+            ],
+            "title": "Etna - Reinventing Subnets - Fuji Pre-Release",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "Etna - Reinventing Subnets - Fuji Pre-Release"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p><strong>Please note that this release is unable to run mainnet - and will display \"mainnet is not supported\" if attempted to run with a mainnet configuration.</strong></p>\n<p>This upgrade consists of the following Avalanche Community Proposals (ACPs):</p>\n<ul>\n<li><a href=\"https://github.com/avalanche-foundation/ACPs/blob/main/ACPs/77-reinventing-subnets/README.md\">ACP-77</a> Reinventing Subnets</li>\n<li><a href=\"https://github.com/avalanche-foundation/ACPs/blob/main/ACPs/103-dynamic-fees/README.md\">ACP-103</a> Add Dynamic Fees to the P-Chain</li>\n<li><a href=\"https://github.com/avalanche-foundation/ACPs/blob/main/ACPs/118-warp-signature-request/README.md\">ACP-118</a> Warp Signature Interface Standard</li>\n<li><a href=\"https://github.com/avalanche-foundation/ACPs/blob/main/ACPs/125-basefee-reduction/README.md\">ACP-125</a> Reduce C-Chain minimum base fee from 25 nAVAX to 1 nAVAX</li>\n<li><a href=\"https://github.com/avalanche-foundation/ACPs/blob/main/ACPs/131-cancun-eips/README.md\">ACP-131</a> Activate Cancun EIPs on C-Chain and Subnet-EVM chains</li>\n<li><a href=\"https://github.com/avalanche-foundation/ACPs/blob/main/ACPs/151-use-current-block-pchain-height-as-context/README.md\">ACP-151</a> Use current block P-Chain height as context for state verification</li>\n</ul>\n<p>The changes in the upgrade go into effect at 11 AM ET (4 PM UTC) on Monday, November 25th, 2024 on the Fuji testnet.</p>\n<p><strong>All Fuji nodes must upgrade before 11 AM ET, November 25th 2024.</strong></p>\n<p>The plugin version is unchanged at <code>38</code> and is compatible with version <code>v1.11.13</code>.</p>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/ava-labs/avalanchego/compare/v1.11.13...v1.12.0-fuji\"><tt>v1.11.13...v1.12.0-fuji</tt></a></p>"
+                }
+            ],
+            "summary": "<p><strong>Please note that this release is unable to run mainnet - and will display \"mainnet is not supported\" if attempted to run with a mainnet configuration.</strong></p>\n<p>This upgrade consists of the following Avalanche Community Proposals (ACPs):</p>\n<ul>\n<li><a href=\"https://github.com/avalanche-foundation/ACPs/blob/main/ACPs/77-reinventing-subnets/README.md\">ACP-77</a> Reinventing Subnets</li>\n<li><a href=\"https://github.com/avalanche-foundation/ACPs/blob/main/ACPs/103-dynamic-fees/README.md\">ACP-103</a> Add Dynamic Fees to the P-Chain</li>\n<li><a href=\"https://github.com/avalanche-foundation/ACPs/blob/main/ACPs/118-warp-signature-request/README.md\">ACP-118</a> Warp Signature Interface Standard</li>\n<li><a href=\"https://github.com/avalanche-foundation/ACPs/blob/main/ACPs/125-basefee-reduction/README.md\">ACP-125</a> Reduce C-Chain minimum base fee from 25 nAVAX to 1 nAVAX</li>\n<li><a href=\"https://github.com/avalanche-foundation/ACPs/blob/main/ACPs/131-cancun-eips/README.md\">ACP-131</a> Activate Cancun EIPs on C-Chain and Subnet-EVM chains</li>\n<li><a href=\"https://github.com/avalanche-foundation/ACPs/blob/main/ACPs/151-use-current-block-pchain-height-as-context/README.md\">ACP-151</a> Use current block P-Chain height as context for state verification</li>\n</ul>\n<p>The changes in the upgrade go into effect at 11 AM ET (4 PM UTC) on Monday, November 25th, 2024 on the Fuji testnet.</p>\n<p><strong>All Fuji nodes must upgrade before 11 AM ET, November 25th 2024.</strong></p>\n<p>The plugin version is unchanged at <code>38</code> and is compatible with version <code>v1.11.13</code>.</p>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/ava-labs/avalanchego/compare/v1.11.13...v1.12.0-fuji\"><tt>v1.11.13...v1.12.0-fuji</tt></a></p>",
+            "authors": [
+                {
+                    "name": "StephenButtolph"
+                }
+            ],
+            "author_detail": {
+                "name": "StephenButtolph"
+            },
+            "author": "StephenButtolph",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/22109487?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/246387644/v1.11.13",
+            "guidislink": true,
+            "link": "https://github.com/ava-labs/avalanchego/releases/tag/v1.11.13",
+            "updated": "2024-11-19T00:09:04Z",
+            "updated_parsed": [
+                2024,
+                11,
+                19,
+                0,
+                9,
+                4,
+                1,
+                324,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/ava-labs/avalanchego/releases/tag/v1.11.13"
+                }
+            ],
+            "title": "Durango.13 - Etna Compatible",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "Durango.13 - Etna Compatible"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>This version is backwards compatible to <a href=\"https://github.com/ava-labs/avalanchego/releases/tag/v1.11.0\">v1.11.0</a>. It is optional, but encouraged.</p>\n<p>The plugin version is updated to <code>38</code> all plugins must update to be compatible.</p>\n<h3>APIs</h3>\n<ul>\n<li>Added <code>platform.getL1Validator</code></li>\n<li>Added <code>platform.getProposedHeight</code></li>\n<li>Updated <code>platform.getValidatorsAt</code> to accept <code>\"proposed\"</code> as valid <code>height</code> input</li>\n</ul>\n<h3>Configs</h3>\n<ul>\n<li>Added P-chain configs\n<ul>\n<li><code>\"l1-weights-cache-size\"</code></li>\n<li><code>\"l1-inactive-validators-cache-size\"</code></li>\n<li><code>\"l1-subnet-id-node-id-cache-size\"</code></li>\n</ul>\n</li>\n</ul>\n<h3>Fixes</h3>\n<ul>\n<li>Fixed metrics initialization in the RPCChainVM. This could cause crashes during startup if metrics were requested during VM initialization.</li>\n<li>Fixed compilation on macos 14.7 and higher</li>\n<li>Fixed avalanchego wallet usage with ledger &gt;=v0.8.4</li>\n<li>Fixed missing <code>NodeIDs</code> argument in the <code>info.peers</code> client implementation</li>\n<li>Fixed <code>getSubnetID</code> state tracing</li>\n</ul>\n<h3>What's Changed</h3>\n<ul>\n<li>[testing] Double image build timeout for bootstrap monitor e2e by <a class=\"user-mention notranslate\" href=\"https://github.com/marun\">@marun</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3468\">#3468</a></li>\n<li>[antithesis] Double the duration of sanity checks by <a class=\"user-mention notranslate\" href=\"https://github.com/marun\">@marun</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3475\">#3475</a></li>\n<li>Properly initialize metrics in rpcchainVM by <a class=\"user-mention notranslate\" href=\"https://github.com/yacovm\">@yacovm</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3477\">#3477</a></li>\n<li>Cleanup editorconfig by <a class=\"user-mention notranslate\" href=\"https://github.com/dhrubabasu\">@dhrubabasu</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3473\">#3473</a></li>\n<li>Update avalanche ledger go package by <a class=\"user-mention notranslate\" href=\"https://github.com/sukantoraymond\">@sukantoraymond</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3456\">#3456</a></li>\n<li>[testing] Enable config of log format for bootstrap monitor by <a class=\"user-mention notranslate\" href=\"https://github.com/marun\">@marun</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3467\">#3467</a></li>\n<li>cache signatures only in acp118 handler by <a class=\"user-mention notranslate\" href=\"https://github.com/ceyonur\">@ceyonur</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3474\">#3474</a></li>\n<li>Introduce and use <code>database.WithDefault</code> by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3478\">#3478</a></li>\n<li>Evict recentlyAccepted blocks based on wall-clock time  by <a class=\"user-mention notranslate\" href=\"https://github.com/iansuvak\">@iansuvak</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3460\">#3460</a></li>\n<li>fix improper use of FailNow in testing by <a class=\"user-mention notranslate\" href=\"https://github.com/tsachiherman\">@tsachiherman</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3479\">#3479</a></li>\n<li>[ACP 151] Use current block's P-Chain height as context for verifying state of the inner block by <a class=\"user-mention notranslate\" href=\"https://github.com/iansuvak\">@iansuvak</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3459\">#3459</a></li>\n<li>[tmpnet] Add --start-network to support hypersdk MODE=run by <a class=\"user-mention notranslate\" href=\"https://github.com/marun\">@marun</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3465\">#3465</a></li>\n<li>[e2e] Check network health after bootstrap checks by <a class=\"user-mention notranslate\" href=\"https://github.com/marun\">@marun</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3466\">#3466</a></li>\n<li>ACP-77: Add ConversionID to state by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3481\">#3481</a></li>\n<li>Make bootstrapping handle its own timeouts by <a class=\"user-mention notranslate\" href=\"https://github.com/yacovm\">@yacovm</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3410\">#3410</a></li>\n<li>Wrap <code>TestDiffExpiry</code> sub-tests in <code>t.Run</code> by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3483\">#3483</a></li>\n<li>Move RPC metrics registration after its client's initialization by <a class=\"user-mention notranslate\" href=\"https://github.com/yacovm\">@yacovm</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3488\">#3488</a></li>\n<li>database: add applicable dbtests for linkeddb by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3486\">#3486</a></li>\n<li>Add SoV Excess to P-chain state by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3482\">#3482</a></li>\n<li>Remove deprecated X-chain pubsub server by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3490\">#3490</a></li>\n<li>Update SoV struct to align with latest ACP-77 spec by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3492\">#3492</a></li>\n<li>Register VM and snowman metrics after chain creation by <a class=\"user-mention notranslate\" href=\"https://github.com/yacovm\">@yacovm</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3489\">#3489</a></li>\n<li>Skip Flaky Test by <a class=\"user-mention notranslate\" href=\"https://github.com/joshua-kim\">@joshua-kim</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3495\">#3495</a></li>\n<li>Add request to update <code>releases.md</code> in PR template by <a class=\"user-mention notranslate\" href=\"https://github.com/ceyonur\">@ceyonur</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3476\">#3476</a></li>\n<li>ACP-77: Update P-chain state staker tests by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3494\">#3494</a></li>\n<li>ACP-77: Write subnet public key diffs to state by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3487\">#3487</a></li>\n<li>Add <code>Deregister</code> to <code>metrics.MultiGatherer</code> interface by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3498\">#3498</a></li>\n<li>ACP-77: Add subnetIDNodeID struct by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3499\">#3499</a></li>\n<li>Use subnet public key diffs after Etna is activated by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3502\">#3502</a></li>\n<li>Split <code>writeCurrentStakers</code> into multiple functions by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3500\">#3500</a></li>\n<li>[tmpnet] Refactor bootstrap monitor kubernetes functions for reuse by <a class=\"user-mention notranslate\" href=\"https://github.com/marun\">@marun</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3446\">#3446</a></li>\n<li>Add NumSubnets to the validator manager interface by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3504\">#3504</a></li>\n<li>Clarify partial sync flag by <a class=\"user-mention notranslate\" href=\"https://github.com/michaelkaplan13\">@michaelkaplan13</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3505\">#3505</a></li>\n<li>Update BLST to v0.3.13 by <a class=\"user-mention notranslate\" href=\"https://github.com/yacovm\">@yacovm</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3506\">#3506</a></li>\n<li>Restrict public keys prior to TLS handshake by <a class=\"user-mention notranslate\" href=\"https://github.com/yacovm\">@yacovm</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3501\">#3501</a></li>\n<li>ACP-77: Filter the inactive validator from block proposals and tx gossip by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3509\">#3509</a></li>\n<li>[testing] Enable bootstrap testing of partial sync by <a class=\"user-mention notranslate\" href=\"https://github.com/marun\">@marun</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3508\">#3508</a></li>\n<li>Rename <code>constantsAreUnmodified</code> to <code>immutableFieldsAreUnmodified</code> by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3513\">#3513</a></li>\n<li>Accept info.Peers args by <a class=\"user-mention notranslate\" href=\"https://github.com/cam-schultz\">@cam-schultz</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3515\">#3515</a></li>\n<li>Return shallow copy of validator set in platformVM's validator manager by <a class=\"user-mention notranslate\" href=\"https://github.com/yacovm\">@yacovm</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3512\">#3512</a></li>\n<li>Add <code>ValidatorWeightDiff</code> <code>Add</code> and <code>Sub</code> helpers by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3514\">#3514</a></li>\n<li>ACP-77: Add caching to SoV DB helpers by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3516\">#3516</a></li>\n<li>Add script to configure metrics and log collection from a local node by <a class=\"user-mention notranslate\" href=\"https://github.com/marun\">@marun</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3517\">#3517</a></li>\n<li>ACP-77: Implement validator state by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3388\">#3388</a></li>\n<li>ACP-77: Reduce block gossip log level by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3519\">#3519</a></li>\n<li>ACP-77: Implement ids.ID#Append by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3518\">#3518</a></li>\n<li>ACP-103: Document and update genesis test fee configs by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3520\">#3520</a></li>\n<li>ACP-77: Deactivate SoVs without sufficient fees by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3412\">#3412</a></li>\n<li>ACP-77: Allow legacy validator removal after conversion by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3521\">#3521</a></li>\n<li>ACP-77: Refactor e2e test by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3522\">#3522</a></li>\n<li>ACP-77: Update <code>ConvertSubnetTx</code> by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3397\">#3397</a></li>\n<li>Remove stutter in P-chain wallet builder by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3524\">#3524</a></li>\n<li>Clarify EndAccumulatedFee comment by <a class=\"user-mention notranslate\" href=\"https://github.com/michaelkaplan13\">@michaelkaplan13</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3523\">#3523</a></li>\n<li>[tmpnet] Misc cleanup for monitoring tooling by <a class=\"user-mention notranslate\" href=\"https://github.com/marun\">@marun</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3527\">#3527</a></li>\n<li>Remove P-chain txsmock package by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3528\">#3528</a></li>\n<li>Unexport all P-Chain visitors by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3525\">#3525</a></li>\n<li>Standardize P-Chain tx visitor order by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3529\">#3529</a></li>\n<li>ACP-77: Implement <code>RegisterSubnetValidatorTx</code> by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3420\">#3420</a></li>\n<li>ACP-77: Refactor P-Chain configs by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3533\">#3533</a></li>\n<li>Add additional BLS benchmarks by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3538\">#3538</a></li>\n<li>ACP-77: Refactor subnet auth verification by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3537\">#3537</a></li>\n<li>ACP-77: Implement <code>SetSubnetValidatorWeightTx</code> by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3421\">#3421</a></li>\n<li>Rename error to be more generic by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3543\">#3543</a></li>\n<li>fix getSubnetIDTag in traced state by <a class=\"user-mention notranslate\" href=\"https://github.com/ceyonur\">@ceyonur</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3542\">#3542</a></li>\n<li>Add <code>platform.getSubnetOnlyValidator</code> API by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3540\">#3540</a></li>\n<li>Add SoV deactivation owner support to the P-chain wallet by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3541\">#3541</a></li>\n<li>ACP-77: Implement Warp message verification by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3423\">#3423</a></li>\n<li>ACP-77: Current validators API for SoV by <a class=\"user-mention notranslate\" href=\"https://github.com/ceyonur\">@ceyonur</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3404\">#3404</a></li>\n<li>ACP-77: Implement Warp message signing by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3428\">#3428</a></li>\n<li>ACP-77: Implement IncreaseBalanceTx by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3429\">#3429</a></li>\n<li>ACP-77: Implement DisableSubnetValidatorTx by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3440\">#3440</a></li>\n<li>Improve P-Chain error messages by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3536\">#3536</a></li>\n<li>Add Etna logging by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3454\">#3454</a></li>\n<li>Add Etna P-chain metrics by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3458\">#3458</a></li>\n<li>Clarify benched field by <a class=\"user-mention notranslate\" href=\"https://github.com/samliok\">@samliok</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3545\">#3545</a></li>\n<li>[tmpnet] Watch for and report FATAL log entries on node startup by <a class=\"user-mention notranslate\" href=\"https://github.com/marun\">@marun</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3535\">#3535</a></li>\n<li>Allow non primary network validators to request all peers by <a class=\"user-mention notranslate\" href=\"https://github.com/cam-schultz\">@cam-schultz</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3491\">#3491</a></li>\n<li>Add <code>platform.getProposedHeight</code> API by <a class=\"user-mention notranslate\" href=\"https://github.com/iansuvak\">@iansuvak</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3530\">#3530</a></li>\n<li>Follow ACP-77 naming conventions by <a class=\"user-mention notranslate\" href=\"https://github.com/michaelkaplan13\">@michaelkaplan13</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3546\">#3546</a></li>\n<li>ACP-103: Finalize complexity calculations by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3548\">#3548</a></li>\n<li>ACP-103: Finalize parameterization by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3549\">#3549</a></li>\n<li>Add \"proposed\" optional flag to <code>getValidatorsAt</code> by <a class=\"user-mention notranslate\" href=\"https://github.com/iansuvak\">@iansuvak</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3531\">#3531</a></li>\n<li>Fix json parsing of GetValidatorsAtArgs by <a class=\"user-mention notranslate\" href=\"https://github.com/iansuvak\">@iansuvak</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3551\">#3551</a></li>\n</ul>\n<h3>New Contributors</h3>\n<ul>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/sukantoraymond\">@sukantoraymond</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3456\">#3456</a></li>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/samliok\">@samliok</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3545\">#3545</a></li>\n</ul>"
+                }
+            ],
+            "summary": "<p>This version is backwards compatible to <a href=\"https://github.com/ava-labs/avalanchego/releases/tag/v1.11.0\">v1.11.0</a>. It is optional, but encouraged.</p>\n<p>The plugin version is updated to <code>38</code> all plugins must update to be compatible.</p>\n<h3>APIs</h3>\n<ul>\n<li>Added <code>platform.getL1Validator</code></li>\n<li>Added <code>platform.getProposedHeight</code></li>\n<li>Updated <code>platform.getValidatorsAt</code> to accept <code>\"proposed\"</code> as valid <code>height</code> input</li>\n</ul>\n<h3>Configs</h3>\n<ul>\n<li>Added P-chain configs\n<ul>\n<li><code>\"l1-weights-cache-size\"</code></li>\n<li><code>\"l1-inactive-validators-cache-size\"</code></li>\n<li><code>\"l1-subnet-id-node-id-cache-size\"</code></li>\n</ul>\n</li>\n</ul>\n<h3>Fixes</h3>\n<ul>\n<li>Fixed metrics initialization in the RPCChainVM. This could cause crashes during startup if metrics were requested during VM initialization.</li>\n<li>Fixed compilation on macos 14.7 and higher</li>\n<li>Fixed avalanchego wallet usage with ledger &gt;=v0.8.4</li>\n<li>Fixed missing <code>NodeIDs</code> argument in the <code>info.peers</code> client implementation</li>\n<li>Fixed <code>getSubnetID</code> state tracing</li>\n</ul>\n<h3>What's Changed</h3>\n<ul>\n<li>[testing] Double image build timeout for bootstrap monitor e2e by <a class=\"user-mention notranslate\" href=\"https://github.com/marun\">@marun</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3468\">#3468</a></li>\n<li>[antithesis] Double the duration of sanity checks by <a class=\"user-mention notranslate\" href=\"https://github.com/marun\">@marun</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3475\">#3475</a></li>\n<li>Properly initialize metrics in rpcchainVM by <a class=\"user-mention notranslate\" href=\"https://github.com/yacovm\">@yacovm</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3477\">#3477</a></li>\n<li>Cleanup editorconfig by <a class=\"user-mention notranslate\" href=\"https://github.com/dhrubabasu\">@dhrubabasu</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3473\">#3473</a></li>\n<li>Update avalanche ledger go package by <a class=\"user-mention notranslate\" href=\"https://github.com/sukantoraymond\">@sukantoraymond</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3456\">#3456</a></li>\n<li>[testing] Enable config of log format for bootstrap monitor by <a class=\"user-mention notranslate\" href=\"https://github.com/marun\">@marun</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3467\">#3467</a></li>\n<li>cache signatures only in acp118 handler by <a class=\"user-mention notranslate\" href=\"https://github.com/ceyonur\">@ceyonur</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3474\">#3474</a></li>\n<li>Introduce and use <code>database.WithDefault</code> by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3478\">#3478</a></li>\n<li>Evict recentlyAccepted blocks based on wall-clock time  by <a class=\"user-mention notranslate\" href=\"https://github.com/iansuvak\">@iansuvak</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3460\">#3460</a></li>\n<li>fix improper use of FailNow in testing by <a class=\"user-mention notranslate\" href=\"https://github.com/tsachiherman\">@tsachiherman</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3479\">#3479</a></li>\n<li>[ACP 151] Use current block's P-Chain height as context for verifying state of the inner block by <a class=\"user-mention notranslate\" href=\"https://github.com/iansuvak\">@iansuvak</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3459\">#3459</a></li>\n<li>[tmpnet] Add --start-network to support hypersdk MODE=run by <a class=\"user-mention notranslate\" href=\"https://github.com/marun\">@marun</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3465\">#3465</a></li>\n<li>[e2e] Check network health after bootstrap checks by <a class=\"user-mention notranslate\" href=\"https://github.com/marun\">@marun</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3466\">#3466</a></li>\n<li>ACP-77: Add ConversionID to state by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3481\">#3481</a></li>\n<li>Make bootstrapping handle its own timeouts by <a class=\"user-mention notranslate\" href=\"https://github.com/yacovm\">@yacovm</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3410\">#3410</a></li>\n<li>Wrap <code>TestDiffExpiry</code> sub-tests in <code>t.Run</code> by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3483\">#3483</a></li>\n<li>Move RPC metrics registration after its client's initialization by <a class=\"user-mention notranslate\" href=\"https://github.com/yacovm\">@yacovm</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3488\">#3488</a></li>\n<li>database: add applicable dbtests for linkeddb by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3486\">#3486</a></li>\n<li>Add SoV Excess to P-chain state by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3482\">#3482</a></li>\n<li>Remove deprecated X-chain pubsub server by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3490\">#3490</a></li>\n<li>Update SoV struct to align with latest ACP-77 spec by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3492\">#3492</a></li>\n<li>Register VM and snowman metrics after chain creation by <a class=\"user-mention notranslate\" href=\"https://github.com/yacovm\">@yacovm</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3489\">#3489</a></li>\n<li>Skip Flaky Test by <a class=\"user-mention notranslate\" href=\"https://github.com/joshua-kim\">@joshua-kim</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3495\">#3495</a></li>\n<li>Add request to update <code>releases.md</code> in PR template by <a class=\"user-mention notranslate\" href=\"https://github.com/ceyonur\">@ceyonur</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3476\">#3476</a></li>\n<li>ACP-77: Update P-chain state staker tests by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3494\">#3494</a></li>\n<li>ACP-77: Write subnet public key diffs to state by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3487\">#3487</a></li>\n<li>Add <code>Deregister</code> to <code>metrics.MultiGatherer</code> interface by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3498\">#3498</a></li>\n<li>ACP-77: Add subnetIDNodeID struct by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3499\">#3499</a></li>\n<li>Use subnet public key diffs after Etna is activated by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3502\">#3502</a></li>\n<li>Split <code>writeCurrentStakers</code> into multiple functions by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3500\">#3500</a></li>\n<li>[tmpnet] Refactor bootstrap monitor kubernetes functions for reuse by <a class=\"user-mention notranslate\" href=\"https://github.com/marun\">@marun</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3446\">#3446</a></li>\n<li>Add NumSubnets to the validator manager interface by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3504\">#3504</a></li>\n<li>Clarify partial sync flag by <a class=\"user-mention notranslate\" href=\"https://github.com/michaelkaplan13\">@michaelkaplan13</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3505\">#3505</a></li>\n<li>Update BLST to v0.3.13 by <a class=\"user-mention notranslate\" href=\"https://github.com/yacovm\">@yacovm</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3506\">#3506</a></li>\n<li>Restrict public keys prior to TLS handshake by <a class=\"user-mention notranslate\" href=\"https://github.com/yacovm\">@yacovm</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3501\">#3501</a></li>\n<li>ACP-77: Filter the inactive validator from block proposals and tx gossip by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3509\">#3509</a></li>\n<li>[testing] Enable bootstrap testing of partial sync by <a class=\"user-mention notranslate\" href=\"https://github.com/marun\">@marun</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3508\">#3508</a></li>\n<li>Rename <code>constantsAreUnmodified</code> to <code>immutableFieldsAreUnmodified</code> by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3513\">#3513</a></li>\n<li>Accept info.Peers args by <a class=\"user-mention notranslate\" href=\"https://github.com/cam-schultz\">@cam-schultz</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3515\">#3515</a></li>\n<li>Return shallow copy of validator set in platformVM's validator manager by <a class=\"user-mention notranslate\" href=\"https://github.com/yacovm\">@yacovm</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3512\">#3512</a></li>\n<li>Add <code>ValidatorWeightDiff</code> <code>Add</code> and <code>Sub</code> helpers by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3514\">#3514</a></li>\n<li>ACP-77: Add caching to SoV DB helpers by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3516\">#3516</a></li>\n<li>Add script to configure metrics and log collection from a local node by <a class=\"user-mention notranslate\" href=\"https://github.com/marun\">@marun</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3517\">#3517</a></li>\n<li>ACP-77: Implement validator state by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3388\">#3388</a></li>\n<li>ACP-77: Reduce block gossip log level by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3519\">#3519</a></li>\n<li>ACP-77: Implement ids.ID#Append by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3518\">#3518</a></li>\n<li>ACP-103: Document and update genesis test fee configs by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3520\">#3520</a></li>\n<li>ACP-77: Deactivate SoVs without sufficient fees by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3412\">#3412</a></li>\n<li>ACP-77: Allow legacy validator removal after conversion by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3521\">#3521</a></li>\n<li>ACP-77: Refactor e2e test by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3522\">#3522</a></li>\n<li>ACP-77: Update <code>ConvertSubnetTx</code> by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3397\">#3397</a></li>\n<li>Remove stutter in P-chain wallet builder by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3524\">#3524</a></li>\n<li>Clarify EndAccumulatedFee comment by <a class=\"user-mention notranslate\" href=\"https://github.com/michaelkaplan13\">@michaelkaplan13</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3523\">#3523</a></li>\n<li>[tmpnet] Misc cleanup for monitoring tooling by <a class=\"user-mention notranslate\" href=\"https://github.com/marun\">@marun</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3527\">#3527</a></li>\n<li>Remove P-chain txsmock package by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3528\">#3528</a></li>\n<li>Unexport all P-Chain visitors by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3525\">#3525</a></li>\n<li>Standardize P-Chain tx visitor order by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3529\">#3529</a></li>\n<li>ACP-77: Implement <code>RegisterSubnetValidatorTx</code> by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3420\">#3420</a></li>\n<li>ACP-77: Refactor P-Chain configs by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3533\">#3533</a></li>\n<li>Add additional BLS benchmarks by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3538\">#3538</a></li>\n<li>ACP-77: Refactor subnet auth verification by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3537\">#3537</a></li>\n<li>ACP-77: Implement <code>SetSubnetValidatorWeightTx</code> by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3421\">#3421</a></li>\n<li>Rename error to be more generic by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3543\">#3543</a></li>\n<li>fix getSubnetIDTag in traced state by <a class=\"user-mention notranslate\" href=\"https://github.com/ceyonur\">@ceyonur</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3542\">#3542</a></li>\n<li>Add <code>platform.getSubnetOnlyValidator</code> API by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3540\">#3540</a></li>\n<li>Add SoV deactivation owner support to the P-chain wallet by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3541\">#3541</a></li>\n<li>ACP-77: Implement Warp message verification by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3423\">#3423</a></li>\n<li>ACP-77: Current validators API for SoV by <a class=\"user-mention notranslate\" href=\"https://github.com/ceyonur\">@ceyonur</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3404\">#3404</a></li>\n<li>ACP-77: Implement Warp message signing by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3428\">#3428</a></li>\n<li>ACP-77: Implement IncreaseBalanceTx by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3429\">#3429</a></li>\n<li>ACP-77: Implement DisableSubnetValidatorTx by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3440\">#3440</a></li>\n<li>Improve P-Chain error messages by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3536\">#3536</a></li>\n<li>Add Etna logging by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3454\">#3454</a></li>\n<li>Add Etna P-chain metrics by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3458\">#3458</a></li>\n<li>Clarify benched field by <a class=\"user-mention notranslate\" href=\"https://github.com/samliok\">@samliok</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3545\">#3545</a></li>\n<li>[tmpnet] Watch for and report FATAL log entries on node startup by <a class=\"user-mention notranslate\" href=\"https://github.com/marun\">@marun</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3535\">#3535</a></li>\n<li>Allow non primary network validators to request all peers by <a class=\"user-mention notranslate\" href=\"https://github.com/cam-schultz\">@cam-schultz</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3491\">#3491</a></li>\n<li>Add <code>platform.getProposedHeight</code> API by <a class=\"user-mention notranslate\" href=\"https://github.com/iansuvak\">@iansuvak</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3530\">#3530</a></li>\n<li>Follow ACP-77 naming conventions by <a class=\"user-mention notranslate\" href=\"https://github.com/michaelkaplan13\">@michaelkaplan13</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3546\">#3546</a></li>\n<li>ACP-103: Finalize complexity calculations by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3548\">#3548</a></li>\n<li>ACP-103: Finalize parameterization by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3549\">#3549</a></li>\n<li>Add \"proposed\" optional flag to <code>getValidatorsAt</code> by <a class=\"user-mention notranslate\" href=\"https://github.com/iansuvak\">@iansuvak</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3531\">#3531</a></li>\n<li>Fix json parsing of GetValidatorsAtArgs by <a class=\"user-mention notranslate\" href=\"https://github.com/iansuvak\">@iansuvak</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3551\">#3551</a></li>\n</ul>\n<h3>New Contributors</h3>\n<ul>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/sukantoraymond\">@sukantoraymond</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3456\">#3456</a></li>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/samliok\">@samliok</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3545\">#3545</a></li>\n</ul>",
+            "authors": [
+                {
+                    "name": "StephenButtolph"
+                }
+            ],
+            "author_detail": {
+                "name": "StephenButtolph"
+            },
+            "author": "StephenButtolph",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/22109487?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/246387644/v1.11.13-rc.2",
+            "guidislink": true,
+            "link": "https://github.com/ava-labs/avalanchego/releases/tag/v1.11.13-rc.2",
+            "updated": "2024-11-18T15:18:32Z",
+            "updated_parsed": [
+                2024,
+                11,
+                18,
+                15,
+                18,
+                32,
+                0,
+                323,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/ava-labs/avalanchego/releases/tag/v1.11.13-rc.2"
+                }
+            ],
+            "title": "v1.11.13-rc.2",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.11.13-rc.2"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>Merge branch 'master' into update-versions-v1.11.13</p>"
+                }
+            ],
+            "summary": "<p>Merge branch 'master' into update-versions-v1.11.13</p>",
+            "authors": [
+                {
+                    "name": "StephenButtolph"
+                }
+            ],
+            "author_detail": {
+                "name": "StephenButtolph"
+            },
+            "author": "StephenButtolph",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/22109487?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/246387644/v1.11.13-rc.1",
+            "guidislink": true,
+            "link": "https://github.com/ava-labs/avalanchego/releases/tag/v1.11.13-rc.1",
+            "updated": "2024-11-15T21:15:51Z",
+            "updated_parsed": [
+                2024,
+                11,
+                15,
+                21,
+                15,
+                51,
+                4,
+                320,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/ava-labs/avalanchego/releases/tag/v1.11.13-rc.1"
+                }
+            ],
+            "title": "v1.11.13-rc.1",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.11.13-rc.1"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>Update coreth</p>"
+                }
+            ],
+            "summary": "<p>Update coreth</p>",
+            "authors": [
+                {
+                    "name": "StephenButtolph"
+                }
+            ],
+            "author_detail": {
+                "name": "StephenButtolph"
+            },
+            "author": "StephenButtolph",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/22109487?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/246387644/v1.11.13-rc.0",
+            "guidislink": true,
+            "link": "https://github.com/ava-labs/avalanchego/releases/tag/v1.11.13-rc.0",
+            "updated": "2024-11-15T20:06:55Z",
+            "updated_parsed": [
+                2024,
+                11,
+                15,
+                20,
+                6,
+                55,
+                4,
+                320,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/ava-labs/avalanchego/releases/tag/v1.11.13-rc.0"
+                }
+            ],
+            "title": "v1.11.13-rc.0: Add \"proposed\" optional flag to `getValidatorsAt` (#3531)",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.11.13-rc.0: Add \"proposed\" optional flag to `getValidatorsAt` (#3531)"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>Signed-off-by: Ian Suvak <a href=\"mailto:ian.suvak@avalabs.org\">ian.suvak@avalabs.org</a><br />\nCo-authored-by: Stephen Buttolph <a href=\"mailto:stephen@avalabs.org\">stephen@avalabs.org</a></p>"
+                }
+            ],
+            "summary": "<p>Signed-off-by: Ian Suvak <a href=\"mailto:ian.suvak@avalabs.org\">ian.suvak@avalabs.org</a><br />\nCo-authored-by: Stephen Buttolph <a href=\"mailto:stephen@avalabs.org\">stephen@avalabs.org</a></p>",
+            "authors": [
+                {
+                    "name": "iansuvak"
+                }
+            ],
+            "author_detail": {
+                "name": "iansuvak"
+            },
+            "author": "iansuvak",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/1126091?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/246387644/v1.12.0-initial-poc.9",
+            "guidislink": true,
+            "link": "https://github.com/ava-labs/avalanchego/releases/tag/v1.12.0-initial-poc.9",
+            "updated": "2024-11-13T19:21:04Z",
+            "updated_parsed": [
+                2024,
+                11,
+                13,
+                19,
+                21,
+                4,
+                2,
+                318,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/ava-labs/avalanchego/releases/tag/v1.12.0-initial-poc.9"
+                }
+            ],
+            "title": "v1.12.0-initial-poc.9",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.12.0-initial-poc.9"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>Add Etna P-chain metrics (<a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3458\">#3458</a>)</p>"
+                }
+            ],
+            "summary": "<p>Add Etna P-chain metrics (<a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3458\">#3458</a>)</p>",
+            "authors": [
+                {
+                    "name": "StephenButtolph"
+                }
+            ],
+            "author_detail": {
+                "name": "StephenButtolph"
+            },
+            "author": "StephenButtolph",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/22109487?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/246387644/v1.12.0-initial-poc.8",
+            "guidislink": true,
+            "link": "https://github.com/ava-labs/avalanchego/releases/tag/v1.12.0-initial-poc.8",
+            "updated": "2024-11-09T00:20:00Z",
+            "updated_parsed": [
+                2024,
+                11,
+                9,
+                0,
+                20,
+                0,
+                5,
+                314,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/ava-labs/avalanchego/releases/tag/v1.12.0-initial-poc.8"
+                }
+            ],
+            "title": "v1.12.0-initial-poc.8",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.12.0-initial-poc.8"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>Merge branch 'implement-acp-77-logging' into implement-acp-77-metrics</p>"
+                }
+            ],
+            "summary": "<p>Merge branch 'implement-acp-77-logging' into implement-acp-77-metrics</p>",
+            "authors": [
+                {
+                    "name": "StephenButtolph"
+                }
+            ],
+            "author_detail": {
+                "name": "StephenButtolph"
+            },
+            "author": "StephenButtolph",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/22109487?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/246387644/v1.12.0-initial-poc.7",
+            "guidislink": true,
+            "link": "https://github.com/ava-labs/avalanchego/releases/tag/v1.12.0-initial-poc.7",
+            "updated": "2024-11-08T21:44:24Z",
+            "updated_parsed": [
+                2024,
+                11,
+                8,
+                21,
+                44,
+                24,
+                4,
+                313,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/ava-labs/avalanchego/releases/tag/v1.12.0-initial-poc.7"
+                }
+            ],
+            "title": "v1.12.0-initial-poc.7",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.12.0-initial-poc.7"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>merged</p>"
+                }
+            ],
+            "summary": "<p>merged</p>",
+            "authors": [
+                {
+                    "name": "StephenButtolph"
+                }
+            ],
+            "author_detail": {
+                "name": "StephenButtolph"
+            },
+            "author": "StephenButtolph",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/22109487?s=60&v=4"
+                }
+            ],
+            "href": ""
+        }
+    ],
+    "feed": {
+        "language": "en-US",
+        "id": "tag:github.com,2008:https://github.com/ava-labs/avalanchego/releases",
+        "guidislink": true,
+        "link": "https://github.com/ava-labs/avalanchego/releases",
+        "links": [
+            {
+                "type": "text/html",
+                "rel": "alternate",
+                "href": "https://github.com/ava-labs/avalanchego/releases"
+            },
+            {
+                "type": "application/atom+xml",
+                "rel": "self",
+                "href": "https://github.com/ava-labs/avalanchego/releases.atom"
+            }
+        ],
+        "title": "Release notes from avalanchego",
+        "title_detail": {
+            "type": "text/plain",
+            "language": "en-US",
+            "base": "",
+            "value": "Release notes from avalanchego"
+        },
+        "updated": "2024-12-02T04:05:39Z",
+        "updated_parsed": [
+            2024,
+            12,
+            2,
+            4,
+            5,
+            39,
+            0,
+            337,
+            0
+        ]
+    },
+    "headers": {},
+    "encoding": "utf-8",
+    "version": "atom10",
+    "namespaces": {
+        "": "http://www.w3.org/2005/Atom",
+        "media": "http://search.yahoo.com/mrss/"
+    }
+}
