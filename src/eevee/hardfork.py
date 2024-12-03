@@ -7,14 +7,14 @@ from pydantic import Field
 
 
 class Hardfork(BaseModel):
-    hardfork: bool = Field(..., description="Whether this is a hardfork")
-    confidence: float = Field(..., description="Confidence in the prediction, between 0 and 1")
-    explanation: str = Field(..., description="Explanation why this is a hardfork or not in Traditional Chinese")
+    hardfork: bool = Field(..., description="Indicates if this is a hardfork.")
+    confidence: float = Field(..., description="Confidence in the hardfork prediction, between 0 and 1.")
+    explanation: str = Field(..., description="Explanation of why this is a hardfork or not, in Traditional Chinese.")
     block_number: int | None = Field(
         None, description="The specific block number associated with the hardfork or breaking change."
     )
     must_upgrade: bool = Field(
-        ..., description="Indicates whether the release note explicitly mentions 'Must Upgrade' or 'Must Update'."
+        ..., description="Indicates if the release note explicitly mentions 'Must Upgrade' or 'Must Update'."
     )
     testnet_names: list[str] = Field(..., description="List of testnet names referenced in the release tag or note.")
     upgrade_deadline: str | None = Field(
