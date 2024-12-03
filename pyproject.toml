@@ -11,6 +11,7 @@ dependencies = [
     "httpx>=0.28.0",
     "lazyopenai>=0.3.0",
     "loguru>=0.7.2",
+    "markdownify>=0.14.1",
     "pydantic>=2.10.2",
     "python-dotenv>=1.0.1",
     "pyyaml>=6.0.2",
@@ -36,6 +37,7 @@ dev = [
     "pytest-mock>=3.14.0",
     "types-setuptools>=75.6.0.20241126",
     "pytest-httpx>=0.35.0",
+    "jupyter>=1.1.1",
 ]
 
 [tool.ruff]
