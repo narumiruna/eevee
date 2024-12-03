@@ -1,10 +1,15 @@
+from collections.abc import Callable
+from typing import Any
+
 import pytest
-from typing import Callable, Dict, Any
-from eevee.slack import get_slack_channel, get_slack_client, post_slack_message
+
+from eevee.slack import get_slack_channel
+from eevee.slack import get_slack_client
+from eevee.slack import post_slack_message
 
 
 @pytest.fixture
-def set_env(monkeypatch: pytest.MonkeyPatch) -> Callable[[Dict[str, str]], None]:
+def set_env(monkeypatch: pytest.MonkeyPatch) -> Callable[[dict[str, str]], None]:
     def _set_env(env_vars):
         for key, value in env_vars.items():
             monkeypatch.setenv(key, value)
@@ -18,7 +23,7 @@ def clear_cache() -> None:
     get_slack_channel.cache_clear()
 
 
-def test_get_slack_client(set_env: Callable[[Dict[str, str]], None]) -> None:
+def test_get_slack_client(set_env: Callable[[dict[str, str]], None]) -> None:
     set_env({"SLACK_TOKEN": "test-token"})
     client = get_slack_client()
     assert client is not None
@@ -31,7 +36,7 @@ def test_get_slack_client_no_token(monkeypatch: pytest.MonkeyPatch) -> None:
     assert client is None
 
 
-def test_get_slack_channel(set_env: Callable[[Dict[str, str]], None]) -> None:
+def test_get_slack_channel(set_env: Callable[[dict[str, str]], None]) -> None:
     set_env({"SLACK_CHANNEL": "test-channel"})
     channel = get_slack_channel()
     assert channel == "test-channel"
