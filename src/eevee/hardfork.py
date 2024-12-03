@@ -17,10 +17,13 @@ class Hardfork(BaseModel):
         None, description="The specific block height associated with the hardfork or breaking change."
     )
     must_upgrade: bool = Field(
-        None, description="Indicates whether the release note explicitly mentions 'Must Upgrade'."
+        ..., description="Indicates whether the release note explicitly mentions 'Must Upgrade'."
     )
-    must_update: bool = Field(None, description="Indicates whether the release note explicitly mentions 'Must Update'.")
+    must_update: bool = Field(..., description="Indicates whether the release note explicitly mentions 'Must Update'.")
     testnet_names: list[str] = Field(..., description="List of testnet names referenced in the release tag or note.")
+    upgrade_deadline: str | None = Field(
+        None, description="The specific date and time by which the upgrade must be completed (ISO8601 format)."
+    )
 
     def to_markdown(self) -> str:
         hardfork_emoji = "🔴" if self.hardfork else "🟢"
@@ -33,6 +36,7 @@ class Hardfork(BaseModel):
             f"- ⬆️ Must Upgrade: {self.must_upgrade}",
             f"- ⬆️ Must Update: {self.must_update}",
             f"- 🌐 Testnet Names: {', '.join(self.testnet_names)}",
+            f"- 📅 Upgrade Deadline: {self.upgrade_deadline}",
         ]
         return "\n".join(lines)
 
