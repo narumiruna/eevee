@@ -35,6 +35,7 @@ dev = [
     "types-pyyaml>=6.0.12.20240917",
     "pytest-mock>=3.14.0",
     "types-setuptools>=75.6.0.20241126",
+    "pytest-httpx>=0.35.0",
 ]
 
 [tool.ruff]
