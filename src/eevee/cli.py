@@ -66,6 +66,13 @@ def to_markdown(results: list[Result]) -> str:
     help="Path to the output markdown file",
 )
 def main(config_file: Path, output_file: Path) -> None:
+    """
+    Main function to process RSS feeds and save the results to a file.
+
+    This function reads the content of RSS feeds specified in a configuration file,
+    processes each feed to determine if it contains a hardfork, and saves the results
+    to an output file.
+    """
     load_dotenv(find_dotenv())
     cfg = Config.load(config_file)
 
