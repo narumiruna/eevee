@@ -1,4 +1,5 @@
 import functools
+from typing import cast
 
 from lazyopenai import generate
 from pydantic import BaseModel
@@ -21,4 +22,4 @@ class Hardfork(BaseModel):
 
 @functools.cache
 def predict_hardfork(text: str) -> Hardfork:
-    return generate(text, response_format=Hardfork)
+    return cast(Hardfork, generate(text, response_format=Hardfork))
