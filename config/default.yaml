@@ -7,9 +7,9 @@ rss_urls:
   # - https://github.com/etclabscore/core-geth/releases.atom
   # - https://github.com/bnb-chain/bsc/releases.atom
   # - https://github.com/OffchainLabs/nitro/releases.atom
-  # - https://github.com/OffchainLabs/go-ethereum/releases.atom
-  # - https://github.com/Consensys/web3signer/releases.atom
-  # - https://status.arbitrum.io/history.rss
-  # - https://github.com/ava-labs/coreth/releases.atom
-  # - https://github.com/flashbots/mev-boost/releases.atom
+  - https://github.com/OffchainLabs/go-ethereum/releases.atom
+  - https://github.com/Consensys/web3signer/releases.atom
+  - https://status.arbitrum.io/history.rss
+  - https://github.com/ava-labs/coreth/releases.atom
+  - https://github.com/flashbots/mev-boost/releases.atom
   - https://github.com/ava-labs/avalanchego/releases.atom

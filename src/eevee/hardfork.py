@@ -34,6 +34,19 @@ class Hardfork(BaseModel):
         ]
         return "\n".join(lines)
 
+    def to_slack(self) -> str:
+        hardfork_emoji = "🔴" if self.hardfork else "🟢"
+        lines = [
+            f"- {hardfork_emoji} *Hardfork*: {self.hardfork}",
+            f"- 📊 *Confidence*: {self.confidence * 100}%",
+            f"- 📝 *Explanation*: {self.explanation}",
+            f"- 🔢 *Block Number*: {self.block_number}",
+            f"- ⬆️ *Must Upgrade*: {self.must_upgrade}",
+            f"- 🌐 *Testnet Names*: {', '.join(self.testnet_names)}",
+            f"- 📅 *Upgrade Deadline*: {self.upgrade_deadline}",
+        ]
+        return "\n".join(lines)
+
 
 @functools.cache
 def predict_hardfork(text: str) -> Hardfork:
