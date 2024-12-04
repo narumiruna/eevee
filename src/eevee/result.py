@@ -72,7 +72,7 @@ class EntryResult(BaseModel):
             f"- ⏰ *Updated At*: {format_datetime(self.updated)}",
             self.format_summary_for_display(),
             "",
-            f"- 🔗 Link: {self.link}",
+            f"- 🔗 *Link*: {self.link}",
             self.hardfork.to_slack(),
             "",
         ]
