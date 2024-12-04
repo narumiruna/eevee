@@ -24,10 +24,33 @@ def load_yaml(f: str | Path) -> Any:
 
 
 def load_json(f: str | Path) -> Any:
+    """
+    Load a JSON file and return its contents.
+
+    Args:
+        f (str | Path): The file path to the JSON file.
+
+    Returns:
+        Any: The contents of the JSON file.
+
+    Raises:
+        FileNotFoundError: If the file does not exist.
+        json.JSONDecodeError: If the file is not a valid JSON.
+    """
     with open(f) as fp:
         return json.load(fp)
 
 
 def save_json(obj: Any, f: str | Path) -> None:
+    """
+    Save a Python object as a JSON file.
+
+    Args:
+        obj (Any): The Python object to be serialized to JSON.
+        f (str | Path): The file path where the JSON data will be saved.
+
+    Returns:
+        None
+    """
     with open(f, "w", encoding="utf-8") as fp:
         json.dump(obj, fp, indent=4, ensure_ascii=False)
