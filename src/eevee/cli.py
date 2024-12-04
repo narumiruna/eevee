@@ -74,6 +74,7 @@ def export(config_file: Path, output_file: Path) -> None:
                 link=entry["link"],
                 title=entry["title"],
                 updated=entry["updated"],
+                summary=entry["summary"],
                 hardfork=predict_hardfork(str(entry)),
             )
             print(entry_result)

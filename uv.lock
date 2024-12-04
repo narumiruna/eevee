@@ -405,6 +405,7 @@ dev = [
     { name = "pytest-httpx" },
     { name = "pytest-mock" },
     { name = "ruff" },
+    { name = "types-decorator" },
     { name = "types-pyyaml" },
     { name = "types-redis" },
     { name = "types-setuptools" },
@@ -436,6 +437,7 @@ dev = [
     { name = "pytest-httpx", specifier = ">=0.35.0" },
     { name = "pytest-mock", specifier = ">=3.14.0" },
     { name = "ruff", specifier = ">=0.7.3" },
+    { name = "types-decorator", specifier = ">=5.1.8.20240310" },
     { name = "types-pyyaml", specifier = ">=6.0.12.20240917" },
     { name = "types-redis", specifier = ">=4.6.0.20241004" },
     { name = "types-setuptools", specifier = ">=75.6.0.20241126" },
@@ -1887,6 +1889,15 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/91/c8/81e5699160b91f0f91eea852d84035c412bfb4b3a29389701044400ab379/types-cffi-1.16.0.20240331.tar.gz", hash = "sha256:b8b20d23a2b89cfed5f8c5bc53b0cb8677c3aac6d970dbc771e28b9c698f5dee", size = 11318 }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/69/7a/98f5d2493a652cec05d3b09be59202d202004a41fca9c70d224782611365/types_cffi-1.16.0.20240331-py3-none-any.whl", hash = "sha256:a363e5ea54a4eb6a4a105d800685fde596bc318089b025b27dee09849fe41ff0", size = 14550 },
+]
+
+[[package]]
+name = "types-decorator"
+version = "5.1.8.20240310"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/c0/88/5097d0d525b34564199ba30faabe418697b2b874ae96f1a2a9512ccf003e/types-decorator-5.1.8.20240310.tar.gz", hash = "sha256:52e316b03783886a8a2abdc228f7071680ba65894545cd2085ebe3cf88684a0e", size = 3734 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/c8/3b/9afa3825b9c04079f5494fb54af3b2a60f8796fe207d2442f16477c0b7d6/types_decorator-5.1.8.20240310-py3-none-any.whl", hash = "sha256:3af75dc38f5baf65b9b53ea6661ce2056c5ca7d70d620d0b1f620285c1242757", size = 3102 },
 ]
 
 [[package]]
