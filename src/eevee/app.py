@@ -67,5 +67,4 @@ class App:
                 redis.set(get_entry_key(entry), entry["updated"])
                 logger.debug(f"Updated redis with key: {get_entry_key(entry)}")
 
-            break
         logger.debug("App run completed")
