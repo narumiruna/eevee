@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 from typing import Any
 
@@ -20,3 +21,8 @@ def load_yaml(f: str | Path) -> Any:
     """
     with Path(f).open() as fp:
         return yaml.safe_load(fp)
+
+
+def load_json(f: str | Path) -> Any:
+    with open(f) as fp:
+        return json.load(fp)
