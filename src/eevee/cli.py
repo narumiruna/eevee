@@ -28,7 +28,7 @@ def cli() -> None:
     default="config/default.yaml",
     help="Path to the config file",
 )
-def bot(config_file: Path) -> None:
+def app(config_file: Path) -> None:
     load_dotenv(find_dotenv())
     config = Config.load(config_file)
 
