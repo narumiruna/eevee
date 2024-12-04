@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+from datetime import datetime
 from typing import Final
 
 from markdownify import markdownify as md
@@ -8,6 +9,10 @@ from pydantic import BaseModel
 from .hardfork import Hardfork
 
 MAX_SUMMARY_LENGTH: Final[int] = 500
+
+
+def format_datetime(s: str) -> str:
+    return datetime.strptime(s, "%Y-%m-%dT%H:%M:%SZ").strftime("%Y-%m-%d %H:%M:%S")
 
 
 class Result(BaseModel):
@@ -51,7 +56,7 @@ class EntryResult(BaseModel):
 
     def to_markdown(self) -> str:
         lines = [
-            f"### {self.title} ({self.updated})",
+            f"### {self.title} ({format_datetime(self.updated)})",
             self.format_summary_for_display(),
             "",
             f"- 🔗 Link: {self.link}",
@@ -61,8 +66,10 @@ class EntryResult(BaseModel):
         return "\n".join(lines)
 
     def to_slack(self, feed_title: str | None = None) -> str:
+        title_line = f"*{feed_title}*: *{self.title}*" if feed_title else f"*{self.title}*"
         lines = [
-            f"*{feed_title}*: *{self.title}* ({self.updated})" if feed_title else f"*{self.title}* ({self.updated})",
+            title_line,
+            f"- ⏰ *Updated At*: {format_datetime(self.updated)}",
             self.format_summary_for_display(),
             "",
             f"- 🔗 Link: {self.link}",
