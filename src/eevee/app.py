@@ -46,7 +46,6 @@ class App:
             logger.debug(f"Processing feed: {feed}")
 
             feed_title = feed["feed"]["title"]
-
             for entry in feed["entries"]:
                 if not self.is_new_entry(entry):
                     logger.debug(f"Skipping entry: {entry['id']}")
