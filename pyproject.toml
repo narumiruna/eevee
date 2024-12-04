@@ -9,7 +9,7 @@ dependencies = [
     "click>=8.1.7",
     "feedparser>=6.0.11",
     "httpx>=0.28.0",
-    "lazyopenai>=0.3.3",
+    "lazyopenai[langfuse]>=0.4.0",
     "loguru>=0.7.2",
     "markdownify>=0.14.1",
     "pydantic>=2.10.2",
@@ -40,6 +40,7 @@ dev = [
     "pytest-httpx>=0.35.0",
     "jupyter>=1.1.1",
     "types-redis>=4.6.0.20241004",
+    "types-decorator>=5.1.8.20240310",
 ]
 
 [tool.ruff]

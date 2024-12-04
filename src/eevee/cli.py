@@ -6,6 +6,7 @@ import click
 from dotenv import find_dotenv
 from dotenv import load_dotenv
 
+from .app import App
 from .config import Config
 from .hardfork import predict_hardfork
 from .result import EntryResult
@@ -17,6 +18,22 @@ from .rss import fetch_feed
 @click.group()
 def cli() -> None:
     pass
+
+
+@cli.command()
+@click.option(
+    "-c",
+    "--config-file",
+    type=click.Path(exists=True, path_type=Path),
+    default="config/default.yaml",
+    help="Path to the config file",
+)
+def bot(config_file: Path) -> None:
+    load_dotenv(find_dotenv())
+    config = Config.load(config_file)
+
+    app = App(config)
+    app.run()
 
 
 @cli.command()
@@ -57,6 +74,7 @@ def export(config_file: Path, output_file: Path) -> None:
                 link=entry["link"],
                 title=entry["title"],
                 updated=entry["updated"],
+                summary=entry["summary"],
                 hardfork=predict_hardfork(str(entry)),
             )
             print(entry_result)
