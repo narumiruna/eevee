@@ -5,49 +5,13 @@ from pathlib import Path
 import click
 from dotenv import find_dotenv
 from dotenv import load_dotenv
-from pydantic import BaseModel
 
 from .config import Config
-from .hardfork import Hardfork
 from .hardfork import predict_hardfork
+from .result import EntryResult
+from .result import Result
+from .result import to_markdown
 from .rss import fetch_feed
-
-
-class Result(BaseModel):
-    url: str
-    title: str
-    entries: list[EntryResult] = []
-
-    def to_markdown(self) -> str:
-        lines = [
-            f"## [{self.title}]({self.url})",
-            "",
-        ]
-
-        for entry in self.entries:
-            lines += [entry.to_markdown()]
-
-        return "\n".join(lines)
-
-
-class EntryResult(BaseModel):
-    link: str
-    title: str
-    updated: str
-    hardfork: Hardfork
-
-    def to_markdown(self) -> str:
-        lines = [
-            f"### {self.title} ({self.updated})",
-            f"- 🔗 Link: {self.link}",
-            self.hardfork.to_markdown(),
-            "",
-        ]
-        return "\n".join(lines)
-
-
-def to_markdown(results: list[Result]) -> str:
-    return "# Hardfork Analysis\n\n" + "\n".join([result.to_markdown() for result in results])
 
 
 @click.command()
