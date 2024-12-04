@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from typing import Final
 
+from markdownify import markdownify as md
 from pydantic import BaseModel
 
 from .hardfork import Hardfork
@@ -43,7 +44,8 @@ class EntryResult(BaseModel):
     hardfork: Hardfork
 
     def trim_summary(self) -> str:
-        return self.summary[:MAX_SUMMARY_LENGTH] + "..." if len(self.summary) > MAX_SUMMARY_LENGTH else self.summary
+        s = md(self.summary)
+        return s[:MAX_SUMMARY_LENGTH] + "..." if len(s) > MAX_SUMMARY_LENGTH else s
 
     def to_markdown(self) -> str:
         lines = [
@@ -56,9 +58,9 @@ class EntryResult(BaseModel):
         ]
         return "\n".join(lines)
 
-    def to_slack(self) -> str:
+    def to_slack(self, feed_title: str | None = None) -> str:
         lines = [
-            f"*{self.title}* ({self.updated})",
+            f"*{feed_title}*: *{self.title}* ({self.updated})" if feed_title else f"*{self.title}* ({self.updated})",
             self.trim_summary(),
             "",
             f"- 🔗 Link: {self.link}",

@@ -45,6 +45,8 @@ class App:
         for _, feed in self.feeds.items():
             logger.debug(f"Processing feed: {feed}")
 
+            feed_title = feed["feed"]["title"]
+
             for entry in feed["entries"]:
                 if not self.is_new_entry(entry):
                     logger.debug(f"Skipping entry: {entry['id']}")
@@ -59,7 +61,7 @@ class App:
                 )
                 logger.debug(f"Entry result: {entry_result}")
 
-                post_slack_message(entry_result.to_slack())
+                post_slack_message(entry_result.to_slack(feed_title))
                 logger.debug("Posted to Slack")
 
                 redis.set(get_entry_key(entry), entry["updated"])
