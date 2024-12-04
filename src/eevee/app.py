@@ -58,9 +58,8 @@ class App:
                     hardfork=predict_hardfork(str(entry)),
                 )
                 logger.debug(f"Entry result: {entry_result}")
-                print(entry_result.to_markdown())
 
-                post_slack_message(entry_result.to_markdown())
+                post_slack_message(entry_result.to_slack())
                 logger.debug("Posted to Slack")
 
                 redis.set(get_entry_key(entry), entry["updated"])
