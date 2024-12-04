@@ -1,0 +1,163 @@
+{
+    "bozo": false,
+    "entries": [
+        {
+            "id": "tag:github.com,2008:Repository/410895655/v1.13.3",
+            "guidislink": true,
+            "link": "https://github.com/OffchainLabs/go-ethereum/releases/tag/v1.13.3",
+            "updated": "2023-10-12T11:36:49Z",
+            "updated_parsed": [
+                2023,
+                10,
+                12,
+                11,
+                36,
+                49,
+                3,
+                285,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/OffchainLabs/go-ethereum/releases/tag/v1.13.3"
+                }
+            ],
+            "title": "v1.13.3",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.13.3"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>params: release Geth v.1.13.3</p>"
+                }
+            ],
+            "summary": "<p>params: release Geth v.1.13.3</p>",
+            "authors": [
+                {
+                    "name": "karalabe"
+                }
+            ],
+            "author_detail": {
+                "name": "karalabe"
+            },
+            "author": "karalabe",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/129561?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/410895655/v2.0.2",
+            "guidislink": true,
+            "link": "https://github.com/OffchainLabs/go-ethereum/releases/tag/v2.0.2",
+            "updated": "2022-09-08T18:40:15Z",
+            "updated_parsed": [
+                2022,
+                9,
+                8,
+                18,
+                40,
+                15,
+                3,
+                251,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/OffchainLabs/go-ethereum/releases/tag/v2.0.2"
+                }
+            ],
+            "title": "Go-Ethereum Nitro v2.0.2",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "Go-Ethereum Nitro v2.0.2"
+            },
+            "content": [
+                {
+                    "type": "text/plain",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "No content."
+                }
+            ],
+            "summary": "No content.",
+            "authors": [
+                {
+                    "name": "hkalodner"
+                }
+            ],
+            "author_detail": {
+                "name": "hkalodner"
+            },
+            "author": "hkalodner",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/412311?s=60&v=4"
+                }
+            ],
+            "href": ""
+        }
+    ],
+    "feed": {
+        "language": "en-US",
+        "id": "tag:github.com,2008:https://github.com/OffchainLabs/go-ethereum/releases",
+        "guidislink": true,
+        "link": "https://github.com/OffchainLabs/go-ethereum/releases",
+        "links": [
+            {
+                "type": "text/html",
+                "rel": "alternate",
+                "href": "https://github.com/OffchainLabs/go-ethereum/releases"
+            },
+            {
+                "type": "application/atom+xml",
+                "rel": "self",
+                "href": "https://github.com/OffchainLabs/go-ethereum/releases.atom"
+            }
+        ],
+        "title": "Release notes from go-ethereum",
+        "title_detail": {
+            "type": "text/plain",
+            "language": "en-US",
+            "base": "",
+            "value": "Release notes from go-ethereum"
+        },
+        "updated": "2023-10-12T11:36:49Z",
+        "updated_parsed": [
+            2023,
+            10,
+            12,
+            11,
+            36,
+            49,
+            3,
+            285,
+            0
+        ]
+    },
+    "headers": {},
+    "encoding": "utf-8",
+    "version": "atom10",
+    "namespaces": {
+        "": "http://www.w3.org/2005/Atom",
+        "media": "http://search.yahoo.com/mrss/"
+    }
+}

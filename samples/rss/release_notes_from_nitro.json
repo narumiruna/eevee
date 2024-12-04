@@ -1,0 +1,619 @@
+{
+    "bozo": false,
+    "entries": [
+        {
+            "id": "tag:github.com,2008:Repository/410897288/v3.3.0-rc.1",
+            "guidislink": true,
+            "link": "https://github.com/OffchainLabs/nitro/releases/tag/v3.3.0-rc.1",
+            "updated": "2024-11-08T16:39:50Z",
+            "updated_parsed": [
+                2024,
+                11,
+                8,
+                16,
+                39,
+                50,
+                4,
+                313,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/OffchainLabs/nitro/releases/tag/v3.3.0-rc.1"
+                }
+            ],
+            "title": "Arbitrum Nitro v3.3.0 Release Candidate 1",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "Arbitrum Nitro v3.3.0 Release Candidate 1"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>This release is available as a Docker image on Docker Hub at <code>offchainlabs/nitro-node:v3.3.0-rc.1-a81da40</code></p>\n<p>This Docker image specifies default flags in its entrypoint which should be replicated if you're overriding the entrypoint: <code>/usr/local/bin/nitro --validation.wasm.allowed-wasm-module-roots /home/user/nitro-legacy/machines,/home/user/target/machines</code></p>\n<p>If you're running a validator without a split validation server (this will be true of most validators), you should instead use the image <code>offchainlabs/nitro-node:v3.3.0-rc.1-a81da40-validator</code> which has the extra script <code>/usr/local/bin/split-val-entry.sh</code> as the entrypoint.</p>\n<h2>What's Changed</h2>\n<p>This release makes miscellaneous improvements to the batch poster, Stylus execution, block validation, and merges in upstream go-ethereum v1.14.0.</p>\n<h2>Configuration Changes</h2>\n<ul>\n<li><code>--execution.caching.stylus-lru-cache</code> has been replaced by <code>--execution.caching.stylus-lru-cache-capacity</code> which is now measured in megabytes.</li>\n<li><code>--blocks-reexecutor.blocks-per-thread</code> has been renamed to <code>--blocks-reexecutor.min-blocks-per-thread</code></li>\n<li><code>--chain.info-ipfs-url</code> and <code>--chain.info-ipfs-download-path</code> have been removed, however, they were already nonfunctional in previous releases.</li>\n<li><code>--node.block-validator.redis-validation-client-config.producer-config.*</code> no longer has the <code>enable-reproduce</code>, check-pending-interval<code>, </code>keepalive-timeout<code>and</code>check-pending-items` config options.</li>\n<li><code>--validation.arbitrator.redis-validation-server-config.consumer-config.keepalive-timeout</code> has been removed.</li>\n</ul>\n<h2>User-facing Improvements</h2>\n<ul>\n<li>Allow external-signer for batch-poster with DA: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2669\">#2669</a></li>\n<li>Make timeout configurable for block validator jit execution: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2698\">#2698</a></li>\n<li>Sort storage_flush_cache to make Stylus tracing deterministic: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2693\">#2693</a></li>\n<li>Support multiple producers in redis streams for stateless block validators: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2581\">#2581</a></li>\n<li>Support google cloud storage as das: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2643\">#2643</a>\n<ul>\n<li>Document the fact OCL does not support google cloud storage: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2727\">#2727</a></li>\n</ul>\n</li>\n<li>Create a build diagnostic tool V1: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2733\">#2733</a>\n<ul>\n<li>Update check-build: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2744\">#2744</a>, <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2746\">#2746</a></li>\n</ul>\n</li>\n<li>Support seamless switchover redis for sequencer coordinator: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2526\">#2526</a>\n<ul>\n<li>This has not been tested in a real chain setup yet, and may be unstable to use.</li>\n</ul>\n</li>\n<li>PeriodToAllowPostingBatchWithOnlyBatchPostingReport config: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2657\">#2657</a></li>\n</ul>\n<h2>Internal Highlights</h2>\n<ul>\n<li>Merge in go-ethereum v1.14.0: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2517\">#2517</a>\n<ul>\n<li>RPC posting gas hook refactor: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2774\">#2774</a></li>\n</ul>\n</li>\n<li>Init-reorg: fix logic: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2681\">#2681</a></li>\n<li>Improve stability of getNodeCreationBlock for L3s: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2682\">#2682</a></li>\n<li>Be more precise when selecting firstMsg in the batch poster: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2646\">#2646</a></li>\n<li>Fix CaptureHostIO when slices are bigger than 2^16: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2704\">#2704</a></li>\n<li>Stylus LRU cache with bytes capacity instead of number of entries capacity : <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2595\">#2595</a></li>\n<li>Stylus cache improvements: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2712\">#2712</a></li>\n<li>Add dangerous batch poster options to cli: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2776\">#2776</a></li>\n<li>Do not use SetFinalizer to remove entries from preimageResolvers to free memory sooner from block validators: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2752\">#2752</a></li>\n<li>Use MessageCommitMode when executing future head block messages: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2705\">#2705</a></li>\n<li>Gives preference to IPv4 when connecting to Sequencer's feed: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2650\">#2650</a></li>\n<li>Jit prover should accept InputJSON format and execute a full block: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2730\">#2730</a></li>\n<li>Adjusts benchbin's args to have the same names as prover's args: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2724\">#2724</a></li>\n<li>Add Gas and Ink types in rust: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2736\">#2736</a></li>\n<li>Improve BlocksReExecutor implementation: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2714\">#2714</a></li>\n<li>Add flags and other info for nitro --dev: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2751\">#2751</a></li>\n<li>Redis streams: Attempt to clear from PEL again after successfull deletion of Lower: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2755\">#2755</a></li>\n<li>Fix inbox reading window after a reorg: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2673\">#2673</a></li>\n<li>Use Golang version 1.23: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2711\">#2711</a></li>\n<li>Update aws-sdk-go-v2: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2720\">#2720</a></li>\n<li>Log from batch poster for which das backends are using chunked vs legacy store: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2747\">#2747</a></li>\n<li>Log the DAS public key on startup: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2717\">#2717</a></li>\n<li>Remove brotli build dir in make clean: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2703\">#2703</a></li>\n<li>Fix spurious refund error log to just be debug: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2617\">#2617</a></li>\n<li>Fix spurious \"failed to re-send transaction\" error logs: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2627\">#2627</a></li>\n<li>Validation Inputs wiring: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2604\">#2604</a></li>\n<li>DAS RPC Client Metrics: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2549\">#2549</a></li>\n<li>Remove arbutil's L1Interface and use *ethclient.Client instead: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2641\">#2641</a></li>\n<li>Adjusts log levels for some logs: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2719\">#2719</a></li>\n<li>Remove IPFS support: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2636\">#2636</a></li>\n<li>Fix memory leak when getting stylus cache metrics: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2734\">#2734</a></li>\n<li>Add buildspec.yml for AWS CodeBuild: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2645\">#2645</a></li>\n<li>Allow builds without Docker inside of Docker for cbrotli-wasm: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2748\">#2748</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/OffchainLabs/nitro/compare/v3.2.1...v3.3.0-rc.1\"><tt>v3.2.1...v3.3.0-rc.1</tt></a></p>"
+                }
+            ],
+            "summary": "<p>This release is available as a Docker image on Docker Hub at <code>offchainlabs/nitro-node:v3.3.0-rc.1-a81da40</code></p>\n<p>This Docker image specifies default flags in its entrypoint which should be replicated if you're overriding the entrypoint: <code>/usr/local/bin/nitro --validation.wasm.allowed-wasm-module-roots /home/user/nitro-legacy/machines,/home/user/target/machines</code></p>\n<p>If you're running a validator without a split validation server (this will be true of most validators), you should instead use the image <code>offchainlabs/nitro-node:v3.3.0-rc.1-a81da40-validator</code> which has the extra script <code>/usr/local/bin/split-val-entry.sh</code> as the entrypoint.</p>\n<h2>What's Changed</h2>\n<p>This release makes miscellaneous improvements to the batch poster, Stylus execution, block validation, and merges in upstream go-ethereum v1.14.0.</p>\n<h2>Configuration Changes</h2>\n<ul>\n<li><code>--execution.caching.stylus-lru-cache</code> has been replaced by <code>--execution.caching.stylus-lru-cache-capacity</code> which is now measured in megabytes.</li>\n<li><code>--blocks-reexecutor.blocks-per-thread</code> has been renamed to <code>--blocks-reexecutor.min-blocks-per-thread</code></li>\n<li><code>--chain.info-ipfs-url</code> and <code>--chain.info-ipfs-download-path</code> have been removed, however, they were already nonfunctional in previous releases.</li>\n<li><code>--node.block-validator.redis-validation-client-config.producer-config.*</code> no longer has the <code>enable-reproduce</code>, check-pending-interval<code>, </code>keepalive-timeout<code>and</code>check-pending-items` config options.</li>\n<li><code>--validation.arbitrator.redis-validation-server-config.consumer-config.keepalive-timeout</code> has been removed.</li>\n</ul>\n<h2>User-facing Improvements</h2>\n<ul>\n<li>Allow external-signer for batch-poster with DA: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2669\">#2669</a></li>\n<li>Make timeout configurable for block validator jit execution: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2698\">#2698</a></li>\n<li>Sort storage_flush_cache to make Stylus tracing deterministic: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2693\">#2693</a></li>\n<li>Support multiple producers in redis streams for stateless block validators: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2581\">#2581</a></li>\n<li>Support google cloud storage as das: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2643\">#2643</a>\n<ul>\n<li>Document the fact OCL does not support google cloud storage: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2727\">#2727</a></li>\n</ul>\n</li>\n<li>Create a build diagnostic tool V1: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2733\">#2733</a>\n<ul>\n<li>Update check-build: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2744\">#2744</a>, <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2746\">#2746</a></li>\n</ul>\n</li>\n<li>Support seamless switchover redis for sequencer coordinator: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2526\">#2526</a>\n<ul>\n<li>This has not been tested in a real chain setup yet, and may be unstable to use.</li>\n</ul>\n</li>\n<li>PeriodToAllowPostingBatchWithOnlyBatchPostingReport config: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2657\">#2657</a></li>\n</ul>\n<h2>Internal Highlights</h2>\n<ul>\n<li>Merge in go-ethereum v1.14.0: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2517\">#2517</a>\n<ul>\n<li>RPC posting gas hook refactor: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2774\">#2774</a></li>\n</ul>\n</li>\n<li>Init-reorg: fix logic: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2681\">#2681</a></li>\n<li>Improve stability of getNodeCreationBlock for L3s: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2682\">#2682</a></li>\n<li>Be more precise when selecting firstMsg in the batch poster: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2646\">#2646</a></li>\n<li>Fix CaptureHostIO when slices are bigger than 2^16: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2704\">#2704</a></li>\n<li>Stylus LRU cache with bytes capacity instead of number of entries capacity : <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2595\">#2595</a></li>\n<li>Stylus cache improvements: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2712\">#2712</a></li>\n<li>Add dangerous batch poster options to cli: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2776\">#2776</a></li>\n<li>Do not use SetFinalizer to remove entries from preimageResolvers to free memory sooner from block validators: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2752\">#2752</a></li>\n<li>Use MessageCommitMode when executing future head block messages: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2705\">#2705</a></li>\n<li>Gives preference to IPv4 when connecting to Sequencer's feed: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2650\">#2650</a></li>\n<li>Jit prover should accept InputJSON format and execute a full block: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2730\">#2730</a></li>\n<li>Adjusts benchbin's args to have the same names as prover's args: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2724\">#2724</a></li>\n<li>Add Gas and Ink types in rust: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2736\">#2736</a></li>\n<li>Improve BlocksReExecutor implementation: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2714\">#2714</a></li>\n<li>Add flags and other info for nitro --dev: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2751\">#2751</a></li>\n<li>Redis streams: Attempt to clear from PEL again after successfull deletion of Lower: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2755\">#2755</a></li>\n<li>Fix inbox reading window after a reorg: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2673\">#2673</a></li>\n<li>Use Golang version 1.23: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2711\">#2711</a></li>\n<li>Update aws-sdk-go-v2: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2720\">#2720</a></li>\n<li>Log from batch poster for which das backends are using chunked vs legacy store: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2747\">#2747</a></li>\n<li>Log the DAS public key on startup: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2717\">#2717</a></li>\n<li>Remove brotli build dir in make clean: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2703\">#2703</a></li>\n<li>Fix spurious refund error log to just be debug: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2617\">#2617</a></li>\n<li>Fix spurious \"failed to re-send transaction\" error logs: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2627\">#2627</a></li>\n<li>Validation Inputs wiring: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2604\">#2604</a></li>\n<li>DAS RPC Client Metrics: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2549\">#2549</a></li>\n<li>Remove arbutil's L1Interface and use *ethclient.Client instead: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2641\">#2641</a></li>\n<li>Adjusts log levels for some logs: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2719\">#2719</a></li>\n<li>Remove IPFS support: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2636\">#2636</a></li>\n<li>Fix memory leak when getting stylus cache metrics: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2734\">#2734</a></li>\n<li>Add buildspec.yml for AWS CodeBuild: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2645\">#2645</a></li>\n<li>Allow builds without Docker inside of Docker for cbrotli-wasm: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2748\">#2748</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/OffchainLabs/nitro/compare/v3.2.1...v3.3.0-rc.1\"><tt>v3.2.1...v3.3.0-rc.1</tt></a></p>",
+            "authors": [
+                {
+                    "name": "PlasmaPower"
+                }
+            ],
+            "author_detail": {
+                "name": "PlasmaPower"
+            },
+            "author": "PlasmaPower",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/6006498?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/410897288/v3.2.1",
+            "guidislink": true,
+            "link": "https://github.com/OffchainLabs/nitro/releases/tag/v3.2.1",
+            "updated": "2024-09-24T15:38:43Z",
+            "updated_parsed": [
+                2024,
+                9,
+                24,
+                15,
+                38,
+                43,
+                1,
+                268,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/OffchainLabs/nitro/releases/tag/v3.2.1"
+                }
+            ],
+            "title": "Arbitrum Nitro v3.2.1",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "Arbitrum Nitro v3.2.1"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>This release is available as a Docker image on Docker Hub at <code>offchainlabs/nitro-node:v3.2.1-d81324d</code></p>\n<p>This Docker image specifies default flags in its entrypoint which should be replicated if you're overriding the entrypoint: <code>/usr/local/bin/nitro --validation.wasm.allowed-wasm-module-roots /home/user/nitro-legacy/machines,/home/user/target/machines</code></p>\n<p>If you're running a validator without a split validation server (this will be true of most validators), you should instead use the image <code>offchainlabs/nitro-node:v3.2.1-d81324d-validator</code> which has the extra script <code>/usr/local/bin/split-val-entry.sh</code> as the entrypoint.</p>\n<h2>What's Changed</h2>\n<p>This release adds support for ArbOS 32 for validators.</p>\n<h2>Internal Highlights</h2>\n<ul>\n<li>Add support for consensus v32 to Docker: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2697\">#2697</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/OffchainLabs/nitro/compare/v3.2.0...v3.2.1\"><tt>v3.2.0...v3.2.1</tt></a></p>"
+                }
+            ],
+            "summary": "<p>This release is available as a Docker image on Docker Hub at <code>offchainlabs/nitro-node:v3.2.1-d81324d</code></p>\n<p>This Docker image specifies default flags in its entrypoint which should be replicated if you're overriding the entrypoint: <code>/usr/local/bin/nitro --validation.wasm.allowed-wasm-module-roots /home/user/nitro-legacy/machines,/home/user/target/machines</code></p>\n<p>If you're running a validator without a split validation server (this will be true of most validators), you should instead use the image <code>offchainlabs/nitro-node:v3.2.1-d81324d-validator</code> which has the extra script <code>/usr/local/bin/split-val-entry.sh</code> as the entrypoint.</p>\n<h2>What's Changed</h2>\n<p>This release adds support for ArbOS 32 for validators.</p>\n<h2>Internal Highlights</h2>\n<ul>\n<li>Add support for consensus v32 to Docker: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2697\">#2697</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/OffchainLabs/nitro/compare/v3.2.0...v3.2.1\"><tt>v3.2.0...v3.2.1</tt></a></p>",
+            "authors": [
+                {
+                    "name": "PlasmaPower"
+                }
+            ],
+            "author_detail": {
+                "name": "PlasmaPower"
+            },
+            "author": "PlasmaPower",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/6006498?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/410897288/v3.2.0",
+            "guidislink": true,
+            "link": "https://github.com/OffchainLabs/nitro/releases/tag/v3.2.0",
+            "updated": "2024-09-24T17:49:35Z",
+            "updated_parsed": [
+                2024,
+                9,
+                24,
+                17,
+                49,
+                35,
+                1,
+                268,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/OffchainLabs/nitro/releases/tag/v3.2.0"
+                }
+            ],
+            "title": "Arbitrum Nitro v3.2.0",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "Arbitrum Nitro v3.2.0"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>This release is available as a Docker image on Docker Hub at <code>offchainlabs/nitro-node:v3.2.0-f847be0</code></p>\n<p>This Docker image specifies default flags in its entrypoint which should be replicated if you're overriding the entrypoint: <code>/usr/local/bin/nitro --validation.wasm.allowed-wasm-module-roots /home/user/nitro-legacy/machines,/home/user/target/machines</code></p>\n<p>If you're running a validator without a split validation server (this will be true of most validators), you should instead use the image <code>offchainlabs/nitro-node:v3.2.0-f847be0-validator</code> which has the extra script <code>/usr/local/bin/split-val-entry.sh</code> as the entrypoint.</p>\n<p>The hash in the Docker image tag is different than this commit hash because the published commit was squashed.</p>\n<h2>What's Changed</h2>\n<p>This release contains security fixes activated by a new upgrade, ArbOS 32. The Arbitrum Security council is planning to execute an emergency action in order to activate ArbOS 32 in the coming days which is why the version upgrade is required. A binary of the release has been provided ahead of time to allow for more time to upgrade, and the source code will be made available some time before the upgrade action is taken.</p>\n<p>If you encounter the error \"cpu flags not supported on local cpu\", your CPU may be missing support for standard x86 extensions. This can be resolved by adding the <code>--execution.stylus-target.amd64=x86_64-linux-unknown+sse4.2</code> flag to disable use of these extensions.</p>\n<h2>User-facing Improvements</h2>\n<ul>\n<li>Add support for ArbOS 32</li>\n<li>Add custom native tracer for cargo stylus replay: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2560\">#2560</a></li>\n<li>Allow force rebuilding of local wasm store: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2606\">#2606</a>\n<ul>\n<li>Support rebuilding of wasm store on init: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2618\">#2618</a></li>\n</ul>\n</li>\n<li>Remove wasm database after downloading snapshot: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2607\">#2607</a></li>\n</ul>\n<h2>Internal Highlights</h2>\n<ul>\n<li>Geth: pull in change to bubble up snapshot db errors: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2662\">#2662</a></li>\n<li>Support cross-compilation of stylus programs: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2605\">#2605</a></li>\n<li>Update default Stylus x86 architecture: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2614\">#2614</a></li>\n<li>Fix setupFastConfirmation not getting called: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2668\">#2668</a></li>\n<li>Only warn on potentially incompatible WASM module roots: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2663\">#2663</a></li>\n<li>Redis consumer: workers and buffers: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2622\">#2622</a>\n<ul>\n<li>Redis consumer fix: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2633\">#2633</a></li>\n<li>Validator recording fix: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2660\">#2660</a></li>\n</ul>\n</li>\n<li>Block_validator: introduce recording-iter-limit: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2637\">#2637</a></li>\n<li>Disable preimage validation in JIT: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2620\">#2620</a></li>\n<li>Close opened files explicitly instead of relying on the GC: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2628\">#2628</a></li>\n<li>Fix: deploy both erc20 based and eth based templates: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2664\">#2664</a></li>\n<li>Populate stylus target cache before rebuilding wasm store: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2612\">#2612</a></li>\n<li>Add safety check that min basefee must be positive for gas estimation: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2621\">#2621</a></li>\n<li>Creates validator wallet through Staker's DataPoster: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2573\">#2573</a></li>\n<li>Small changes to database conversion: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2591\">#2591</a></li>\n<li>Resolve parent chain block by hash when resolving delayed messages: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2649\">#2649</a></li>\n<li>Lower a couple of info logs down to debug: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2603\">#2603</a></li>\n<li>Add Mac OSX environment variables: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2624\">#2624</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/OffchainLabs/nitro/compare/v3.1.2...v3.2.0\"><tt>v3.1.2...v3.2.0</tt></a></p>"
+                }
+            ],
+            "summary": "<p>This release is available as a Docker image on Docker Hub at <code>offchainlabs/nitro-node:v3.2.0-f847be0</code></p>\n<p>This Docker image specifies default flags in its entrypoint which should be replicated if you're overriding the entrypoint: <code>/usr/local/bin/nitro --validation.wasm.allowed-wasm-module-roots /home/user/nitro-legacy/machines,/home/user/target/machines</code></p>\n<p>If you're running a validator without a split validation server (this will be true of most validators), you should instead use the image <code>offchainlabs/nitro-node:v3.2.0-f847be0-validator</code> which has the extra script <code>/usr/local/bin/split-val-entry.sh</code> as the entrypoint.</p>\n<p>The hash in the Docker image tag is different than this commit hash because the published commit was squashed.</p>\n<h2>What's Changed</h2>\n<p>This release contains security fixes activated by a new upgrade, ArbOS 32. The Arbitrum Security council is planning to execute an emergency action in order to activate ArbOS 32 in the coming days which is why the version upgrade is required. A binary of the release has been provided ahead of time to allow for more time to upgrade, and the source code will be made available some time before the upgrade action is taken.</p>\n<p>If you encounter the error \"cpu flags not supported on local cpu\", your CPU may be missing support for standard x86 extensions. This can be resolved by adding the <code>--execution.stylus-target.amd64=x86_64-linux-unknown+sse4.2</code> flag to disable use of these extensions.</p>\n<h2>User-facing Improvements</h2>\n<ul>\n<li>Add support for ArbOS 32</li>\n<li>Add custom native tracer for cargo stylus replay: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2560\">#2560</a></li>\n<li>Allow force rebuilding of local wasm store: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2606\">#2606</a>\n<ul>\n<li>Support rebuilding of wasm store on init: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2618\">#2618</a></li>\n</ul>\n</li>\n<li>Remove wasm database after downloading snapshot: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2607\">#2607</a></li>\n</ul>\n<h2>Internal Highlights</h2>\n<ul>\n<li>Geth: pull in change to bubble up snapshot db errors: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2662\">#2662</a></li>\n<li>Support cross-compilation of stylus programs: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2605\">#2605</a></li>\n<li>Update default Stylus x86 architecture: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2614\">#2614</a></li>\n<li>Fix setupFastConfirmation not getting called: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2668\">#2668</a></li>\n<li>Only warn on potentially incompatible WASM module roots: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2663\">#2663</a></li>\n<li>Redis consumer: workers and buffers: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2622\">#2622</a>\n<ul>\n<li>Redis consumer fix: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2633\">#2633</a></li>\n<li>Validator recording fix: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2660\">#2660</a></li>\n</ul>\n</li>\n<li>Block_validator: introduce recording-iter-limit: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2637\">#2637</a></li>\n<li>Disable preimage validation in JIT: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2620\">#2620</a></li>\n<li>Close opened files explicitly instead of relying on the GC: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2628\">#2628</a></li>\n<li>Fix: deploy both erc20 based and eth based templates: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2664\">#2664</a></li>\n<li>Populate stylus target cache before rebuilding wasm store: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2612\">#2612</a></li>\n<li>Add safety check that min basefee must be positive for gas estimation: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2621\">#2621</a></li>\n<li>Creates validator wallet through Staker's DataPoster: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2573\">#2573</a></li>\n<li>Small changes to database conversion: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2591\">#2591</a></li>\n<li>Resolve parent chain block by hash when resolving delayed messages: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2649\">#2649</a></li>\n<li>Lower a couple of info logs down to debug: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2603\">#2603</a></li>\n<li>Add Mac OSX environment variables: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2624\">#2624</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/OffchainLabs/nitro/compare/v3.1.2...v3.2.0\"><tt>v3.1.2...v3.2.0</tt></a></p>",
+            "authors": [
+                {
+                    "name": "PlasmaPower"
+                }
+            ],
+            "author_detail": {
+                "name": "PlasmaPower"
+            },
+            "author": "PlasmaPower",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/6006498?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/410897288/consensus-v32",
+            "guidislink": true,
+            "link": "https://github.com/OffchainLabs/nitro/releases/tag/consensus-v32",
+            "updated": "2024-09-24T15:09:42Z",
+            "updated_parsed": [
+                2024,
+                9,
+                24,
+                15,
+                9,
+                42,
+                1,
+                268,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/OffchainLabs/nitro/releases/tag/consensus-v32"
+                }
+            ],
+            "title": "Arbitrum Nitro Consensus v32",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "Arbitrum Nitro Consensus v32"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<h2>This release signifies a WASM fraud proof consensus version, and is not a good version to run a node on</h2>\n<p><strong>WAVM Module Root</strong>: 0x184884e1eb9fefdc158f6c8ac912bb183bf3cf83f0090317e0bc4ac5860baa39</p>\n<p>This consensus release supports ArbOS 32.</p>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/OffchainLabs/nitro/compare/consensus-v31...consensus-v32\"><tt>consensus-v31...consensus-v32</tt></a></p>"
+                }
+            ],
+            "summary": "<h2>This release signifies a WASM fraud proof consensus version, and is not a good version to run a node on</h2>\n<p><strong>WAVM Module Root</strong>: 0x184884e1eb9fefdc158f6c8ac912bb183bf3cf83f0090317e0bc4ac5860baa39</p>\n<p>This consensus release supports ArbOS 32.</p>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/OffchainLabs/nitro/compare/consensus-v31...consensus-v32\"><tt>consensus-v31...consensus-v32</tt></a></p>",
+            "authors": [
+                {
+                    "name": "PlasmaPower"
+                }
+            ],
+            "author_detail": {
+                "name": "PlasmaPower"
+            },
+            "author": "PlasmaPower",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/6006498?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/410897288/v3.2.0-binary-release",
+            "guidislink": true,
+            "link": "https://github.com/OffchainLabs/nitro/releases/tag/v3.2.0-binary-release",
+            "updated": "2024-09-23T20:47:50Z",
+            "updated_parsed": [
+                2024,
+                9,
+                23,
+                20,
+                47,
+                50,
+                0,
+                267,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/OffchainLabs/nitro/releases/tag/v3.2.0-binary-release"
+                }
+            ],
+            "title": "Arbitrum Nitro v3.2.0 Binary Release",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "Arbitrum Nitro v3.2.0 Binary Release"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>This release is available as a Docker image on Docker Hub at <code>offchainlabs/nitro-node:v3.2.0-f847be0</code></p>\n<p>This Docker image specifies default flags in its entrypoint which should be replicated if you're overriding the entrypoint: <code>/usr/local/bin/nitro --validation.wasm.allowed-wasm-module-roots /home/user/nitro-legacy/machines,/home/user/target/machines</code></p>\n<p>If you're running a validator without a split validation server (this will be true of most validators), you should instead use the image <code>offchainlabs/nitro-node:v3.2.0-f847be0-validator</code> which has the extra script <code>/usr/local/bin/split-val-entry.sh</code> as the entrypoint.</p>\n<h2>What's Changed</h2>\n<p>This release contains security fixes activated by a new upgrade, ArbOS 32. The Arbitrum Security council is planning to execute an emergency action in order to activate ArbOS 32 in the coming days which is why the version upgrade is required. A binary of the release has been provided ahead of time to allow for more time to upgrade, and the source code will be made available some time before the upgrade action is taken.</p>\n<h2>User-facing Improvements</h2>\n<ul>\n<li>Add support for ArbOS 32</li>\n<li>Add custom native tracer for cargo stylus replay: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2560\">#2560</a></li>\n<li>Allow force rebuilding of local wasm store: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2606\">#2606</a>\n<ul>\n<li>Support rebuilding of wasm store on init: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2618\">#2618</a></li>\n</ul>\n</li>\n<li>Remove wasm database after downloading snapshot: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2607\">#2607</a></li>\n</ul>\n<h2>Internal Highlights</h2>\n<ul>\n<li>Geth: pull in change to bubble up snapshot db errors: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2662\">#2662</a></li>\n<li>Support cross-compilation of stylus programs: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2605\">#2605</a></li>\n<li>Update default Stylus x86 architecture: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2614\">#2614</a></li>\n<li>Fix setupFastConfirmation not getting called: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2668\">#2668</a></li>\n<li>Only warn on potentially incompatible WASM module roots: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2663\">#2663</a></li>\n<li>Redis consumer: workers and buffers: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2622\">#2622</a>\n<ul>\n<li>Redis consumer fix: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2633\">#2633</a></li>\n<li>Validator recording fix: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2660\">#2660</a></li>\n</ul>\n</li>\n<li>Block_validator: introduce recording-iter-limit: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2637\">#2637</a></li>\n<li>Disable preimage validation in JIT: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2620\">#2620</a></li>\n<li>Close opened files explicitly instead of relying on the GC: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2628\">#2628</a></li>\n<li>Fix: deploy both erc20 based and eth based templates: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2664\">#2664</a></li>\n<li>Populate stylus target cache before rebuilding wasm store: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2612\">#2612</a></li>\n<li>Add safety check that min basefee must be positive for gas estimation: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2621\">#2621</a></li>\n<li>Creates validator wallet through Staker's DataPoster: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2573\">#2573</a></li>\n<li>Small changes to database conversion: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2591\">#2591</a></li>\n<li>Resolve parent chain block by hash when resolving delayed messages: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2649\">#2649</a></li>\n<li>Lower a couple of info logs down to debug: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2603\">#2603</a></li>\n<li>Add Mac OSX environment variables: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2624\">#2624</a></li>\n</ul>"
+                }
+            ],
+            "summary": "<p>This release is available as a Docker image on Docker Hub at <code>offchainlabs/nitro-node:v3.2.0-f847be0</code></p>\n<p>This Docker image specifies default flags in its entrypoint which should be replicated if you're overriding the entrypoint: <code>/usr/local/bin/nitro --validation.wasm.allowed-wasm-module-roots /home/user/nitro-legacy/machines,/home/user/target/machines</code></p>\n<p>If you're running a validator without a split validation server (this will be true of most validators), you should instead use the image <code>offchainlabs/nitro-node:v3.2.0-f847be0-validator</code> which has the extra script <code>/usr/local/bin/split-val-entry.sh</code> as the entrypoint.</p>\n<h2>What's Changed</h2>\n<p>This release contains security fixes activated by a new upgrade, ArbOS 32. The Arbitrum Security council is planning to execute an emergency action in order to activate ArbOS 32 in the coming days which is why the version upgrade is required. A binary of the release has been provided ahead of time to allow for more time to upgrade, and the source code will be made available some time before the upgrade action is taken.</p>\n<h2>User-facing Improvements</h2>\n<ul>\n<li>Add support for ArbOS 32</li>\n<li>Add custom native tracer for cargo stylus replay: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2560\">#2560</a></li>\n<li>Allow force rebuilding of local wasm store: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2606\">#2606</a>\n<ul>\n<li>Support rebuilding of wasm store on init: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2618\">#2618</a></li>\n</ul>\n</li>\n<li>Remove wasm database after downloading snapshot: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2607\">#2607</a></li>\n</ul>\n<h2>Internal Highlights</h2>\n<ul>\n<li>Geth: pull in change to bubble up snapshot db errors: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2662\">#2662</a></li>\n<li>Support cross-compilation of stylus programs: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2605\">#2605</a></li>\n<li>Update default Stylus x86 architecture: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2614\">#2614</a></li>\n<li>Fix setupFastConfirmation not getting called: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2668\">#2668</a></li>\n<li>Only warn on potentially incompatible WASM module roots: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2663\">#2663</a></li>\n<li>Redis consumer: workers and buffers: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2622\">#2622</a>\n<ul>\n<li>Redis consumer fix: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2633\">#2633</a></li>\n<li>Validator recording fix: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2660\">#2660</a></li>\n</ul>\n</li>\n<li>Block_validator: introduce recording-iter-limit: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2637\">#2637</a></li>\n<li>Disable preimage validation in JIT: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2620\">#2620</a></li>\n<li>Close opened files explicitly instead of relying on the GC: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2628\">#2628</a></li>\n<li>Fix: deploy both erc20 based and eth based templates: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2664\">#2664</a></li>\n<li>Populate stylus target cache before rebuilding wasm store: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2612\">#2612</a></li>\n<li>Add safety check that min basefee must be positive for gas estimation: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2621\">#2621</a></li>\n<li>Creates validator wallet through Staker's DataPoster: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2573\">#2573</a></li>\n<li>Small changes to database conversion: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2591\">#2591</a></li>\n<li>Resolve parent chain block by hash when resolving delayed messages: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2649\">#2649</a></li>\n<li>Lower a couple of info logs down to debug: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2603\">#2603</a></li>\n<li>Add Mac OSX environment variables: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2624\">#2624</a></li>\n</ul>",
+            "authors": [
+                {
+                    "name": "PlasmaPower"
+                }
+            ],
+            "author_detail": {
+                "name": "PlasmaPower"
+            },
+            "author": "PlasmaPower",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/6006498?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/410897288/consensus-v32-binary-release",
+            "guidislink": true,
+            "link": "https://github.com/OffchainLabs/nitro/releases/tag/consensus-v32-binary-release",
+            "updated": "2024-09-23T20:45:37Z",
+            "updated_parsed": [
+                2024,
+                9,
+                23,
+                20,
+                45,
+                37,
+                0,
+                267,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/OffchainLabs/nitro/releases/tag/consensus-v32-binary-release"
+                }
+            ],
+            "title": "Arbitrum Nitro Consensus v32 Binary Release",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "Arbitrum Nitro Consensus v32 Binary Release"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p><strong>WAVM Module Root</strong>: 0x184884e1eb9fefdc158f6c8ac912bb183bf3cf83f0090317e0bc4ac5860baa39</p>\n<p>This consensus release supports ArbOS 32.</p>"
+                }
+            ],
+            "summary": "<p><strong>WAVM Module Root</strong>: 0x184884e1eb9fefdc158f6c8ac912bb183bf3cf83f0090317e0bc4ac5860baa39</p>\n<p>This consensus release supports ArbOS 32.</p>",
+            "authors": [
+                {
+                    "name": "PlasmaPower"
+                }
+            ],
+            "author_detail": {
+                "name": "PlasmaPower"
+            },
+            "author": "PlasmaPower",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/6006498?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/410897288/v3.1.3-rc.2",
+            "guidislink": true,
+            "link": "https://github.com/OffchainLabs/nitro/releases/tag/v3.1.3-rc.2",
+            "updated": "2024-09-16T16:57:59Z",
+            "updated_parsed": [
+                2024,
+                9,
+                16,
+                16,
+                57,
+                59,
+                0,
+                260,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/OffchainLabs/nitro/releases/tag/v3.1.3-rc.2"
+                }
+            ],
+            "title": "Arbitrum Nitro v3.1.3 Release Candidate 2",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "Arbitrum Nitro v3.1.3 Release Candidate 2"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>This release is available as a Docker image on Docker Hub at <code>offchainlabs/nitro-node:v3.1.3-rc.2-4483e77</code></p>\n<p>This Docker image specifies default flags in its entrypoint which should be replicated if you're overriding the entrypoint: <code>/usr/local/bin/nitro --validation.wasm.allowed-wasm-module-roots /home/user/nitro-legacy/machines,/home/user/target/machines</code></p>\n<p>If you're running a validator without a split validation server (this will be true of most validators), you should instead use the image <code>offchainlabs/nitro-node:v3.1.3-rc.2-4483e77-validator</code> which has the extra script <code>/usr/local/bin/split-val-entry.sh</code> as the entrypoint.</p>\n<h2>What's Changed</h2>\n<p>This release adds a native tracer for Stylus calls, and contains numerous stability improvements, including a fix for a database corruption and invalid state issue in go-ethereum.</p>\n<h2>User-facing Improvements</h2>\n<ul>\n<li>Add custom native tracer for cargo stylus replay: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2560\">#2560</a></li>\n<li>Allow force rebuilding of local wasm store: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2606\">#2606</a>\n<ul>\n<li>Support rebuilding of wasm store on init: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2618\">#2618</a></li>\n</ul>\n</li>\n<li>Remove wasm database after downloading snapshot: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2607\">#2607</a></li>\n</ul>\n<h2>Internal Highlights</h2>\n<ul>\n<li>Geth: pull in change to bubble up snapshot db errors: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2662\">#2662</a></li>\n<li>Support cross-compilation of stylus programs: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2605\">#2605</a></li>\n<li>Update default Stylus x86 architecture: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2614\">#2614</a></li>\n<li>Fix setupFastConfirmation not getting called: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2668\">#2668</a></li>\n<li>Only warn on potentially incompatible WASM module roots: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2663\">#2663</a></li>\n<li>Redis consumer: workers and buffers: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2622\">#2622</a>\n<ul>\n<li>Redis consumer fix: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2633\">#2633</a></li>\n<li>Validator recording fix: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2660\">#2660</a></li>\n</ul>\n</li>\n<li>Block_validator: introduce recording-iter-limit: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2637\">#2637</a></li>\n<li>Disable preimage validation in JIT: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2620\">#2620</a></li>\n<li>Close opened files explicitly instead of relying on the GC: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2628\">#2628</a></li>\n<li>Fix: deploy both erc20 based and eth based templates: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2664\">#2664</a></li>\n<li>Populate stylus target cache before rebuilding wasm store: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2612\">#2612</a></li>\n<li>Add safety check that min basefee must be positive for gas estimation: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2621\">#2621</a></li>\n<li>Creates validator wallet through Staker's DataPoster: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2573\">#2573</a></li>\n<li>Small changes to database conversion: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2591\">#2591</a></li>\n<li>Resolve parent chain block by hash when resolving delayed messages: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2649\">#2649</a></li>\n<li>Lower a couple of info logs down to debug: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2603\">#2603</a></li>\n<li>Add Mac OSX environment variables: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2624\">#2624</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/OffchainLabs/nitro/compare/v3.1.2...v3.1.3-rc.2\"><tt>v3.1.2...v3.1.3-rc.2</tt></a></p>"
+                }
+            ],
+            "summary": "<p>This release is available as a Docker image on Docker Hub at <code>offchainlabs/nitro-node:v3.1.3-rc.2-4483e77</code></p>\n<p>This Docker image specifies default flags in its entrypoint which should be replicated if you're overriding the entrypoint: <code>/usr/local/bin/nitro --validation.wasm.allowed-wasm-module-roots /home/user/nitro-legacy/machines,/home/user/target/machines</code></p>\n<p>If you're running a validator without a split validation server (this will be true of most validators), you should instead use the image <code>offchainlabs/nitro-node:v3.1.3-rc.2-4483e77-validator</code> which has the extra script <code>/usr/local/bin/split-val-entry.sh</code> as the entrypoint.</p>\n<h2>What's Changed</h2>\n<p>This release adds a native tracer for Stylus calls, and contains numerous stability improvements, including a fix for a database corruption and invalid state issue in go-ethereum.</p>\n<h2>User-facing Improvements</h2>\n<ul>\n<li>Add custom native tracer for cargo stylus replay: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2560\">#2560</a></li>\n<li>Allow force rebuilding of local wasm store: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2606\">#2606</a>\n<ul>\n<li>Support rebuilding of wasm store on init: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2618\">#2618</a></li>\n</ul>\n</li>\n<li>Remove wasm database after downloading snapshot: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2607\">#2607</a></li>\n</ul>\n<h2>Internal Highlights</h2>\n<ul>\n<li>Geth: pull in change to bubble up snapshot db errors: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2662\">#2662</a></li>\n<li>Support cross-compilation of stylus programs: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2605\">#2605</a></li>\n<li>Update default Stylus x86 architecture: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2614\">#2614</a></li>\n<li>Fix setupFastConfirmation not getting called: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2668\">#2668</a></li>\n<li>Only warn on potentially incompatible WASM module roots: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2663\">#2663</a></li>\n<li>Redis consumer: workers and buffers: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2622\">#2622</a>\n<ul>\n<li>Redis consumer fix: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2633\">#2633</a></li>\n<li>Validator recording fix: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2660\">#2660</a></li>\n</ul>\n</li>\n<li>Block_validator: introduce recording-iter-limit: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2637\">#2637</a></li>\n<li>Disable preimage validation in JIT: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2620\">#2620</a></li>\n<li>Close opened files explicitly instead of relying on the GC: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2628\">#2628</a></li>\n<li>Fix: deploy both erc20 based and eth based templates: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2664\">#2664</a></li>\n<li>Populate stylus target cache before rebuilding wasm store: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2612\">#2612</a></li>\n<li>Add safety check that min basefee must be positive for gas estimation: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2621\">#2621</a></li>\n<li>Creates validator wallet through Staker's DataPoster: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2573\">#2573</a></li>\n<li>Small changes to database conversion: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2591\">#2591</a></li>\n<li>Resolve parent chain block by hash when resolving delayed messages: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2649\">#2649</a></li>\n<li>Lower a couple of info logs down to debug: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2603\">#2603</a></li>\n<li>Add Mac OSX environment variables: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2624\">#2624</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/OffchainLabs/nitro/compare/v3.1.2...v3.1.3-rc.2\"><tt>v3.1.2...v3.1.3-rc.2</tt></a></p>",
+            "authors": [
+                {
+                    "name": "PlasmaPower"
+                }
+            ],
+            "author_detail": {
+                "name": "PlasmaPower"
+            },
+            "author": "PlasmaPower",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/6006498?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/410897288/v3.1.3-rc.1",
+            "guidislink": true,
+            "link": "https://github.com/OffchainLabs/nitro/releases/tag/v3.1.3-rc.1",
+            "updated": "2024-09-03T18:45:34Z",
+            "updated_parsed": [
+                2024,
+                9,
+                3,
+                18,
+                45,
+                34,
+                1,
+                247,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/OffchainLabs/nitro/releases/tag/v3.1.3-rc.1"
+                }
+            ],
+            "title": "v3.1.3-rc.1",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v3.1.3-rc.1"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>Arbitrum Nitro v3.1.3 Release Candidate 1</p>"
+                }
+            ],
+            "summary": "<p>Arbitrum Nitro v3.1.3 Release Candidate 1</p>",
+            "authors": [
+                {
+                    "name": "PlasmaPower"
+                }
+            ],
+            "author_detail": {
+                "name": "PlasmaPower"
+            },
+            "author": "PlasmaPower",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/6006498?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/410897288/v3.1.2",
+            "guidislink": true,
+            "link": "https://github.com/OffchainLabs/nitro/releases/tag/v3.1.2",
+            "updated": "2024-08-27T20:06:29Z",
+            "updated_parsed": [
+                2024,
+                8,
+                27,
+                20,
+                6,
+                29,
+                1,
+                240,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/OffchainLabs/nitro/releases/tag/v3.1.2"
+                }
+            ],
+            "title": "Arbitrum Nitro v3.1.2",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "Arbitrum Nitro v3.1.2"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>This release is available as a Docker image on Docker Hub at <code>offchainlabs/nitro-node:v3.1.2-309340a</code></p>\n<p>This Docker image specifies default flags in its entrypoint which should be replicated if you're overriding the entrypoint: <code>/usr/local/bin/nitro --validation.wasm.allowed-wasm-module-roots /home/user/nitro-legacy/machines,/home/user/target/machines</code></p>\n<p>If you're running a validator without a split validation server (this will be true of most validators), you should instead use the image <code>offchainlabs/nitro-node:v3.1.2-309340a-validator</code> which has the extra script <code>/usr/local/bin/split-val-entry.sh</code> as the entrypoint.</p>\n<p>It's important that you only run the nitro node against trusted databases. If you want to use an untrusted database, you can first remove the <code>wasm</code> directory if it exists (it might be inside the a folder called <code>nitro</code>). Otherwise, the database may have malicious unvalidated code that can result in remote code execution. This is also mitigated by running the Arbitrum Nitro node inside docker.</p>\n<h2>What's Changed</h2>\n<p>This release fixes a crash in v3.1.1 for chains imported from Arbitrum Classic, i.e. Arbitrum One. For details on the v3.1.1 release, see <a href=\"https://github.com/OffchainLabs/nitro/releases/tag/v3.1.1\">the v3.1.1 release notes</a>.</p>\n<h2>Internal Highlights</h2>\n<ul>\n<li>Return false if nil is passed to IsNotExistError: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2616\">#2616</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/OffchainLabs/nitro/compare/v3.1.1...v3.1.2\"><tt>v3.1.1...v3.1.2</tt></a></p>"
+                }
+            ],
+            "summary": "<p>This release is available as a Docker image on Docker Hub at <code>offchainlabs/nitro-node:v3.1.2-309340a</code></p>\n<p>This Docker image specifies default flags in its entrypoint which should be replicated if you're overriding the entrypoint: <code>/usr/local/bin/nitro --validation.wasm.allowed-wasm-module-roots /home/user/nitro-legacy/machines,/home/user/target/machines</code></p>\n<p>If you're running a validator without a split validation server (this will be true of most validators), you should instead use the image <code>offchainlabs/nitro-node:v3.1.2-309340a-validator</code> which has the extra script <code>/usr/local/bin/split-val-entry.sh</code> as the entrypoint.</p>\n<p>It's important that you only run the nitro node against trusted databases. If you want to use an untrusted database, you can first remove the <code>wasm</code> directory if it exists (it might be inside the a folder called <code>nitro</code>). Otherwise, the database may have malicious unvalidated code that can result in remote code execution. This is also mitigated by running the Arbitrum Nitro node inside docker.</p>\n<h2>What's Changed</h2>\n<p>This release fixes a crash in v3.1.1 for chains imported from Arbitrum Classic, i.e. Arbitrum One. For details on the v3.1.1 release, see <a href=\"https://github.com/OffchainLabs/nitro/releases/tag/v3.1.1\">the v3.1.1 release notes</a>.</p>\n<h2>Internal Highlights</h2>\n<ul>\n<li>Return false if nil is passed to IsNotExistError: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2616\">#2616</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/OffchainLabs/nitro/compare/v3.1.1...v3.1.2\"><tt>v3.1.1...v3.1.2</tt></a></p>",
+            "authors": [
+                {
+                    "name": "PlasmaPower"
+                }
+            ],
+            "author_detail": {
+                "name": "PlasmaPower"
+            },
+            "author": "PlasmaPower",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/6006498?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/410897288/v3.1.1",
+            "guidislink": true,
+            "link": "https://github.com/OffchainLabs/nitro/releases/tag/v3.1.1",
+            "updated": "2024-09-18T15:45:55Z",
+            "updated_parsed": [
+                2024,
+                9,
+                18,
+                15,
+                45,
+                55,
+                2,
+                262,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/OffchainLabs/nitro/releases/tag/v3.1.1"
+                }
+            ],
+            "title": "Arbitrum Nitro v3.1.1",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "Arbitrum Nitro v3.1.1"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<h1>Use v3.1.2 instead</h1>\n<p>This release has an issue preventing successful startup on databases with an Arbitrum Classic message lookup table such as most Arbitrum One databases. This is fixed in <a href=\"https://github.com/OffchainLabs/nitro/releases/tag/v3.1.2\">v3.1.2</a>.</p>\n<h1>Release notes</h1>\n<p>This release is available as a Docker image on Docker Hub at <code>offchainlabs/nitro-node:v3.1.1-b26e84e</code></p>\n<p>This Docker image specifies default flags in its entrypoint which should be replicated if you're overriding the entrypoint: <code>/usr/local/bin/nitro --validation.wasm.allowed-wasm-module-roots /home/user/nitro-legacy/machines,/home/user/target/machines</code></p>\n<p>If you're running a validator without a split validation server (this will be true of most validators), you should instead use the image <code>offchainlabs/nitro-node:v3.1.1-b26e84e-validator</code> which has the extra script <code>/usr/local/bin/split-val-entry.sh</code> as the entrypoint.</p>\n<p>It's important that you only run the nitro node against trusted databases. If you want to use an untrusted database, you can first remove the <code>wasm</code> directory if it exists (it might be inside the a folder called <code>nitro</code>). Otherwise, the database may have malicious unvalidated code that can result in remote code execution. This is also mitigated by running the Arbitrum Nitro node inside docker.</p>\n<h2>What's Changed</h2>\n<p>This release significantly improves Stylus support including EVM-like tracing, adds support for fast confirmation, adds experimental PathDB support, improves Anytrust DAS stability, improves validator stability, adds additional metrics, and improves tracing support.</p>\n<h2>Configuration Changes</h2>\n<ul>\n<li><code>--execution.tx-pre-checker.strictness</code> now defaults to 20 instead of 0, meaning that transactions sent to the node will have some basic checks applied (e.g. nonce isn't too low, account has enough balance, maxFeePerGas is high enough, etc.) before being forwarded to the sequencer. This will help reduce issues with the sequencer rate limiting intermediate nodes due to an influx of invalid transactions.</li>\n<li><code>--execution.sequencer.sender-whitelist</code>, <code>--node.batch-poster.data-poster.replacement-times</code>, <code>--node.batch-poster.data-poster.blob-tx-replacement-times</code>, <code>--node.staker.data-poster.replacement-times</code>, and <code>--node.staker.data-poster.blob-tx-replacement-times</code> were all changed from strings with commas separating their components to arrays of strings. This shouldn't affect CLI usage, but will mean that JSON configuration of these values needs to be changed from strings to arrays.</li>\n<li><code>--init.reset-to-message</code> has been removed and replaced with <code>--init.reorg-to-message-batch</code> which will reorg to the batch at or before the requested message number. There's also <code>--init.reorg-to-block-batch</code> which takes a block number and <code>--init.reorg-to-batch</code> which takes a batch number.</li>\n</ul>\n<h2>Metrics Changes</h2>\n<ul>\n<li><code>arb/sequencer/condtionaltx/*</code> metrics were renamed to <code>arb/sequencer/conditionaltx/*</code> and <code>arb/txprechecker/condtionaltx/*</code> metrics were similarly renamed to <code>arb/txprechecker/conditionaltx/*</code> to fix typos</li>\n</ul>\n<h2>Experimental PathDB Support</h2>\n<p>This release adds experimental PathDB support with <code>--execution.caching.state-scheme=path</code>. However, this has not been thoroughly tested, and as such we don't recommend running it in production at this time, as it may have database corruption issues or produce incorrect results. It'll also require a resync with a new database.</p>\n<h2>User-facing Improvements</h2>\n<ul>\n<li>Add option to enable fast confirmation: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2434\">#2434</a>\n<ul>\n<li>Try to fast confirm past nodes too: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2520\">#2520</a></li>\n<li>Disable fast confirmations by default: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2579\">#2579</a></li>\n</ul>\n</li>\n<li>Pathdb support for full nodes: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2324\">#2324</a></li>\n<li>Add tool for database conversion from leveldb to pebbledb: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2061\">#2061</a></li>\n<li>Add EVM tracing for Stylus programs: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2530\">#2530</a></li>\n<li>Metrics for total gas used for eth_call and total gas used for eth_estimateGas: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2478\">#2478</a></li>\n<li>Update tracing scopeContext's stack to have correct contract address while tracing for contract calls: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2487\">#2487</a></li>\n<li>Santize metric device names for iostat metrics: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2491\">#2491</a></li>\n<li>Fix a metrics typo omitting an \"i\": <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2492\">#2492</a></li>\n<li>[RPC Change] Rename <code>arbvalidator_validateMessageNumber</code> method to <code>arbdebug_validateMessageNumber</code>: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2514\">#2514</a></li>\n<li>Add some dataposter metrics: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2523\">#2523</a></li>\n<li>Fix reorg on init flags: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2538\">#2538</a></li>\n<li>Change comma separated string values in config to string slice: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2480\">#2480</a></li>\n<li>Split-val-entry: allow options for validators: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2574\">#2574</a></li>\n<li>Default to pre-checker enabled: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2556\">#2556</a></li>\n<li>Update dev test chains ArbOS versions in arbitrum_chain_info.json: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2575\">#2575</a></li>\n<li>Expand all --dev flags in place: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2578\">#2578</a></li>\n<li>Lower URL case in latest database init: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2589\">#2589</a></li>\n</ul>\n<h2>Internal Highlights</h2>\n<ul>\n<li>Fix inverted expiry logic for DAS S3 backends: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2600\">#2600</a></li>\n<li>Merge in upstream go-ethereum v1.13.15: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2512\">#2512</a></li>\n<li>Lower data poster max tip pre-rbf from 5 gwei to 1.2 gwei (applies to the batch poster and validator posting transactions to the parent chain): <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2569\">#2569</a></li>\n<li>Move TxLookupLimit override into ParseNode: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2481\">#2481</a></li>\n<li>Check all \"not found\" errors (fixes default data poster config): <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2532\">#2532</a></li>\n<li>Fixes block hash retrieval in PopulateFeedBacklog: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2551\">#2551</a></li>\n<li>Produce a more descriptive error when validation server url is not set to a WS/WSS server: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2475\">#2475</a></li>\n<li>validation spawner only recieves one validation binary: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2505\">#2505</a></li>\n<li>Compute and validate wasmModuleRoot while building docker: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2479\">#2479</a></li>\n<li>Avoids fetching batch in execution layer, consensus layer fills all necessary information regarding a batch to the execution layer: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2377\">#2377</a></li>\n<li>Fix \"sequencer batches out of order\" log: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2488\">#2488</a></li>\n<li>Improve the BOLD Challenge Cache: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2459\">#2459</a></li>\n<li>Redis val fixes: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2486\">#2486</a></li>\n<li>Add keysetHash to \"Couldn't get keyset\" log msg: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2502\">#2502</a></li>\n<li>Use default rpcclient config when unmarshalling JSON: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2508\">#2508</a></li>\n<li>Add DAS FS fallback to old layout, fix health check : <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2510\">#2510</a></li>\n<li>Configurable timeout for HeaderReader polling: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2507\">#2507</a></li>\n<li>Make the merkle tree implementation perform better: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2273\">#2273</a>\n<ul>\n<li>Further improvements to Merkleization: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2328\">#2328</a></li>\n<li>Fix a merkle bug with odd-length resize calls: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2550\">#2550</a></li>\n</ul>\n</li>\n<li>Change the test data stored by das fs healthcheck: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2513\">#2513</a></li>\n<li>Stores message result at consensus side: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2453\">#2453</a></li>\n<li>Fix DAS sync default retention period: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2522\">#2522</a></li>\n<li>Remove some dynamically generated metrics from DAS: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2524\">#2524</a></li>\n<li>fix: stop timer: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2516\">#2516</a></li>\n<li>Target WASM MVP spec for rust builds: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2546\">#2546</a></li>\n<li>Fix split validation: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2568\">#2568</a></li>\n<li>Remove default nitro-val RPC request size limit: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2564\">#2564</a></li>\n<li>Before posting a batch, run it through the inbox multiplexer and confirm it produces the expected set of messages: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2371\">#2371</a></li>\n<li>Update rust pinned in dockerfile from 1.80 to 1.80.1: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2563\">#2563</a></li>\n<li>Remove fast confirmer config: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2547\">#2547</a></li>\n<li>Stylus: add compilation target config, support multiple targets in wasm store: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2463\">#2463</a>\n<ul>\n<li>Populate stylus target cache before rebuilding wasm store: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2612\">#2612</a></li>\n</ul>\n</li>\n<li>Delete messages from coordinator after they become final: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2471\">#2471</a></li>\n<li>Fix data poster replace-by-fee loop: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2590\">#2590</a></li>\n<li>Avoid '^triedb layer .+ is disk layer$' error: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2588\">#2588</a></li>\n<li>Remove parent-chain.wallet from config dump: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2592\">#2592</a></li>\n<li>Fix live reloading of staker config: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2587\">#2587</a></li>\n<li>Lower a couple of info logs down to debug: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2603\">#2603</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/OffchainLabs/nitro/compare/v3.1.0...v3.1.1\"><tt>v3.1.0...v3.1.1</tt></a></p>"
+                }
+            ],
+            "summary": "<h1>Use v3.1.2 instead</h1>\n<p>This release has an issue preventing successful startup on databases with an Arbitrum Classic message lookup table such as most Arbitrum One databases. This is fixed in <a href=\"https://github.com/OffchainLabs/nitro/releases/tag/v3.1.2\">v3.1.2</a>.</p>\n<h1>Release notes</h1>\n<p>This release is available as a Docker image on Docker Hub at <code>offchainlabs/nitro-node:v3.1.1-b26e84e</code></p>\n<p>This Docker image specifies default flags in its entrypoint which should be replicated if you're overriding the entrypoint: <code>/usr/local/bin/nitro --validation.wasm.allowed-wasm-module-roots /home/user/nitro-legacy/machines,/home/user/target/machines</code></p>\n<p>If you're running a validator without a split validation server (this will be true of most validators), you should instead use the image <code>offchainlabs/nitro-node:v3.1.1-b26e84e-validator</code> which has the extra script <code>/usr/local/bin/split-val-entry.sh</code> as the entrypoint.</p>\n<p>It's important that you only run the nitro node against trusted databases. If you want to use an untrusted database, you can first remove the <code>wasm</code> directory if it exists (it might be inside the a folder called <code>nitro</code>). Otherwise, the database may have malicious unvalidated code that can result in remote code execution. This is also mitigated by running the Arbitrum Nitro node inside docker.</p>\n<h2>What's Changed</h2>\n<p>This release significantly improves Stylus support including EVM-like tracing, adds support for fast confirmation, adds experimental PathDB support, improves Anytrust DAS stability, improves validator stability, adds additional metrics, and improves tracing support.</p>\n<h2>Configuration Changes</h2>\n<ul>\n<li><code>--execution.tx-pre-checker.strictness</code> now defaults to 20 instead of 0, meaning that transactions sent to the node will have some basic checks applied (e.g. nonce isn't too low, account has enough balance, maxFeePerGas is high enough, etc.) before being forwarded to the sequencer. This will help reduce issues with the sequencer rate limiting intermediate nodes due to an influx of invalid transactions.</li>\n<li><code>--execution.sequencer.sender-whitelist</code>, <code>--node.batch-poster.data-poster.replacement-times</code>, <code>--node.batch-poster.data-poster.blob-tx-replacement-times</code>, <code>--node.staker.data-poster.replacement-times</code>, and <code>--node.staker.data-poster.blob-tx-replacement-times</code> were all changed from strings with commas separating their components to arrays of strings. This shouldn't affect CLI usage, but will mean that JSON configuration of these values needs to be changed from strings to arrays.</li>\n<li><code>--init.reset-to-message</code> has been removed and replaced with <code>--init.reorg-to-message-batch</code> which will reorg to the batch at or before the requested message number. There's also <code>--init.reorg-to-block-batch</code> which takes a block number and <code>--init.reorg-to-batch</code> which takes a batch number.</li>\n</ul>\n<h2>Metrics Changes</h2>\n<ul>\n<li><code>arb/sequencer/condtionaltx/*</code> metrics were renamed to <code>arb/sequencer/conditionaltx/*</code> and <code>arb/txprechecker/condtionaltx/*</code> metrics were similarly renamed to <code>arb/txprechecker/conditionaltx/*</code> to fix typos</li>\n</ul>\n<h2>Experimental PathDB Support</h2>\n<p>This release adds experimental PathDB support with <code>--execution.caching.state-scheme=path</code>. However, this has not been thoroughly tested, and as such we don't recommend running it in production at this time, as it may have database corruption issues or produce incorrect results. It'll also require a resync with a new database.</p>\n<h2>User-facing Improvements</h2>\n<ul>\n<li>Add option to enable fast confirmation: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2434\">#2434</a>\n<ul>\n<li>Try to fast confirm past nodes too: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2520\">#2520</a></li>\n<li>Disable fast confirmations by default: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2579\">#2579</a></li>\n</ul>\n</li>\n<li>Pathdb support for full nodes: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2324\">#2324</a></li>\n<li>Add tool for database conversion from leveldb to pebbledb: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2061\">#2061</a></li>\n<li>Add EVM tracing for Stylus programs: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2530\">#2530</a></li>\n<li>Metrics for total gas used for eth_call and total gas used for eth_estimateGas: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2478\">#2478</a></li>\n<li>Update tracing scopeContext's stack to have correct contract address while tracing for contract calls: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2487\">#2487</a></li>\n<li>Santize metric device names for iostat metrics: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2491\">#2491</a></li>\n<li>Fix a metrics typo omitting an \"i\": <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2492\">#2492</a></li>\n<li>[RPC Change] Rename <code>arbvalidator_validateMessageNumber</code> method to <code>arbdebug_validateMessageNumber</code>: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2514\">#2514</a></li>\n<li>Add some dataposter metrics: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2523\">#2523</a></li>\n<li>Fix reorg on init flags: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2538\">#2538</a></li>\n<li>Change comma separated string values in config to string slice: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2480\">#2480</a></li>\n<li>Split-val-entry: allow options for validators: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2574\">#2574</a></li>\n<li>Default to pre-checker enabled: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2556\">#2556</a></li>\n<li>Update dev test chains ArbOS versions in arbitrum_chain_info.json: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2575\">#2575</a></li>\n<li>Expand all --dev flags in place: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2578\">#2578</a></li>\n<li>Lower URL case in latest database init: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2589\">#2589</a></li>\n</ul>\n<h2>Internal Highlights</h2>\n<ul>\n<li>Fix inverted expiry logic for DAS S3 backends: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2600\">#2600</a></li>\n<li>Merge in upstream go-ethereum v1.13.15: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2512\">#2512</a></li>\n<li>Lower data poster max tip pre-rbf from 5 gwei to 1.2 gwei (applies to the batch poster and validator posting transactions to the parent chain): <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2569\">#2569</a></li>\n<li>Move TxLookupLimit override into ParseNode: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2481\">#2481</a></li>\n<li>Check all \"not found\" errors (fixes default data poster config): <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2532\">#2532</a></li>\n<li>Fixes block hash retrieval in PopulateFeedBacklog: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2551\">#2551</a></li>\n<li>Produce a more descriptive error when validation server url is not set to a WS/WSS server: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2475\">#2475</a></li>\n<li>validation spawner only recieves one validation binary: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2505\">#2505</a></li>\n<li>Compute and validate wasmModuleRoot while building docker: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2479\">#2479</a></li>\n<li>Avoids fetching batch in execution layer, consensus layer fills all necessary information regarding a batch to the execution layer: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2377\">#2377</a></li>\n<li>Fix \"sequencer batches out of order\" log: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2488\">#2488</a></li>\n<li>Improve the BOLD Challenge Cache: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2459\">#2459</a></li>\n<li>Redis val fixes: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2486\">#2486</a></li>\n<li>Add keysetHash to \"Couldn't get keyset\" log msg: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2502\">#2502</a></li>\n<li>Use default rpcclient config when unmarshalling JSON: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2508\">#2508</a></li>\n<li>Add DAS FS fallback to old layout, fix health check : <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2510\">#2510</a></li>\n<li>Configurable timeout for HeaderReader polling: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2507\">#2507</a></li>\n<li>Make the merkle tree implementation perform better: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2273\">#2273</a>\n<ul>\n<li>Further improvements to Merkleization: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2328\">#2328</a></li>\n<li>Fix a merkle bug with odd-length resize calls: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2550\">#2550</a></li>\n</ul>\n</li>\n<li>Change the test data stored by das fs healthcheck: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2513\">#2513</a></li>\n<li>Stores message result at consensus side: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2453\">#2453</a></li>\n<li>Fix DAS sync default retention period: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2522\">#2522</a></li>\n<li>Remove some dynamically generated metrics from DAS: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2524\">#2524</a></li>\n<li>fix: stop timer: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2516\">#2516</a></li>\n<li>Target WASM MVP spec for rust builds: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2546\">#2546</a></li>\n<li>Fix split validation: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2568\">#2568</a></li>\n<li>Remove default nitro-val RPC request size limit: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2564\">#2564</a></li>\n<li>Before posting a batch, run it through the inbox multiplexer and confirm it produces the expected set of messages: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2371\">#2371</a></li>\n<li>Update rust pinned in dockerfile from 1.80 to 1.80.1: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2563\">#2563</a></li>\n<li>Remove fast confirmer config: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2547\">#2547</a></li>\n<li>Stylus: add compilation target config, support multiple targets in wasm store: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2463\">#2463</a>\n<ul>\n<li>Populate stylus target cache before rebuilding wasm store: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2612\">#2612</a></li>\n</ul>\n</li>\n<li>Delete messages from coordinator after they become final: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2471\">#2471</a></li>\n<li>Fix data poster replace-by-fee loop: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2590\">#2590</a></li>\n<li>Avoid '^triedb layer .+ is disk layer$' error: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2588\">#2588</a></li>\n<li>Remove parent-chain.wallet from config dump: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2592\">#2592</a></li>\n<li>Fix live reloading of staker config: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2587\">#2587</a></li>\n<li>Lower a couple of info logs down to debug: <a class=\"issue-link js-issue-link\" href=\"https://github.com/OffchainLabs/nitro/pull/2603\">#2603</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/OffchainLabs/nitro/compare/v3.1.0...v3.1.1\"><tt>v3.1.0...v3.1.1</tt></a></p>",
+            "authors": [
+                {
+                    "name": "PlasmaPower"
+                }
+            ],
+            "author_detail": {
+                "name": "PlasmaPower"
+            },
+            "author": "PlasmaPower",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/6006498?s=60&v=4"
+                }
+            ],
+            "href": ""
+        }
+    ],
+    "feed": {
+        "language": "en-US",
+        "id": "tag:github.com,2008:https://github.com/OffchainLabs/nitro/releases",
+        "guidislink": true,
+        "link": "https://github.com/OffchainLabs/nitro/releases",
+        "links": [
+            {
+                "type": "text/html",
+                "rel": "alternate",
+                "href": "https://github.com/OffchainLabs/nitro/releases"
+            },
+            {
+                "type": "application/atom+xml",
+                "rel": "self",
+                "href": "https://github.com/OffchainLabs/nitro/releases.atom"
+            }
+        ],
+        "title": "Release notes from nitro",
+        "title_detail": {
+            "type": "text/plain",
+            "language": "en-US",
+            "base": "",
+            "value": "Release notes from nitro"
+        },
+        "updated": "2024-11-07T22:31:46Z",
+        "updated_parsed": [
+            2024,
+            11,
+            7,
+            22,
+            31,
+            46,
+            3,
+            312,
+            0
+        ]
+    },
+    "headers": {},
+    "encoding": "utf-8",
+    "version": "atom10",
+    "namespaces": {
+        "": "http://www.w3.org/2005/Atom",
+        "media": "http://search.yahoo.com/mrss/"
+    }
+}

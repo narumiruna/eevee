@@ -1,0 +1,619 @@
+{
+    "bozo": false,
+    "entries": [
+        {
+            "id": "tag:github.com,2008:Repository/265775217/v1.4.16",
+            "guidislink": true,
+            "link": "https://github.com/bnb-chain/bsc/releases/tag/v1.4.16",
+            "updated": "2024-11-26T09:46:54Z",
+            "updated_parsed": [
+                2024,
+                11,
+                26,
+                9,
+                46,
+                54,
+                1,
+                331,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/bnb-chain/bsc/releases/tag/v1.4.16"
+                }
+            ],
+            "title": "v1.4.16",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.4.16"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<h2>Changelog</h2>\n<p><strong>v1.4.16</strong> is a maintenance release, which mainly include:</p>\n<ul>\n<li>Fix a multi-DB bug, which failed to prune historical data from main db after BSC support 4844</li>\n<li>Add the code framework of BSC next hardfork: Pascal</li>\n<li>Systemcontract code cleanup, which is part of Pascal hard fork without a BEP.</li>\n<li>New feature: <a href=\"https://github.com/bnb-chain/bsc/pull/2660\">overflowpool</a>, it tries to enhance the current TxPool to support large traffic.</li>\n<li>Add some tool for trouble shoot, JSTool and PythonTool</li>\n</ul>\n<h3>BUGFIX</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2736\">#2736</a> ethclient: move TransactionOpts to avoid import internal package;</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2755\">#2755</a> fix: fix multi-db env</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2759\">#2759</a> fix: add blobSidecars in db inspect</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2764\">#2764</a> fix: add blobSidecars in db inspect</li>\n</ul>\n<h3>FEATURE</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2692\">#2692</a> feat: add pascal hardfork</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2718\">#2718</a> feat: add Prague hardfork</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2734\">#2734</a> feat: update system contract bytecodes of pascal hardfork</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2737\">#2737</a> feat: modify LOCK_PERIOD_FOR_TOKEN_RECOVER to 300 seconds on BSC Testnet in pascal hardfork</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2660\">#2660</a> core/txpool/legacypool: add overflowpool for txs</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2754\">#2754</a> core/txpool: improve Add() logic, handle edge case</li>\n</ul>\n<h3>IMPROVEMENT</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2727\">#2727</a> core: clearup testflag for Bohr</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2716\">#2716</a> minor Update group_prover.sage</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2735\">#2735</a> concensus/parlia.go: make distribute incoming tx more independence</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2742\">#2742</a> feat: remove pipecommit</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2748\">#2748</a> jsutil: put all js utils in one file</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2749\">#2749</a> jsutils: add tool GetKeyParameters</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2756\">#2756</a> nancy: ignore github.com/golang-jwt/jwt/v4 4.5.0 in .nancy-ignore</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2757\">#2757</a> util: python script to get stats of reorg</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2758\">#2758</a> utils: print monikey for reorg script</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2714\">#2714</a> refactor: Directly swap two variables to optimize code</li>\n</ul>\n<h2>Assets</h2>\n<table>\n<thead>\n<tr>\n<th align=\"center\">Assets</th>\n<th>Sha256 Checksum</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\">mainnet.zip</td>\n<td>e9143c17e5369414fb3a569155eb5c66cee7c4395c13695b73d669a9df46fa46</td>\n</tr>\n<tr>\n<td align=\"center\">testnet.zip</td>\n<td>042a1884b00e6cd72af5c3e31c5985b9d8a78a29ccc19fb4ba660e0da1e621e7</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux</td>\n<td>4556d7d744a94481d25a369c1fc9443cdc4563e4ef8f3185bcf90506b7b8693e</td>\n</tr>\n<tr>\n<td align=\"center\">geth_mac</td>\n<td>f39701bff744eeab653c22d816b158a3ddceb686bc88fd7d8aa10671cba77d6c</td>\n</tr>\n<tr>\n<td align=\"center\">geth_windows</td>\n<td>16b5b446ea2999a6504231f381ffd879ef4040c1a7c37d0220bd8dd469da54a5</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux_arm64</td>\n<td>6538ec007ca8b359681824cadb3a1f713f1c05e74d566bbf38aae728d9149548</td>\n</tr>\n</tbody>\n</table>"
+                }
+            ],
+            "summary": "<h2>Changelog</h2>\n<p><strong>v1.4.16</strong> is a maintenance release, which mainly include:</p>\n<ul>\n<li>Fix a multi-DB bug, which failed to prune historical data from main db after BSC support 4844</li>\n<li>Add the code framework of BSC next hardfork: Pascal</li>\n<li>Systemcontract code cleanup, which is part of Pascal hard fork without a BEP.</li>\n<li>New feature: <a href=\"https://github.com/bnb-chain/bsc/pull/2660\">overflowpool</a>, it tries to enhance the current TxPool to support large traffic.</li>\n<li>Add some tool for trouble shoot, JSTool and PythonTool</li>\n</ul>\n<h3>BUGFIX</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2736\">#2736</a> ethclient: move TransactionOpts to avoid import internal package;</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2755\">#2755</a> fix: fix multi-db env</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2759\">#2759</a> fix: add blobSidecars in db inspect</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2764\">#2764</a> fix: add blobSidecars in db inspect</li>\n</ul>\n<h3>FEATURE</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2692\">#2692</a> feat: add pascal hardfork</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2718\">#2718</a> feat: add Prague hardfork</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2734\">#2734</a> feat: update system contract bytecodes of pascal hardfork</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2737\">#2737</a> feat: modify LOCK_PERIOD_FOR_TOKEN_RECOVER to 300 seconds on BSC Testnet in pascal hardfork</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2660\">#2660</a> core/txpool/legacypool: add overflowpool for txs</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2754\">#2754</a> core/txpool: improve Add() logic, handle edge case</li>\n</ul>\n<h3>IMPROVEMENT</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2727\">#2727</a> core: clearup testflag for Bohr</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2716\">#2716</a> minor Update group_prover.sage</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2735\">#2735</a> concensus/parlia.go: make distribute incoming tx more independence</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2742\">#2742</a> feat: remove pipecommit</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2748\">#2748</a> jsutil: put all js utils in one file</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2749\">#2749</a> jsutils: add tool GetKeyParameters</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2756\">#2756</a> nancy: ignore github.com/golang-jwt/jwt/v4 4.5.0 in .nancy-ignore</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2757\">#2757</a> util: python script to get stats of reorg</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2758\">#2758</a> utils: print monikey for reorg script</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2714\">#2714</a> refactor: Directly swap two variables to optimize code</li>\n</ul>\n<h2>Assets</h2>\n<table>\n<thead>\n<tr>\n<th align=\"center\">Assets</th>\n<th>Sha256 Checksum</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\">mainnet.zip</td>\n<td>e9143c17e5369414fb3a569155eb5c66cee7c4395c13695b73d669a9df46fa46</td>\n</tr>\n<tr>\n<td align=\"center\">testnet.zip</td>\n<td>042a1884b00e6cd72af5c3e31c5985b9d8a78a29ccc19fb4ba660e0da1e621e7</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux</td>\n<td>4556d7d744a94481d25a369c1fc9443cdc4563e4ef8f3185bcf90506b7b8693e</td>\n</tr>\n<tr>\n<td align=\"center\">geth_mac</td>\n<td>f39701bff744eeab653c22d816b158a3ddceb686bc88fd7d8aa10671cba77d6c</td>\n</tr>\n<tr>\n<td align=\"center\">geth_windows</td>\n<td>16b5b446ea2999a6504231f381ffd879ef4040c1a7c37d0220bd8dd469da54a5</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux_arm64</td>\n<td>6538ec007ca8b359681824cadb3a1f713f1c05e74d566bbf38aae728d9149548</td>\n</tr>\n</tbody>\n</table>",
+            "authors": [
+                {
+                    "name": "github-actions[bot]"
+                }
+            ],
+            "author_detail": {
+                "name": "github-actions[bot]"
+            },
+            "author": "github-actions[bot]",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/in/15368?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/265775217/v1.4.15",
+            "guidislink": true,
+            "link": "https://github.com/bnb-chain/bsc/releases/tag/v1.4.15",
+            "updated": "2024-10-10T05:06:34Z",
+            "updated_parsed": [
+                2024,
+                10,
+                10,
+                5,
+                6,
+                34,
+                3,
+                284,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/bnb-chain/bsc/releases/tag/v1.4.15"
+                }
+            ],
+            "title": "v1.4.15",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.4.15"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>Require Mandatory Update? No</p>\n<h2>Description</h2>\n<p>v1.4.15 is a maintenance release, which mainly has some enhancement on P2P and TxPool module, it also provides some Restful API for L2 and support customized token on BSC faucet.</p>\n<h2>Changelog</h2>\n<h3>BUGFIX</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2680\">#2680</a> txpool: apply miner's gasceil to txpool</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2688\">#2688</a> txpool: set default GasCeil from 30M to 0</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2696\">#2696</a> miner: limit block size to eth protocol msg size</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2684\">#2684</a> eth: Add sidecars when available to broadcasted current block</li>\n</ul>\n<h3>FEATURE</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2672\">#2672</a> faucet: with mainnet balance check, 0.002BNB at least</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2678\">#2678</a> beaconserver: simulated beacon api server for op-stack</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2687\">#2687</a> faucet: support customized token</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2698\">#2698</a> faucet: add example for custimized token</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2706\">#2706</a> faucet: update DIN token faucet support</li>\n</ul>\n<h3>IMPROVEMENT</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2677\">#2677</a> log: add some p2p log</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2679\">#2679</a> build(deps): bump actions/download-artifact in /.github/workflows</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2662\">#2662</a> metrics: add some extra feature flags as node stats</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2675\">#2675</a> fetcher: Sleep after marking block as done when requeuing</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2695\">#2695</a> CI: nancy ignore <a href=\"https://github.com/advisories/GHSA-24pj-f32f-p9j2\" title=\"CVE-2024-8421\">CVE-2024-8421</a></li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2689\">#2689</a> consensus/parlia: wait more time when processing huge blocks</li>\n</ul>\n<h2>Assets</h2>\n<table>\n<thead>\n<tr>\n<th align=\"center\">Assets</th>\n<th>Sha256 Checksum</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\">mainnet.zip</td>\n<td>aeeae3392bd51af57fb1e2eddeefff7e84d58a37f87513495348d82deee5824f</td>\n</tr>\n<tr>\n<td align=\"center\">testnet.zip</td>\n<td>fc1f15a0f31db46df24692c7f525bd97511acb91aaf406a5c4f8ebc646ae87d4</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux</td>\n<td>21451524bbdfdcc15b80fded601aab7fb22de9538d9d7ebceedcb747f57671b2</td>\n</tr>\n<tr>\n<td align=\"center\">geth_mac</td>\n<td>0807cbb1335ddb5e2cc32a67d112a304b859baf242e3a209a3d18a4dc440a3c3</td>\n</tr>\n<tr>\n<td align=\"center\">geth_windows</td>\n<td>ae91c1ab0aca16045e7693dd1650e38e62c3da94124275104d0318712308dc11</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux_arm64</td>\n<td>3e7d4a587251e84d2440d5f9686e93d30dc1cc30216ec21582a43da23e509f24</td>\n</tr>\n</tbody>\n</table>"
+                }
+            ],
+            "summary": "<p>Require Mandatory Update? No</p>\n<h2>Description</h2>\n<p>v1.4.15 is a maintenance release, which mainly has some enhancement on P2P and TxPool module, it also provides some Restful API for L2 and support customized token on BSC faucet.</p>\n<h2>Changelog</h2>\n<h3>BUGFIX</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2680\">#2680</a> txpool: apply miner's gasceil to txpool</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2688\">#2688</a> txpool: set default GasCeil from 30M to 0</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2696\">#2696</a> miner: limit block size to eth protocol msg size</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2684\">#2684</a> eth: Add sidecars when available to broadcasted current block</li>\n</ul>\n<h3>FEATURE</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2672\">#2672</a> faucet: with mainnet balance check, 0.002BNB at least</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2678\">#2678</a> beaconserver: simulated beacon api server for op-stack</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2687\">#2687</a> faucet: support customized token</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2698\">#2698</a> faucet: add example for custimized token</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2706\">#2706</a> faucet: update DIN token faucet support</li>\n</ul>\n<h3>IMPROVEMENT</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2677\">#2677</a> log: add some p2p log</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2679\">#2679</a> build(deps): bump actions/download-artifact in /.github/workflows</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2662\">#2662</a> metrics: add some extra feature flags as node stats</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2675\">#2675</a> fetcher: Sleep after marking block as done when requeuing</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2695\">#2695</a> CI: nancy ignore <a href=\"https://github.com/advisories/GHSA-24pj-f32f-p9j2\" title=\"CVE-2024-8421\">CVE-2024-8421</a></li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2689\">#2689</a> consensus/parlia: wait more time when processing huge blocks</li>\n</ul>\n<h2>Assets</h2>\n<table>\n<thead>\n<tr>\n<th align=\"center\">Assets</th>\n<th>Sha256 Checksum</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\">mainnet.zip</td>\n<td>aeeae3392bd51af57fb1e2eddeefff7e84d58a37f87513495348d82deee5824f</td>\n</tr>\n<tr>\n<td align=\"center\">testnet.zip</td>\n<td>fc1f15a0f31db46df24692c7f525bd97511acb91aaf406a5c4f8ebc646ae87d4</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux</td>\n<td>21451524bbdfdcc15b80fded601aab7fb22de9538d9d7ebceedcb747f57671b2</td>\n</tr>\n<tr>\n<td align=\"center\">geth_mac</td>\n<td>0807cbb1335ddb5e2cc32a67d112a304b859baf242e3a209a3d18a4dc440a3c3</td>\n</tr>\n<tr>\n<td align=\"center\">geth_windows</td>\n<td>ae91c1ab0aca16045e7693dd1650e38e62c3da94124275104d0318712308dc11</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux_arm64</td>\n<td>3e7d4a587251e84d2440d5f9686e93d30dc1cc30216ec21582a43da23e509f24</td>\n</tr>\n</tbody>\n</table>",
+            "authors": [
+                {
+                    "name": "github-actions[bot]"
+                }
+            ],
+            "author_detail": {
+                "name": "github-actions[bot]"
+            },
+            "author": "github-actions[bot]",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/in/15368?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/265775217/v1.4.14",
+            "guidislink": true,
+            "link": "https://github.com/bnb-chain/bsc/releases/tag/v1.4.14",
+            "updated": "2024-09-05T05:18:25Z",
+            "updated_parsed": [
+                2024,
+                9,
+                5,
+                5,
+                18,
+                25,
+                3,
+                249,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/bnb-chain/bsc/releases/tag/v1.4.14"
+                }
+            ],
+            "title": "v1.4.14",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.4.14"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p><strong>Important Announcement:</strong><br />\nHashSchema&amp;LevelDB mode will be discontinued after September 30, 2024, will be replaced by PathSchema&amp;PebbleDB mode<br />\nIf you are still running with HashSchema or LevelDB, you need to reinstall your node with the <a href=\"https://github.com/bnb-chain/bsc-snapshots\">latest bsc-snapshot</a>.<br />\nHow to check the running mode and the steps to do the migration, pls refer: <a class=\"issue-link js-issue-link\" href=\"https://github.com/bnb-chain/bsc-snapshots/issues/379\">bnb-chain/bsc-snapshots#379</a>.</p>\n<h2>Notice</h2>\n<p>Require Mandatory Update? <strong>Mainnet: Yes</strong></p>\n<h2>Description</h2>\n<p>Release v1.4.14 is a <strong>hard fork release for BSC Mainnet</strong>, the HF name is: <a href=\"https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936#p-1418-h-5bohr-wip-target-20240926-27\" rel=\"nofollow\">Bohr</a>.<br />\nThe target Bohr hard fork time will be:</p>\n<ul>\n<li>Mainnet: 2024-09-26 02:20:00 AM UTC</li>\n</ul>\n<p>There are 4 BEPs in Bohr:</p>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP-341.md\">BEP-341: Validators can produce consecutive blocks</a></li>\n<li><a href=\"https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP-402.md\">BEP-402: Complete missing fields in Block Header to generate Signature</a></li>\n<li><a href=\"https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP-404.md\">BEP-404: Clear Miner History when Switching Validators Set</a></li>\n<li><a href=\"https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP-410.md\">BEP-410: Add Agent for Validators</a></li>\n</ul>\n<p>Among these BEPs, <strong>BEP-341</strong> holds the most significance as it proposes a change to the block production protocol. However, BEP-341 will only come into effect after the affirmative outcome of a governance vote.<br />\nAnd <strong>BEP-402</strong> updates the block header signature logic, please pay special attention if your product involves the logic of block header verification.<br />\nThe other 2 BEPs, <strong>BEP-404</strong> and <strong>BEP-410</strong> are for some enhancement and unlikely to have compatibility issue.</p>\n<h2>Changelog</h2>\n<h3>BUGFIX</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2643\">#2643</a>core: fix cache for receipts</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2656\">#2656</a>ethclient: fix BlobSidecars api</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2657\">#2657</a>fix: update prunefreezer’s offset when pruneancient and the dataset has pruned block</li>\n</ul>\n<h3>FEATURE</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2661\">#2661</a>config: setup Mainnet 2 hardfork date: HaberFix &amp; Bohr</li>\n</ul>\n<h3>IMPROVEMENT</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2578\">#2578</a>core/systemcontracts: use vm.StateDB in UpgradeBuildInSystemContract</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2649\">#2649</a>internal/debug: remove memsize</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2655\">#2655</a>internal/ethapi: make GetFinalizedHeader monotonically increasing</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2658\">#2658</a>core: improve readability of the fork choice logic</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2665\">#2665</a>faucet: bump and resend faucet transaction if it has been pending for a while</li>\n</ul>\n<h2>Assets</h2>\n<table>\n<thead>\n<tr>\n<th align=\"center\">Assets</th>\n<th>Sha256 Checksum</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\">mainnet.zip</td>\n<td>aeeae3392bd51af57fb1e2eddeefff7e84d58a37f87513495348d82deee5824f</td>\n</tr>\n<tr>\n<td align=\"center\">testnet.zip</td>\n<td>e1c88c2eba416e562fde8d8012b7669d6f9d176e3d126e6c25712a2fc0b39ac7</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux</td>\n<td>ec9be2b58a1a39b665ea7fb6f113c3a97a200906cebe214ab05fbc60c62cac39</td>\n</tr>\n<tr>\n<td align=\"center\">geth_mac</td>\n<td>0db5acd6eb1e546bb6b120e2c5c04363bf7c76b6164db68d55cb5281877cec5e</td>\n</tr>\n<tr>\n<td align=\"center\">geth_windows</td>\n<td>7aa9254bd75bf0ca16de05d79242cab69b0983133131db95b7e1cc26acc47212</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux_arm64</td>\n<td>0bb975dc3afe110ce5c76ac514d8c87bcf2529ba9e1f5a52096a2e2a16397d26</td>\n</tr>\n</tbody>\n</table>"
+                }
+            ],
+            "summary": "<p><strong>Important Announcement:</strong><br />\nHashSchema&amp;LevelDB mode will be discontinued after September 30, 2024, will be replaced by PathSchema&amp;PebbleDB mode<br />\nIf you are still running with HashSchema or LevelDB, you need to reinstall your node with the <a href=\"https://github.com/bnb-chain/bsc-snapshots\">latest bsc-snapshot</a>.<br />\nHow to check the running mode and the steps to do the migration, pls refer: <a class=\"issue-link js-issue-link\" href=\"https://github.com/bnb-chain/bsc-snapshots/issues/379\">bnb-chain/bsc-snapshots#379</a>.</p>\n<h2>Notice</h2>\n<p>Require Mandatory Update? <strong>Mainnet: Yes</strong></p>\n<h2>Description</h2>\n<p>Release v1.4.14 is a <strong>hard fork release for BSC Mainnet</strong>, the HF name is: <a href=\"https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936#p-1418-h-5bohr-wip-target-20240926-27\" rel=\"nofollow\">Bohr</a>.<br />\nThe target Bohr hard fork time will be:</p>\n<ul>\n<li>Mainnet: 2024-09-26 02:20:00 AM UTC</li>\n</ul>\n<p>There are 4 BEPs in Bohr:</p>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP-341.md\">BEP-341: Validators can produce consecutive blocks</a></li>\n<li><a href=\"https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP-402.md\">BEP-402: Complete missing fields in Block Header to generate Signature</a></li>\n<li><a href=\"https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP-404.md\">BEP-404: Clear Miner History when Switching Validators Set</a></li>\n<li><a href=\"https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP-410.md\">BEP-410: Add Agent for Validators</a></li>\n</ul>\n<p>Among these BEPs, <strong>BEP-341</strong> holds the most significance as it proposes a change to the block production protocol. However, BEP-341 will only come into effect after the affirmative outcome of a governance vote.<br />\nAnd <strong>BEP-402</strong> updates the block header signature logic, please pay special attention if your product involves the logic of block header verification.<br />\nThe other 2 BEPs, <strong>BEP-404</strong> and <strong>BEP-410</strong> are for some enhancement and unlikely to have compatibility issue.</p>\n<h2>Changelog</h2>\n<h3>BUGFIX</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2643\">#2643</a>core: fix cache for receipts</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2656\">#2656</a>ethclient: fix BlobSidecars api</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2657\">#2657</a>fix: update prunefreezer’s offset when pruneancient and the dataset has pruned block</li>\n</ul>\n<h3>FEATURE</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2661\">#2661</a>config: setup Mainnet 2 hardfork date: HaberFix &amp; Bohr</li>\n</ul>\n<h3>IMPROVEMENT</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2578\">#2578</a>core/systemcontracts: use vm.StateDB in UpgradeBuildInSystemContract</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2649\">#2649</a>internal/debug: remove memsize</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2655\">#2655</a>internal/ethapi: make GetFinalizedHeader monotonically increasing</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2658\">#2658</a>core: improve readability of the fork choice logic</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2665\">#2665</a>faucet: bump and resend faucet transaction if it has been pending for a while</li>\n</ul>\n<h2>Assets</h2>\n<table>\n<thead>\n<tr>\n<th align=\"center\">Assets</th>\n<th>Sha256 Checksum</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\">mainnet.zip</td>\n<td>aeeae3392bd51af57fb1e2eddeefff7e84d58a37f87513495348d82deee5824f</td>\n</tr>\n<tr>\n<td align=\"center\">testnet.zip</td>\n<td>e1c88c2eba416e562fde8d8012b7669d6f9d176e3d126e6c25712a2fc0b39ac7</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux</td>\n<td>ec9be2b58a1a39b665ea7fb6f113c3a97a200906cebe214ab05fbc60c62cac39</td>\n</tr>\n<tr>\n<td align=\"center\">geth_mac</td>\n<td>0db5acd6eb1e546bb6b120e2c5c04363bf7c76b6164db68d55cb5281877cec5e</td>\n</tr>\n<tr>\n<td align=\"center\">geth_windows</td>\n<td>7aa9254bd75bf0ca16de05d79242cab69b0983133131db95b7e1cc26acc47212</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux_arm64</td>\n<td>0bb975dc3afe110ce5c76ac514d8c87bcf2529ba9e1f5a52096a2e2a16397d26</td>\n</tr>\n</tbody>\n</table>",
+            "authors": [
+                {
+                    "name": "github-actions[bot]"
+                }
+            ],
+            "author_detail": {
+                "name": "github-actions[bot]"
+            },
+            "author": "github-actions[bot]",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/in/15368?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/265775217/v1.4.13",
+            "guidislink": true,
+            "link": "https://github.com/bnb-chain/bsc/releases/tag/v1.4.13",
+            "updated": "2024-08-15T03:25:53Z",
+            "updated_parsed": [
+                2024,
+                8,
+                15,
+                3,
+                25,
+                53,
+                3,
+                228,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/bnb-chain/bsc/releases/tag/v1.4.13"
+                }
+            ],
+            "title": "v1.4.13",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.4.13"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p><strong>Important Announcement:</strong><br />\nHashSchema&amp;LevelDB mode will be discontinued after September 30, 2024, will be replaced by PathSchema&amp;PebbleDB mode<br />\nIf you are still running with HashSchema or LevelDB, you need to reinstall your node with the <a href=\"https://github.com/bnb-chain/bsc-snapshots\">latest bsc-snapshot</a>.<br />\nHow to check the running mode and the steps to do the migration, pls refer: <a class=\"issue-link js-issue-link\" href=\"https://github.com/bnb-chain/bsc-snapshots/issues/379\">bnb-chain/bsc-snapshots#379</a>.</p>\n<h2>Notice</h2>\n<p>Require Mandatory Update?</p>\n<ul>\n<li><strong>Testnet: Yes</strong></li>\n<li><strong>Mainnet: No</strong></li>\n</ul>\n<h2>Description</h2>\n<p>Release v1.4.13 is a <strong>hard fork release for BSC Testnet</strong>, the HF name is: <a href=\"https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936#h-5bohr-wip-26\" rel=\"nofollow\">Bohr</a>.<br />\nThe target Bohr hard fork time will be:</p>\n<ul>\n<li><strong>Testnet: 2024-08-20 01:23:16 AM UTC</strong></li>\n<li>Mainnet: it is not determined yet, target Later Sep 2024</li>\n</ul>\n<p>There are 4 BEPs in Bohr:</p>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP-341.md\">BEP-341: Validators can produce consecutive blocks</a></li>\n<li><a href=\"https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP-402.md\">BEP-402: Complete missing fields in Block Header to generate Signature</a></li>\n<li><a href=\"https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP-404.md\">BEP-404: Clear Miner History when Switching Validators Set</a></li>\n<li><a href=\"https://github.com/bnb-chain/BEPs/pull/410\">BEP-410: Add Agent for Validators</a></li>\n</ul>\n<p>Among these BEPs, <strong>BEP-341</strong> holds the most significance as it proposes a change to the block production protocol. However, BEP-341 will only come into effect after the affirmative outcome of a governance vote.<br />\nAnd <strong>BEP-402</strong> updates the block header signature logic, please pay special attention if your product involves the logic of block header verification.<br />\nThe other 2 BEPs, <strong>BEP-404</strong> and <strong>BEP-410</strong> are for some enhancement and unlikely to have compatibility issue.</p>\n<h2>Changelog</h2>\n<h3>BUGFIX</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2602\">#2602</a> fix: prune-state when specify --triesInMemory 32</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/00025790\">#2579</a> fix: only take non-mempool tx to calculate bid price</li>\n</ul>\n<h3>FEATURE</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2634\">#2634</a> config: setup Testnet Bohr hardfork date</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2482\">#2482</a> BEP-341: Validators can produce consecutive blocks</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2502\">#2502</a> BEP-402: Complete Missing Fields in Block Header to Generate Signature</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2558\">#2558</a> BEP-404: Clear Miner History when Switching Validators Set</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2605\">#2605</a> feat: add bohr upgrade contracts bytecode</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2614\">#2614</a> fix: update stakehub bytecode after zero address agent issue fixed</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2608\">#2608</a> consensus/parlia: modify mining time for last block in one turn</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2618\">#2618</a> consensus/parlia: exclude inturn validator when calculate backoffTime</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2621\">#2621</a> core: not record zero hash beacon block root with Parlia engine</li>\n</ul>\n<h3>IMPROVEMENT</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2589\">#2589</a> core/vote: vote before committing state and writing block</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2596\">#2596</a> core: improve the network stability when double sign happens</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2600\">#2600</a> core: cache block after wroten into db</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2629\">#2629</a> utils: add GetTopAddr to analyse large traffic</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2591\">#2591</a> consensus/parlia: add GetJustifiedNumber and GetFinalizedNumber</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2611\">#2611</a> cmd/utils: add new flag OverridePassedForkTime</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2603\">#2603</a> faucet: rate limit initial implementation</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2622\">#2622</a> tests: fix evm-test CI</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2628\">#2628</a> Makefile: use docker compose v2 instead of v1</li>\n</ul>\n<h2>Assets</h2>\n<table>\n<thead>\n<tr>\n<th align=\"center\">Assets</th>\n<th>Sha256 Checksum</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\">mainnet.zip</td>\n<td>aeeae3392bd51af57fb1e2eddeefff7e84d58a37f87513495348d82deee5824f</td>\n</tr>\n<tr>\n<td align=\"center\">testnet.zip</td>\n<td>e1c88c2eba416e562fde8d8012b7669d6f9d176e3d126e6c25712a2fc0b39ac7</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux</td>\n<td>e99d28cd0480e95271737fb7ab4c21280e0a5cdd0770835d3b2a034b05691f9d</td>\n</tr>\n<tr>\n<td align=\"center\">geth_mac</td>\n<td>89541efc8c6b857ec2cbda05cf8c5b9e5374d37f2ac47340444d3e83dbc92881</td>\n</tr>\n<tr>\n<td align=\"center\">geth_windows</td>\n<td>caf2ac9bc2a63ee6a5140492b996d91e8720bff36fd073e3169f9920c1c140e8</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux_arm64</td>\n<td>9e6a0995fba61bc42cc51cdd04a07a740120fc0c0f959114bbb8bb33f13e1828</td>\n</tr>\n</tbody>\n</table>"
+                }
+            ],
+            "summary": "<p><strong>Important Announcement:</strong><br />\nHashSchema&amp;LevelDB mode will be discontinued after September 30, 2024, will be replaced by PathSchema&amp;PebbleDB mode<br />\nIf you are still running with HashSchema or LevelDB, you need to reinstall your node with the <a href=\"https://github.com/bnb-chain/bsc-snapshots\">latest bsc-snapshot</a>.<br />\nHow to check the running mode and the steps to do the migration, pls refer: <a class=\"issue-link js-issue-link\" href=\"https://github.com/bnb-chain/bsc-snapshots/issues/379\">bnb-chain/bsc-snapshots#379</a>.</p>\n<h2>Notice</h2>\n<p>Require Mandatory Update?</p>\n<ul>\n<li><strong>Testnet: Yes</strong></li>\n<li><strong>Mainnet: No</strong></li>\n</ul>\n<h2>Description</h2>\n<p>Release v1.4.13 is a <strong>hard fork release for BSC Testnet</strong>, the HF name is: <a href=\"https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936#h-5bohr-wip-26\" rel=\"nofollow\">Bohr</a>.<br />\nThe target Bohr hard fork time will be:</p>\n<ul>\n<li><strong>Testnet: 2024-08-20 01:23:16 AM UTC</strong></li>\n<li>Mainnet: it is not determined yet, target Later Sep 2024</li>\n</ul>\n<p>There are 4 BEPs in Bohr:</p>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP-341.md\">BEP-341: Validators can produce consecutive blocks</a></li>\n<li><a href=\"https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP-402.md\">BEP-402: Complete missing fields in Block Header to generate Signature</a></li>\n<li><a href=\"https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP-404.md\">BEP-404: Clear Miner History when Switching Validators Set</a></li>\n<li><a href=\"https://github.com/bnb-chain/BEPs/pull/410\">BEP-410: Add Agent for Validators</a></li>\n</ul>\n<p>Among these BEPs, <strong>BEP-341</strong> holds the most significance as it proposes a change to the block production protocol. However, BEP-341 will only come into effect after the affirmative outcome of a governance vote.<br />\nAnd <strong>BEP-402</strong> updates the block header signature logic, please pay special attention if your product involves the logic of block header verification.<br />\nThe other 2 BEPs, <strong>BEP-404</strong> and <strong>BEP-410</strong> are for some enhancement and unlikely to have compatibility issue.</p>\n<h2>Changelog</h2>\n<h3>BUGFIX</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2602\">#2602</a> fix: prune-state when specify --triesInMemory 32</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/00025790\">#2579</a> fix: only take non-mempool tx to calculate bid price</li>\n</ul>\n<h3>FEATURE</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2634\">#2634</a> config: setup Testnet Bohr hardfork date</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2482\">#2482</a> BEP-341: Validators can produce consecutive blocks</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2502\">#2502</a> BEP-402: Complete Missing Fields in Block Header to Generate Signature</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2558\">#2558</a> BEP-404: Clear Miner History when Switching Validators Set</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2605\">#2605</a> feat: add bohr upgrade contracts bytecode</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2614\">#2614</a> fix: update stakehub bytecode after zero address agent issue fixed</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2608\">#2608</a> consensus/parlia: modify mining time for last block in one turn</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2618\">#2618</a> consensus/parlia: exclude inturn validator when calculate backoffTime</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2621\">#2621</a> core: not record zero hash beacon block root with Parlia engine</li>\n</ul>\n<h3>IMPROVEMENT</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2589\">#2589</a> core/vote: vote before committing state and writing block</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2596\">#2596</a> core: improve the network stability when double sign happens</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2600\">#2600</a> core: cache block after wroten into db</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2629\">#2629</a> utils: add GetTopAddr to analyse large traffic</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2591\">#2591</a> consensus/parlia: add GetJustifiedNumber and GetFinalizedNumber</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2611\">#2611</a> cmd/utils: add new flag OverridePassedForkTime</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2603\">#2603</a> faucet: rate limit initial implementation</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2622\">#2622</a> tests: fix evm-test CI</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2628\">#2628</a> Makefile: use docker compose v2 instead of v1</li>\n</ul>\n<h2>Assets</h2>\n<table>\n<thead>\n<tr>\n<th align=\"center\">Assets</th>\n<th>Sha256 Checksum</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\">mainnet.zip</td>\n<td>aeeae3392bd51af57fb1e2eddeefff7e84d58a37f87513495348d82deee5824f</td>\n</tr>\n<tr>\n<td align=\"center\">testnet.zip</td>\n<td>e1c88c2eba416e562fde8d8012b7669d6f9d176e3d126e6c25712a2fc0b39ac7</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux</td>\n<td>e99d28cd0480e95271737fb7ab4c21280e0a5cdd0770835d3b2a034b05691f9d</td>\n</tr>\n<tr>\n<td align=\"center\">geth_mac</td>\n<td>89541efc8c6b857ec2cbda05cf8c5b9e5374d37f2ac47340444d3e83dbc92881</td>\n</tr>\n<tr>\n<td align=\"center\">geth_windows</td>\n<td>caf2ac9bc2a63ee6a5140492b996d91e8720bff36fd073e3169f9920c1c140e8</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux_arm64</td>\n<td>9e6a0995fba61bc42cc51cdd04a07a740120fc0c0f959114bbb8bb33f13e1828</td>\n</tr>\n</tbody>\n</table>",
+            "authors": [
+                {
+                    "name": "github-actions[bot]"
+                }
+            ],
+            "author_detail": {
+                "name": "github-actions[bot]"
+            },
+            "author": "github-actions[bot]",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/in/15368?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/265775217/v1.4.12",
+            "guidislink": true,
+            "link": "https://github.com/bnb-chain/bsc/releases/tag/v1.4.12",
+            "updated": "2024-07-24T06:14:51Z",
+            "updated_parsed": [
+                2024,
+                7,
+                24,
+                6,
+                14,
+                51,
+                2,
+                206,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/bnb-chain/bsc/releases/tag/v1.4.12"
+                }
+            ],
+            "title": "v1.4.12",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.4.12"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<h2>Notice</h2>\n<p>Mandatory Update: <strong>No</strong></p>\n<p>This is a maintenance release, which includes some bug fix of: <code>--pruneancient</code>, <code>issues of force kill</code>, <code>multi-database</code>, <code>snapshot prune-state</code>. And also has some improvements on <code>vote</code>, <code>minor</code>, <code>mev</code>, <code>freezer</code></p>\n<h2>Changelog</h2>\n<h3>BUGFIX</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2557\">#2557</a> fix: fix state inspect error after pruned state</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2562\">#2562</a> fix: delete unexpected block</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2566\">#2566</a> core: avoid to cache block before wroten into db</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2567\">#2567</a> fix: fix statedb copy</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2574\">#2574</a> core: adapt highestVerifiedHeader to FastFinality</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2542\">#2542</a> fix: pruneancient freeze from the previous position when the first time</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2564\">#2564</a> fix: the bug of blobsidecars and downloader with multi-database</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2582\">#2582</a> fix: remove delete and dangling side chains in prunefreezer</li>\n</ul>\n<h3>FEATURE</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2513\">#2513</a> cmd/jsutils: add a tool to get performance between a range of blocks</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2569\">#2569</a> cmd/jsutils: add a tool to get slash count</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2583\">#2583</a> cmd/jsutill: add log about validator name</li>\n</ul>\n<h3>IMPROVEMENT</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2546\">#2546</a> go.mod: update missing dependency</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2559\">#2559</a> nancy: ignore go-retryablehttp@v0.7.4 in .nancy-ignore</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2556\">#2556</a> chore: update greenfield cometbft version</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2561\">#2561</a> tests: fix unstable test</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2572\">#2572</a> core: clearup testflag for Cancun and Haber</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2573\">#2573</a> cmd/utils: support use NetworkId to distinguish chapel when do syncing</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2538\">#2538</a> feat: enhance bid comparison and reply bidding results &amp;&amp; detail logs</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2568\">#2568</a> core/vote: not vote if too late for next in turn validator</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2580\">#2580</a> freezer: Opt freezer env checking</li>\n</ul>\n<h2>Assets</h2>\n<table>\n<thead>\n<tr>\n<th align=\"center\">Assets</th>\n<th>Sha256 Checksum</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\">mainnet.zip</td>\n<td>aeeae3392bd51af57fb1e2eddeefff7e84d58a37f87513495348d82deee5824f</td>\n</tr>\n<tr>\n<td align=\"center\">testnet.zip</td>\n<td>e1c88c2eba416e562fde8d8012b7669d6f9d176e3d126e6c25712a2fc0b39ac7</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux</td>\n<td>3ac588488b35e4997743fd410f15011c23f3d02bfb6ffbf8a872b9e18fbe0eba</td>\n</tr>\n<tr>\n<td align=\"center\">geth_mac</td>\n<td>5044ba67cbc9febaf117fc2b9e19b8860ea7986dc9cfad3b903e2f931fc668c8</td>\n</tr>\n<tr>\n<td align=\"center\">geth_windows</td>\n<td>874513d9cbc296ab8b76aa15f62fbc197001e33c267bb0a059ab9c9c209ba417</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux_arm64</td>\n<td>0357c7a06f55adc7f41db4d2ca270747be82d0373d2c20d18f528e5ed01fa0be</td>\n</tr>\n</tbody>\n</table>"
+                }
+            ],
+            "summary": "<h2>Notice</h2>\n<p>Mandatory Update: <strong>No</strong></p>\n<p>This is a maintenance release, which includes some bug fix of: <code>--pruneancient</code>, <code>issues of force kill</code>, <code>multi-database</code>, <code>snapshot prune-state</code>. And also has some improvements on <code>vote</code>, <code>minor</code>, <code>mev</code>, <code>freezer</code></p>\n<h2>Changelog</h2>\n<h3>BUGFIX</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2557\">#2557</a> fix: fix state inspect error after pruned state</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2562\">#2562</a> fix: delete unexpected block</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2566\">#2566</a> core: avoid to cache block before wroten into db</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2567\">#2567</a> fix: fix statedb copy</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2574\">#2574</a> core: adapt highestVerifiedHeader to FastFinality</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2542\">#2542</a> fix: pruneancient freeze from the previous position when the first time</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2564\">#2564</a> fix: the bug of blobsidecars and downloader with multi-database</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2582\">#2582</a> fix: remove delete and dangling side chains in prunefreezer</li>\n</ul>\n<h3>FEATURE</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2513\">#2513</a> cmd/jsutils: add a tool to get performance between a range of blocks</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2569\">#2569</a> cmd/jsutils: add a tool to get slash count</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2583\">#2583</a> cmd/jsutill: add log about validator name</li>\n</ul>\n<h3>IMPROVEMENT</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2546\">#2546</a> go.mod: update missing dependency</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2559\">#2559</a> nancy: ignore go-retryablehttp@v0.7.4 in .nancy-ignore</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2556\">#2556</a> chore: update greenfield cometbft version</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2561\">#2561</a> tests: fix unstable test</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2572\">#2572</a> core: clearup testflag for Cancun and Haber</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2573\">#2573</a> cmd/utils: support use NetworkId to distinguish chapel when do syncing</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2538\">#2538</a> feat: enhance bid comparison and reply bidding results &amp;&amp; detail logs</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2568\">#2568</a> core/vote: not vote if too late for next in turn validator</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2580\">#2580</a> freezer: Opt freezer env checking</li>\n</ul>\n<h2>Assets</h2>\n<table>\n<thead>\n<tr>\n<th align=\"center\">Assets</th>\n<th>Sha256 Checksum</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\">mainnet.zip</td>\n<td>aeeae3392bd51af57fb1e2eddeefff7e84d58a37f87513495348d82deee5824f</td>\n</tr>\n<tr>\n<td align=\"center\">testnet.zip</td>\n<td>e1c88c2eba416e562fde8d8012b7669d6f9d176e3d126e6c25712a2fc0b39ac7</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux</td>\n<td>3ac588488b35e4997743fd410f15011c23f3d02bfb6ffbf8a872b9e18fbe0eba</td>\n</tr>\n<tr>\n<td align=\"center\">geth_mac</td>\n<td>5044ba67cbc9febaf117fc2b9e19b8860ea7986dc9cfad3b903e2f931fc668c8</td>\n</tr>\n<tr>\n<td align=\"center\">geth_windows</td>\n<td>874513d9cbc296ab8b76aa15f62fbc197001e33c267bb0a059ab9c9c209ba417</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux_arm64</td>\n<td>0357c7a06f55adc7f41db4d2ca270747be82d0373d2c20d18f528e5ed01fa0be</td>\n</tr>\n</tbody>\n</table>",
+            "authors": [
+                {
+                    "name": "github-actions[bot]"
+                }
+            ],
+            "author_detail": {
+                "name": "github-actions[bot]"
+            },
+            "author": "github-actions[bot]",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/in/15368?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/265775217/v1.4.11",
+            "guidislink": true,
+            "link": "https://github.com/bnb-chain/bsc/releases/tag/v1.4.11",
+            "updated": "2024-07-10T15:35:35Z",
+            "updated_parsed": [
+                2024,
+                7,
+                10,
+                15,
+                35,
+                35,
+                2,
+                192,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/bnb-chain/bsc/releases/tag/v1.4.11"
+                }
+            ],
+            "title": "v1.4.11",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.4.11"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<h2>Notice</h2>\n<p>Mandatory Update: <strong>Yes</strong></p>\n<p>This is a hardfork release target to resolve a staking reward distribution issue on  BSC testnet. This upgrade, known as the \"Haber Fix\" upgrade, is scheduled to take place on July 3, 2024, at 06:06:28 GMT. All clients on BSC testnet are encouraged to upgrade to the latest version.</p>\n<p><em>Optional for the client running on mainnet.</em></p>\n<h2>Changelog</h2>\n<h3>BUGFIX</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2534\">#2534</a> fix: nil pointer when clear simulating bid</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2535\">#2535</a> upgrade: add HaberFix hardfork</li>\n</ul>\n<h2>Assets</h2>\n<table>\n<thead>\n<tr>\n<th align=\"center\">Assets</th>\n<th>Sha256 Checksum</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\">mainnet.zip</td>\n<td>aeeae3392bd51af57fb1e2eddeefff7e84d58a37f87513495348d82deee5824f</td>\n</tr>\n<tr>\n<td align=\"center\">testnet.zip</td>\n<td>bcb79b8731c50ddaa3a5a2e3e92afa4f04b0c04c72b6b37b8a69ecd776304f15</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux</td>\n<td>72118152e80ae2d3545d5a8002335b1bb43a79f6fce4ee96f431f58ddffe64eb</td>\n</tr>\n<tr>\n<td align=\"center\">geth_mac</td>\n<td>3f3a43e9a33295c3448701b79805d625a5dfd2664d2589dde6a88d1a088cccc5</td>\n</tr>\n<tr>\n<td align=\"center\">geth_windows</td>\n<td>5d42342bb28838833540ce163184ea4f887ef5dec60626e8bb418991c6807581</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux_arm64</td>\n<td>574a397d8a31bcb95a8dcb6f381655210618e7f407f89d454c8eb6eb5cdb5b0c</td>\n</tr>\n</tbody>\n</table>"
+                }
+            ],
+            "summary": "<h2>Notice</h2>\n<p>Mandatory Update: <strong>Yes</strong></p>\n<p>This is a hardfork release target to resolve a staking reward distribution issue on  BSC testnet. This upgrade, known as the \"Haber Fix\" upgrade, is scheduled to take place on July 3, 2024, at 06:06:28 GMT. All clients on BSC testnet are encouraged to upgrade to the latest version.</p>\n<p><em>Optional for the client running on mainnet.</em></p>\n<h2>Changelog</h2>\n<h3>BUGFIX</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2534\">#2534</a> fix: nil pointer when clear simulating bid</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2535\">#2535</a> upgrade: add HaberFix hardfork</li>\n</ul>\n<h2>Assets</h2>\n<table>\n<thead>\n<tr>\n<th align=\"center\">Assets</th>\n<th>Sha256 Checksum</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\">mainnet.zip</td>\n<td>aeeae3392bd51af57fb1e2eddeefff7e84d58a37f87513495348d82deee5824f</td>\n</tr>\n<tr>\n<td align=\"center\">testnet.zip</td>\n<td>bcb79b8731c50ddaa3a5a2e3e92afa4f04b0c04c72b6b37b8a69ecd776304f15</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux</td>\n<td>72118152e80ae2d3545d5a8002335b1bb43a79f6fce4ee96f431f58ddffe64eb</td>\n</tr>\n<tr>\n<td align=\"center\">geth_mac</td>\n<td>3f3a43e9a33295c3448701b79805d625a5dfd2664d2589dde6a88d1a088cccc5</td>\n</tr>\n<tr>\n<td align=\"center\">geth_windows</td>\n<td>5d42342bb28838833540ce163184ea4f887ef5dec60626e8bb418991c6807581</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux_arm64</td>\n<td>574a397d8a31bcb95a8dcb6f381655210618e7f407f89d454c8eb6eb5cdb5b0c</td>\n</tr>\n</tbody>\n</table>",
+            "authors": [
+                {
+                    "name": "github-actions[bot]"
+                }
+            ],
+            "author_detail": {
+                "name": "github-actions[bot]"
+            },
+            "author": "github-actions[bot]",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/in/15368?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/265775217/v1.4.10",
+            "guidislink": true,
+            "link": "https://github.com/bnb-chain/bsc/releases/tag/v1.4.10",
+            "updated": "2024-06-21T08:30:53Z",
+            "updated_parsed": [
+                2024,
+                6,
+                21,
+                8,
+                30,
+                53,
+                4,
+                173,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/bnb-chain/bsc/releases/tag/v1.4.10"
+                }
+            ],
+            "title": "v1.4.10",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.4.10"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p><strong>Notice:</strong><br />\nv1.4.10 solved the <a href=\"https://github.com/bnb-chain/bsc/issues/2522\">\"BAD BLOCK\"</a> issue after Haber hard fork, pls use this version if your node has the BAD BLOCK issue.</p>\n<h2>Description</h2>\n<p>Mandatory Update: <strong>No(but strongly recommended!)</strong><br />\nLatest  Mandatory Update: <strong><a href=\"https://github.com/bnb-chain/bsc/releases/v1.4.8\">v1.4.8</a></strong></p>\n<p>v1.4.10 is a maintenance release,  which has several improvements and fixes:</p>\n<ul>\n<li>improve: performance, MEV-API, less-reorg</li>\n<li>fix: ethapi, UT failure, rpc:getBlobSidecars, BAD BLOCK caused by nil withdrawals.</li>\n</ul>\n<p>There is no compatible change, to upgrade to v1.4.10 from v1.4.x, simply replace the binary should work.</p>\n<h2>Change Log</h2>\n<h3>FEATURE</h3>\n<ul>\n<li>NA</li>\n</ul>\n<h3>IMPROVEMENT</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2512\">#2512</a> feat: add mev helper params and func</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2508\">#2508</a> perf: speedup pbss trienode read</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2509\">#2509</a> perf: optimize chain commit performance for multi-database</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2451\">#2451</a> core/forkchoice: improve stability when inturn block not generate</li>\n</ul>\n<h3>BUGFIX</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2518\">#2518</a> fix: remove zero gasprice check for BSC</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2519\">#2519</a> UT: random failure of TestSnapSyncWithBlobs</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2515\">#2515</a> fix getBlobSidecars by ethclient</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2525\">#2525</a> fix: ensure empty withdrawals after cancun before broadcast</li>\n</ul>\n<h2>Example</h2>\n<p>NA</p>\n<h2>Compatibility</h2>\n<p>NA</p>\n<h2>Assets</h2>\n<table>\n<thead>\n<tr>\n<th align=\"center\">Assets</th>\n<th>Sha256 Checksum</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\">mainnet.zip</td>\n<td>aeeae3392bd51af57fb1e2eddeefff7e84d58a37f87513495348d82deee5824f</td>\n</tr>\n<tr>\n<td align=\"center\">testnet.zip</td>\n<td>bcb79b8731c50ddaa3a5a2e3e92afa4f04b0c04c72b6b37b8a69ecd776304f15</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux</td>\n<td>7d762aa5f7c3fcd2a53ee82c6fb58ab86dce2447233a55f75b60dc21e20ce66a</td>\n</tr>\n<tr>\n<td align=\"center\">geth_mac</td>\n<td>e787f0651cf2a0a06ac57f641bfc62b773e349e22e229b778a63b4df0e5605ff</td>\n</tr>\n<tr>\n<td align=\"center\">geth_windows</td>\n<td>483422c9a540a96f3a22bfe6378a953bb6c9216b14ea7f1ac53b37e807b49d34</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux_arm64</td>\n<td>48986bea8185104e175e0c672fd41183aa6f574ed1c97077f4e99e947fe9844b</td>\n</tr>\n</tbody>\n</table>"
+                }
+            ],
+            "summary": "<p><strong>Notice:</strong><br />\nv1.4.10 solved the <a href=\"https://github.com/bnb-chain/bsc/issues/2522\">\"BAD BLOCK\"</a> issue after Haber hard fork, pls use this version if your node has the BAD BLOCK issue.</p>\n<h2>Description</h2>\n<p>Mandatory Update: <strong>No(but strongly recommended!)</strong><br />\nLatest  Mandatory Update: <strong><a href=\"https://github.com/bnb-chain/bsc/releases/v1.4.8\">v1.4.8</a></strong></p>\n<p>v1.4.10 is a maintenance release,  which has several improvements and fixes:</p>\n<ul>\n<li>improve: performance, MEV-API, less-reorg</li>\n<li>fix: ethapi, UT failure, rpc:getBlobSidecars, BAD BLOCK caused by nil withdrawals.</li>\n</ul>\n<p>There is no compatible change, to upgrade to v1.4.10 from v1.4.x, simply replace the binary should work.</p>\n<h2>Change Log</h2>\n<h3>FEATURE</h3>\n<ul>\n<li>NA</li>\n</ul>\n<h3>IMPROVEMENT</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2512\">#2512</a> feat: add mev helper params and func</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2508\">#2508</a> perf: speedup pbss trienode read</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2509\">#2509</a> perf: optimize chain commit performance for multi-database</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2451\">#2451</a> core/forkchoice: improve stability when inturn block not generate</li>\n</ul>\n<h3>BUGFIX</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2518\">#2518</a> fix: remove zero gasprice check for BSC</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2519\">#2519</a> UT: random failure of TestSnapSyncWithBlobs</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2515\">#2515</a> fix getBlobSidecars by ethclient</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2525\">#2525</a> fix: ensure empty withdrawals after cancun before broadcast</li>\n</ul>\n<h2>Example</h2>\n<p>NA</p>\n<h2>Compatibility</h2>\n<p>NA</p>\n<h2>Assets</h2>\n<table>\n<thead>\n<tr>\n<th align=\"center\">Assets</th>\n<th>Sha256 Checksum</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\">mainnet.zip</td>\n<td>aeeae3392bd51af57fb1e2eddeefff7e84d58a37f87513495348d82deee5824f</td>\n</tr>\n<tr>\n<td align=\"center\">testnet.zip</td>\n<td>bcb79b8731c50ddaa3a5a2e3e92afa4f04b0c04c72b6b37b8a69ecd776304f15</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux</td>\n<td>7d762aa5f7c3fcd2a53ee82c6fb58ab86dce2447233a55f75b60dc21e20ce66a</td>\n</tr>\n<tr>\n<td align=\"center\">geth_mac</td>\n<td>e787f0651cf2a0a06ac57f641bfc62b773e349e22e229b778a63b4df0e5605ff</td>\n</tr>\n<tr>\n<td align=\"center\">geth_windows</td>\n<td>483422c9a540a96f3a22bfe6378a953bb6c9216b14ea7f1ac53b37e807b49d34</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux_arm64</td>\n<td>48986bea8185104e175e0c672fd41183aa6f574ed1c97077f4e99e947fe9844b</td>\n</tr>\n</tbody>\n</table>",
+            "authors": [
+                {
+                    "name": "github-actions[bot]"
+                }
+            ],
+            "author_detail": {
+                "name": "github-actions[bot]"
+            },
+            "author": "github-actions[bot]",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/in/15368?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/265775217/v1.4.9",
+            "guidislink": true,
+            "link": "https://github.com/bnb-chain/bsc/releases/tag/v1.4.9",
+            "updated": "2024-06-18T07:28:42Z",
+            "updated_parsed": [
+                2024,
+                6,
+                18,
+                7,
+                28,
+                42,
+                1,
+                170,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/bnb-chain/bsc/releases/tag/v1.4.9"
+                }
+            ],
+            "title": "v1.4.9",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.4.9"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<h2>Description</h2>\n<p>Mandatory Update: <strong>No</strong><br />\nLatest Mandatory Update: <strong><a href=\"https://github.com/bnb-chain/bsc/releases/v1.4.8\">v1.4.8</a></strong></p>\n<p>v1.4.9 is a maintenance release,  which mainly addressed some issues about: <strong>prune-block</strong>, <strong>multi-database</strong> and <strong>MEV</strong><br />\nThere is no compatible change, to upgrade to v1.4.9 from v1.4.x, simply replace the binary should work.</p>\n<h2>Changelog</h2>\n<h3>FEATURE</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2463\">#2463</a>  utils: add check_blobtx.js</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2470\">#2470</a>  jsutils: faucet successful requests within blocks</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2467\">#2467</a>  internal/ethapi: add optional parameter for blobSidecars</li>\n</ul>\n<h3>IMPROVEMENT</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2462\">#2462</a>  cmd/utils: add a flag to change breathe block interval for testing</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2497\">#2497</a>  params/config: add Bohr hardfork</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2479\">#2479</a>  dev: ensure consistency in BPS bundle result</li>\n</ul>\n<h3>BUGFIX</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2461\">#2461</a>  eth/handler: check lists in body before broadcast blocks</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2455\">#2455</a>  cmd: fix memory leak when big dataset</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2466\">#2466</a>  sync: fix some sync issues caused by prune-block.</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2475\">#2475</a>  fix: move mev op to MinerAPI &amp; add command to console</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2473\">#2473</a>  fix: limit the gas price of the mev bid</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2484\">#2484</a>  fix: fix inspect database error</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2481\">#2481</a>  fix: keep 9W blocks in ancient db when prune block</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2495\">#2495</a>  fix: add an empty freeze db</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2507\">#2507</a>  fix: waiting for the last simulation before pick best bid</li>\n</ul>\n<h2>Assets</h2>\n<table>\n<thead>\n<tr>\n<th align=\"center\">Assets</th>\n<th>Sha256 Checksum</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\">mainnet.zip</td>\n<td>aeeae3392bd51af57fb1e2eddeefff7e84d58a37f87513495348d82deee5824f</td>\n</tr>\n<tr>\n<td align=\"center\">testnet.zip</td>\n<td>bcb79b8731c50ddaa3a5a2e3e92afa4f04b0c04c72b6b37b8a69ecd776304f15</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux</td>\n<td>52e4ed0f6000b14f40bc5ce215e48f1f516664af7ad331b365696d93613487b4</td>\n</tr>\n<tr>\n<td align=\"center\">geth_mac</td>\n<td>0bb2f95f40920ac2c1a68d7b2501d34d1cd88456bb0c9e7307458068d06989b3</td>\n</tr>\n<tr>\n<td align=\"center\">geth_windows</td>\n<td>3f2e9c7a70a350cafa5bf08f14485acefc1ca19ae8684d97f744cb5166e4c4e2</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux_arm64</td>\n<td>24821c6130837c96830434f8be243f94b0ff35f30ceb4c0ebf6d381ba89d002a</td>\n</tr>\n</tbody>\n</table>"
+                }
+            ],
+            "summary": "<h2>Description</h2>\n<p>Mandatory Update: <strong>No</strong><br />\nLatest Mandatory Update: <strong><a href=\"https://github.com/bnb-chain/bsc/releases/v1.4.8\">v1.4.8</a></strong></p>\n<p>v1.4.9 is a maintenance release,  which mainly addressed some issues about: <strong>prune-block</strong>, <strong>multi-database</strong> and <strong>MEV</strong><br />\nThere is no compatible change, to upgrade to v1.4.9 from v1.4.x, simply replace the binary should work.</p>\n<h2>Changelog</h2>\n<h3>FEATURE</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2463\">#2463</a>  utils: add check_blobtx.js</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2470\">#2470</a>  jsutils: faucet successful requests within blocks</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2467\">#2467</a>  internal/ethapi: add optional parameter for blobSidecars</li>\n</ul>\n<h3>IMPROVEMENT</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2462\">#2462</a>  cmd/utils: add a flag to change breathe block interval for testing</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2497\">#2497</a>  params/config: add Bohr hardfork</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2479\">#2479</a>  dev: ensure consistency in BPS bundle result</li>\n</ul>\n<h3>BUGFIX</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2461\">#2461</a>  eth/handler: check lists in body before broadcast blocks</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2455\">#2455</a>  cmd: fix memory leak when big dataset</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2466\">#2466</a>  sync: fix some sync issues caused by prune-block.</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2475\">#2475</a>  fix: move mev op to MinerAPI &amp; add command to console</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2473\">#2473</a>  fix: limit the gas price of the mev bid</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2484\">#2484</a>  fix: fix inspect database error</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2481\">#2481</a>  fix: keep 9W blocks in ancient db when prune block</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2495\">#2495</a>  fix: add an empty freeze db</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2507\">#2507</a>  fix: waiting for the last simulation before pick best bid</li>\n</ul>\n<h2>Assets</h2>\n<table>\n<thead>\n<tr>\n<th align=\"center\">Assets</th>\n<th>Sha256 Checksum</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\">mainnet.zip</td>\n<td>aeeae3392bd51af57fb1e2eddeefff7e84d58a37f87513495348d82deee5824f</td>\n</tr>\n<tr>\n<td align=\"center\">testnet.zip</td>\n<td>bcb79b8731c50ddaa3a5a2e3e92afa4f04b0c04c72b6b37b8a69ecd776304f15</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux</td>\n<td>52e4ed0f6000b14f40bc5ce215e48f1f516664af7ad331b365696d93613487b4</td>\n</tr>\n<tr>\n<td align=\"center\">geth_mac</td>\n<td>0bb2f95f40920ac2c1a68d7b2501d34d1cd88456bb0c9e7307458068d06989b3</td>\n</tr>\n<tr>\n<td align=\"center\">geth_windows</td>\n<td>3f2e9c7a70a350cafa5bf08f14485acefc1ca19ae8684d97f744cb5166e4c4e2</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux_arm64</td>\n<td>24821c6130837c96830434f8be243f94b0ff35f30ceb4c0ebf6d381ba89d002a</td>\n</tr>\n</tbody>\n</table>",
+            "authors": [
+                {
+                    "name": "github-actions[bot]"
+                }
+            ],
+            "author_detail": {
+                "name": "github-actions[bot]"
+            },
+            "author": "github-actions[bot]",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/in/15368?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/265775217/v1.4.8",
+            "guidislink": true,
+            "link": "https://github.com/bnb-chain/bsc/releases/tag/v1.4.8",
+            "updated": "2024-06-18T07:24:21Z",
+            "updated_parsed": [
+                2024,
+                6,
+                18,
+                7,
+                24,
+                21,
+                1,
+                170,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/bnb-chain/bsc/releases/tag/v1.4.8"
+                }
+            ],
+            "title": "v1.4.8",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.4.8"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<h2>Notice</h2>\n<p>Mandatory Update: <strong>Yes</strong></p>\n<p><strong>Haber</strong> and <strong>Tycho(Cancun: BlobTx)</strong> hard fork will be enabled on BSC mainnet simultaneously, so this release also supports the Tycho hard fork, detail of Tycho hard fork may refer <a href=\"https://github.com/bnb-chain/bsc/releases/edit/v1.4.7\">https://github.com/bnb-chain/bsc/releases/edit/v1.4.7</a></p>\n<h2>Description</h2>\n<p>Release v1.4.8 is a cut-in <strong>hard fork release for BSC Testnet and Mainnet</strong>, the HF name is: <a href=\"https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936#h-4haber-wip-25\" rel=\"nofollow\">Haber</a>, it only supports one BEP: <a href=\"https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP-381.md\">BEP-381: Precompile for secp256r1 Curve Support</a></p>\n<p>As there is strong demand for supporting of secp256r1 pre-compile contract, we decide to move it faster.<br />\nAnd BSC would use address 0x100, which is same as other major chains to make it easier for developers.<br />\nDevelopers may refer this code on how to use this pre-compile contract: <a href=\"https://github.com/getclave/clave-contracts/blob/master/contracts/helpers/VerifierCaller.sol\">https://github.com/getclave/clave-contracts/blob/master/contracts/helpers/VerifierCaller.sol</a></p>\n<p>The target Haber hard fork time will be:</p>\n<ul>\n<li>Testnet:  2024-05-29 06:07:00 AM UTC</li>\n<li>Mainnet:  2024-06-20 06:05:00 AM UTC</li>\n</ul>\n<h2>Changelog</h2>\n<h3>FEATURE</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2483\">#2483</a> core/vm: add secp256r1 into PrecompiledContractsHaber</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2400\">#2400</a> RIP-7212: Precompile for secp256r1 Curve Support</li>\n</ul>\n<h3>IMPROVEMENT</h3>\n<p>NA</p>\n<h3>BUGFIX</h3>\n<p>NA</p>\n<h2>Assets</h2>\n<table>\n<thead>\n<tr>\n<th align=\"center\">Assets</th>\n<th>Sha256 Checksum</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\">mainnet.zip</td>\n<td>aeeae3392bd51af57fb1e2eddeefff7e84d58a37f87513495348d82deee5824f</td>\n</tr>\n<tr>\n<td align=\"center\">testnet.zip</td>\n<td>bcb79b8731c50ddaa3a5a2e3e92afa4f04b0c04c72b6b37b8a69ecd776304f15</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux</td>\n<td>8310f250fe8f628ec839d5954ff4e3e70ca1a0248e3b76243f4885945dd5ce3e</td>\n</tr>\n<tr>\n<td align=\"center\">geth_mac</td>\n<td>c99ede9b07d09fe5960a03bce0cd3c92c8f93d0022741b3cb7ccf3ecbb7070e4</td>\n</tr>\n<tr>\n<td align=\"center\">geth_windows</td>\n<td>ec7d777c7a200612e301da863a64b1ddf5ed76e5dba575e496479174453cd4d8</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux_arm64</td>\n<td>a2a7ee2872dc2d0dc4fadd7417d31f7fcdf6e553cf1b90cb630fcd6c0dcff845</td>\n</tr>\n</tbody>\n</table>"
+                }
+            ],
+            "summary": "<h2>Notice</h2>\n<p>Mandatory Update: <strong>Yes</strong></p>\n<p><strong>Haber</strong> and <strong>Tycho(Cancun: BlobTx)</strong> hard fork will be enabled on BSC mainnet simultaneously, so this release also supports the Tycho hard fork, detail of Tycho hard fork may refer <a href=\"https://github.com/bnb-chain/bsc/releases/edit/v1.4.7\">https://github.com/bnb-chain/bsc/releases/edit/v1.4.7</a></p>\n<h2>Description</h2>\n<p>Release v1.4.8 is a cut-in <strong>hard fork release for BSC Testnet and Mainnet</strong>, the HF name is: <a href=\"https://forum.bnbchain.org/t/bnb-chain-roadmap-mainnet/936#h-4haber-wip-25\" rel=\"nofollow\">Haber</a>, it only supports one BEP: <a href=\"https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP-381.md\">BEP-381: Precompile for secp256r1 Curve Support</a></p>\n<p>As there is strong demand for supporting of secp256r1 pre-compile contract, we decide to move it faster.<br />\nAnd BSC would use address 0x100, which is same as other major chains to make it easier for developers.<br />\nDevelopers may refer this code on how to use this pre-compile contract: <a href=\"https://github.com/getclave/clave-contracts/blob/master/contracts/helpers/VerifierCaller.sol\">https://github.com/getclave/clave-contracts/blob/master/contracts/helpers/VerifierCaller.sol</a></p>\n<p>The target Haber hard fork time will be:</p>\n<ul>\n<li>Testnet:  2024-05-29 06:07:00 AM UTC</li>\n<li>Mainnet:  2024-06-20 06:05:00 AM UTC</li>\n</ul>\n<h2>Changelog</h2>\n<h3>FEATURE</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2483\">#2483</a> core/vm: add secp256r1 into PrecompiledContractsHaber</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2400\">#2400</a> RIP-7212: Precompile for secp256r1 Curve Support</li>\n</ul>\n<h3>IMPROVEMENT</h3>\n<p>NA</p>\n<h3>BUGFIX</h3>\n<p>NA</p>\n<h2>Assets</h2>\n<table>\n<thead>\n<tr>\n<th align=\"center\">Assets</th>\n<th>Sha256 Checksum</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\">mainnet.zip</td>\n<td>aeeae3392bd51af57fb1e2eddeefff7e84d58a37f87513495348d82deee5824f</td>\n</tr>\n<tr>\n<td align=\"center\">testnet.zip</td>\n<td>bcb79b8731c50ddaa3a5a2e3e92afa4f04b0c04c72b6b37b8a69ecd776304f15</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux</td>\n<td>8310f250fe8f628ec839d5954ff4e3e70ca1a0248e3b76243f4885945dd5ce3e</td>\n</tr>\n<tr>\n<td align=\"center\">geth_mac</td>\n<td>c99ede9b07d09fe5960a03bce0cd3c92c8f93d0022741b3cb7ccf3ecbb7070e4</td>\n</tr>\n<tr>\n<td align=\"center\">geth_windows</td>\n<td>ec7d777c7a200612e301da863a64b1ddf5ed76e5dba575e496479174453cd4d8</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux_arm64</td>\n<td>a2a7ee2872dc2d0dc4fadd7417d31f7fcdf6e553cf1b90cb630fcd6c0dcff845</td>\n</tr>\n</tbody>\n</table>",
+            "authors": [
+                {
+                    "name": "github-actions[bot]"
+                }
+            ],
+            "author_detail": {
+                "name": "github-actions[bot]"
+            },
+            "author": "github-actions[bot]",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/in/15368?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/265775217/v1.4.7",
+            "guidislink": true,
+            "link": "https://github.com/bnb-chain/bsc/releases/tag/v1.4.7",
+            "updated": "2024-05-21T11:19:08Z",
+            "updated_parsed": [
+                2024,
+                5,
+                21,
+                11,
+                19,
+                8,
+                1,
+                142,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/bnb-chain/bsc/releases/tag/v1.4.7"
+                }
+            ],
+            "title": "v1.4.7",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.4.7"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<h2>Description</h2>\n<p>Release v1.4.7 is a hard fork release for <strong>BSC Mainnet</strong>, the HF name is: Tycho, it mainly support Cancun EIPs on BSC:</p>\n<ul>\n<li>a.<a href=\"https://github.com/bnb-chain/BEPs/pull/336\">BEP-336: Implement EIP-4844: ProtoDanksharding</a></li>\n<li>b.<a href=\"https://github.com/bnb-chain/BEPs/pull/343\">BEP-343: Implement EIP-1153: Transient storage opcodes</a></li>\n<li>c.<a href=\"https://github.com/bnb-chain/BEPs/pull/344\">BEP-344: Implement EIP-6780: SELFDESTRUCT only in same transaction</a></li>\n<li>d.<a href=\"https://github.com/bnb-chain/BEPs/pull/342\">BEP-342: Implement EIP-5656: MCOPY</a></li>\n<li>e.<a href=\"https://github.com/bnb-chain/BEPs/pull/345\">BEP-345: Implement EIP-7516: BLOBBASEFEE opcode</a></li>\n</ul>\n<p>But BSC won’t support “EIP-4788: BeaconRoot”, as there is no CL on BSC.</p>\n<p>The target Tycho hard fork time will be:</p>\n<ul>\n<li>Mainnet:  2024-06-20 06:05:00 AM UTC</li>\n</ul>\n<p>After <code>Tycho</code> hard fork, BSC will also support Blob Transaction, which will provide similar mechanism as Ethereum EIP-4844.  And BSC L2 rollup could take advantage of it to reduce the rollup cost.<br />\nIf you have any question about it, pls refer: <a href=\"https://forum.bnbchain.org/t/faq-about-eip-4844-on-bsc/2620\" rel=\"nofollow\">FAQ: About EIP-4844 on BSC</a></p>\n<h2>Changelog</h2>\n<h3>FEATURE</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2439\">#2439</a> config: setup Mainnet Tycho(Cancun) hardfork date</li>\n</ul>\n<h3>IMPROVEMENT</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2396\">#2396</a> metrics: add blockInsertMgaspsGauge to trace mgasps</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2411\">#2411</a> build(deps): bump golang.org/x/net from 0.19.0 to 0.23.0</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2435\">#2435</a> txpool: limit max gas when mining is enabled</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2438\">#2438</a> fix: performance issue when load journal</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2440\">#2440</a> nancy: add files .nancy-ignore</li>\n</ul>\n<h3>BUGFIX</h3>\n<p>NA</p>\n<h2>Assets</h2>\n<table>\n<thead>\n<tr>\n<th align=\"center\">Assets</th>\n<th>Sha256 Checksum</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\">mainnet.zip</td>\n<td>aeeae3392bd51af57fb1e2eddeefff7e84d58a37f87513495348d82deee5824f</td>\n</tr>\n<tr>\n<td align=\"center\">testnet.zip</td>\n<td>bcb79b8731c50ddaa3a5a2e3e92afa4f04b0c04c72b6b37b8a69ecd776304f15</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux</td>\n<td>84853f993eb30b38a5c35cfdb65e036ccddb9b697c54483870cb034d2b055cba</td>\n</tr>\n<tr>\n<td align=\"center\">geth_mac</td>\n<td>eb7fa9993cff3b9f203766170e46266e3c2169c0434d7f7ed746113260244fbc</td>\n</tr>\n<tr>\n<td align=\"center\">geth_windows</td>\n<td>f52e5ef1abbf6be565e0696fcba46f86cefc1d4170b76577af34e4b5fe206f1c</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux_arm64</td>\n<td>ade5dfdc85d79ca5086bae6821599e598a154a7e644c7608bc243f472395cd5f</td>\n</tr>\n</tbody>\n</table>"
+                }
+            ],
+            "summary": "<h2>Description</h2>\n<p>Release v1.4.7 is a hard fork release for <strong>BSC Mainnet</strong>, the HF name is: Tycho, it mainly support Cancun EIPs on BSC:</p>\n<ul>\n<li>a.<a href=\"https://github.com/bnb-chain/BEPs/pull/336\">BEP-336: Implement EIP-4844: ProtoDanksharding</a></li>\n<li>b.<a href=\"https://github.com/bnb-chain/BEPs/pull/343\">BEP-343: Implement EIP-1153: Transient storage opcodes</a></li>\n<li>c.<a href=\"https://github.com/bnb-chain/BEPs/pull/344\">BEP-344: Implement EIP-6780: SELFDESTRUCT only in same transaction</a></li>\n<li>d.<a href=\"https://github.com/bnb-chain/BEPs/pull/342\">BEP-342: Implement EIP-5656: MCOPY</a></li>\n<li>e.<a href=\"https://github.com/bnb-chain/BEPs/pull/345\">BEP-345: Implement EIP-7516: BLOBBASEFEE opcode</a></li>\n</ul>\n<p>But BSC won’t support “EIP-4788: BeaconRoot”, as there is no CL on BSC.</p>\n<p>The target Tycho hard fork time will be:</p>\n<ul>\n<li>Mainnet:  2024-06-20 06:05:00 AM UTC</li>\n</ul>\n<p>After <code>Tycho</code> hard fork, BSC will also support Blob Transaction, which will provide similar mechanism as Ethereum EIP-4844.  And BSC L2 rollup could take advantage of it to reduce the rollup cost.<br />\nIf you have any question about it, pls refer: <a href=\"https://forum.bnbchain.org/t/faq-about-eip-4844-on-bsc/2620\" rel=\"nofollow\">FAQ: About EIP-4844 on BSC</a></p>\n<h2>Changelog</h2>\n<h3>FEATURE</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2439\">#2439</a> config: setup Mainnet Tycho(Cancun) hardfork date</li>\n</ul>\n<h3>IMPROVEMENT</h3>\n<ul>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2396\">#2396</a> metrics: add blockInsertMgaspsGauge to trace mgasps</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2411\">#2411</a> build(deps): bump golang.org/x/net from 0.19.0 to 0.23.0</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2435\">#2435</a> txpool: limit max gas when mining is enabled</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2438\">#2438</a> fix: performance issue when load journal</li>\n<li><a href=\"https://github.com/bnb-chain/bsc/pull/2440\">#2440</a> nancy: add files .nancy-ignore</li>\n</ul>\n<h3>BUGFIX</h3>\n<p>NA</p>\n<h2>Assets</h2>\n<table>\n<thead>\n<tr>\n<th align=\"center\">Assets</th>\n<th>Sha256 Checksum</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\">mainnet.zip</td>\n<td>aeeae3392bd51af57fb1e2eddeefff7e84d58a37f87513495348d82deee5824f</td>\n</tr>\n<tr>\n<td align=\"center\">testnet.zip</td>\n<td>bcb79b8731c50ddaa3a5a2e3e92afa4f04b0c04c72b6b37b8a69ecd776304f15</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux</td>\n<td>84853f993eb30b38a5c35cfdb65e036ccddb9b697c54483870cb034d2b055cba</td>\n</tr>\n<tr>\n<td align=\"center\">geth_mac</td>\n<td>eb7fa9993cff3b9f203766170e46266e3c2169c0434d7f7ed746113260244fbc</td>\n</tr>\n<tr>\n<td align=\"center\">geth_windows</td>\n<td>f52e5ef1abbf6be565e0696fcba46f86cefc1d4170b76577af34e4b5fe206f1c</td>\n</tr>\n<tr>\n<td align=\"center\">geth_linux_arm64</td>\n<td>ade5dfdc85d79ca5086bae6821599e598a154a7e644c7608bc243f472395cd5f</td>\n</tr>\n</tbody>\n</table>",
+            "authors": [
+                {
+                    "name": "github-actions[bot]"
+                }
+            ],
+            "author_detail": {
+                "name": "github-actions[bot]"
+            },
+            "author": "github-actions[bot]",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/in/15368?s=60&v=4"
+                }
+            ],
+            "href": ""
+        }
+    ],
+    "feed": {
+        "language": "en-US",
+        "id": "tag:github.com,2008:https://github.com/bnb-chain/bsc/releases",
+        "guidislink": true,
+        "link": "https://github.com/bnb-chain/bsc/releases",
+        "links": [
+            {
+                "type": "text/html",
+                "rel": "alternate",
+                "href": "https://github.com/bnb-chain/bsc/releases"
+            },
+            {
+                "type": "application/atom+xml",
+                "rel": "self",
+                "href": "https://github.com/bnb-chain/bsc/releases.atom"
+            }
+        ],
+        "title": "Release notes from bsc",
+        "title_detail": {
+            "type": "text/plain",
+            "language": "en-US",
+            "base": "",
+            "value": "Release notes from bsc"
+        },
+        "updated": "2024-11-25T09:00:14Z",
+        "updated_parsed": [
+            2024,
+            11,
+            25,
+            9,
+            0,
+            14,
+            0,
+            330,
+            0
+        ]
+    },
+    "headers": {},
+    "encoding": "utf-8",
+    "version": "atom10",
+    "namespaces": {
+        "": "http://www.w3.org/2005/Atom",
+        "media": "http://search.yahoo.com/mrss/"
+    }
+}

@@ -1,0 +1,619 @@
+{
+    "bozo": false,
+    "entries": [
+        {
+            "id": "tag:github.com,2008:Repository/241638997/v1.12.20",
+            "guidislink": true,
+            "link": "https://github.com/etclabscore/core-geth/releases/tag/v1.12.20",
+            "updated": "2024-06-10T14:53:20Z",
+            "updated_parsed": [
+                2024,
+                6,
+                10,
+                14,
+                53,
+                20,
+                0,
+                162,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/etclabscore/core-geth/releases/tag/v1.12.20"
+                }
+            ],
+            "title": "Prophasis (v1.12.20)",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "Prophasis (v1.12.20)"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>This release merges the v1.13.x ethereum/go-ethereum release series, through v1.13.15.</p>\n<blockquote>\n<p>Geth <a href=\"https://github.com/ethereum/go-ethereum/releases/tag/v1.13.0\">v1.13.0</a> is a major milestone in the lifetime of Geth, bits and bobs being in development for around 6 years now. Since a release note cannot do it justice, please see our <a href=\"https://blog.ethereum.org/2023/09/12/geth-v1-13-0\" rel=\"nofollow\">Geth v1.13.0 release blog post</a>.</p>\n</blockquote>\n<p>This release series brought Ethereum through the Cancun fork, which established Shard Blob Transactions, beacon block roots in the EVM, and new opcodes; none of which are directly relevant to ETC now.</p>\n<p>What has been relevant to ETC is that upstream versions of <code>ethash</code> and other PoW-related code have been abandoned as ETH pursues an engineering path exclusively concerned with PoS. This leaves core-geth as the primary maintainer of these packages. The span between our two clients is yawning, but we hope you'll find this release a welcome bridge between worlds.</p>\n<p>Please find a few cherry-picked references below for your convenience.</p>\n<ul>\n<li>Path database scheme is the default for new instances (replacing hash scheme).</li>\n<li>Dropped ETH66 and ETH67 protocol versions.</li>\n<li>Logging-related CLI API changes, since geth now uses a Go language library <code>slog</code>. Notably, <code>--log.backtraceat</code> and <code>--log.debug</code> are removed.</li>\n<li>A few RPC API changes, including an added call <code>eth_getBlockReceipts</code>, modifying the <code>block</code> parameter in <code>eth_call</code> optional (defaulting to <code>latest</code>), and causing <code>eth_syncing</code> to behave differently.</li>\n<li>Support for the <em>light protocol</em> (aka <code>les</code>) is dropped.</li>\n<li>Add ethereum/go-ethereum Cancun support for all pertinent networks.\n<ul>\n<li>EIP-1153: Transient storage opcodes</li>\n<li>EIP-4788: Beacon block root in the EVM</li>\n<li>EIP-4844: Shard Blob Transactions</li>\n<li>EIP-5656: MCOPY - Memory copying instruction</li>\n<li>EIP-6780: SELFDESTRUCT only in same transaction</li>\n<li>EIP-7516: BLOBBASEFEE opcode</li>\n</ul>\n</li>\n<li>And lots of bug fixes for new and existing features.</li>\n</ul>"
+                }
+            ],
+            "summary": "<p>This release merges the v1.13.x ethereum/go-ethereum release series, through v1.13.15.</p>\n<blockquote>\n<p>Geth <a href=\"https://github.com/ethereum/go-ethereum/releases/tag/v1.13.0\">v1.13.0</a> is a major milestone in the lifetime of Geth, bits and bobs being in development for around 6 years now. Since a release note cannot do it justice, please see our <a href=\"https://blog.ethereum.org/2023/09/12/geth-v1-13-0\" rel=\"nofollow\">Geth v1.13.0 release blog post</a>.</p>\n</blockquote>\n<p>This release series brought Ethereum through the Cancun fork, which established Shard Blob Transactions, beacon block roots in the EVM, and new opcodes; none of which are directly relevant to ETC now.</p>\n<p>What has been relevant to ETC is that upstream versions of <code>ethash</code> and other PoW-related code have been abandoned as ETH pursues an engineering path exclusively concerned with PoS. This leaves core-geth as the primary maintainer of these packages. The span between our two clients is yawning, but we hope you'll find this release a welcome bridge between worlds.</p>\n<p>Please find a few cherry-picked references below for your convenience.</p>\n<ul>\n<li>Path database scheme is the default for new instances (replacing hash scheme).</li>\n<li>Dropped ETH66 and ETH67 protocol versions.</li>\n<li>Logging-related CLI API changes, since geth now uses a Go language library <code>slog</code>. Notably, <code>--log.backtraceat</code> and <code>--log.debug</code> are removed.</li>\n<li>A few RPC API changes, including an added call <code>eth_getBlockReceipts</code>, modifying the <code>block</code> parameter in <code>eth_call</code> optional (defaulting to <code>latest</code>), and causing <code>eth_syncing</code> to behave differently.</li>\n<li>Support for the <em>light protocol</em> (aka <code>les</code>) is dropped.</li>\n<li>Add ethereum/go-ethereum Cancun support for all pertinent networks.\n<ul>\n<li>EIP-1153: Transient storage opcodes</li>\n<li>EIP-4788: Beacon block root in the EVM</li>\n<li>EIP-4844: Shard Blob Transactions</li>\n<li>EIP-5656: MCOPY - Memory copying instruction</li>\n<li>EIP-6780: SELFDESTRUCT only in same transaction</li>\n<li>EIP-7516: BLOBBASEFEE opcode</li>\n</ul>\n</li>\n<li>And lots of bug fixes for new and existing features.</li>\n</ul>",
+            "authors": [
+                {
+                    "name": "diega"
+                }
+            ],
+            "author_detail": {
+                "name": "diega"
+            },
+            "author": "diega",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/79943?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/241638997/v1.12.19",
+            "guidislink": true,
+            "link": "https://github.com/etclabscore/core-geth/releases/tag/v1.12.19",
+            "updated": "2024-02-05T19:56:31Z",
+            "updated_parsed": [
+                2024,
+                2,
+                5,
+                19,
+                56,
+                31,
+                0,
+                36,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/etclabscore/core-geth/releases/tag/v1.12.19"
+                }
+            ],
+            "title": "Persiphone (v1.12.19)",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "Persiphone (v1.12.19)"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<h2>Fixed</h2>\n<ul>\n<li>Fix UPnP unwanted termination, which was causing nodes behind a NAT to be unreachable. (<a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/611\">#611</a>)</li>\n<li>Fix config toml, go generate. Allowing setting the <code>ECBP1100</code> and <code>OverrideECBP1100Deactivate</code> through TOML configuration. (<a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/614\">#614</a>)</li>\n</ul>\n<hr />\n<p>Comparison with last release: <a href=\"https://github.com/etclabscore/core-geth/compare/v1.12.18..v1.12.19\">v1.12.19..v1.12.18</a><br />\nDocker images published under <a href=\"https://hub.docker.com/r/etclabscore/core-geth/builds\" rel=\"nofollow\">etclabscore/core-geth</a>.</p>"
+                }
+            ],
+            "summary": "<h2>Fixed</h2>\n<ul>\n<li>Fix UPnP unwanted termination, which was causing nodes behind a NAT to be unreachable. (<a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/611\">#611</a>)</li>\n<li>Fix config toml, go generate. Allowing setting the <code>ECBP1100</code> and <code>OverrideECBP1100Deactivate</code> through TOML configuration. (<a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/614\">#614</a>)</li>\n</ul>\n<hr />\n<p>Comparison with last release: <a href=\"https://github.com/etclabscore/core-geth/compare/v1.12.18..v1.12.19\">v1.12.19..v1.12.18</a><br />\nDocker images published under <a href=\"https://hub.docker.com/r/etclabscore/core-geth/builds\" rel=\"nofollow\">etclabscore/core-geth</a>.</p>",
+            "authors": [
+                {
+                    "name": "ziogaschr"
+                }
+            ],
+            "author_detail": {
+                "name": "ziogaschr"
+            },
+            "author": "ziogaschr",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/802700?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/241638997/v1.12.18",
+            "guidislink": true,
+            "link": "https://github.com/etclabscore/core-geth/releases/tag/v1.12.18",
+            "updated": "2024-01-09T17:11:53Z",
+            "updated_parsed": [
+                2024,
+                1,
+                9,
+                17,
+                11,
+                53,
+                1,
+                9,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/etclabscore/core-geth/releases/tag/v1.12.18"
+                }
+            ],
+            "title": "Gaia (v1.12.18)",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "Gaia (v1.12.18)"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<h2>What's Changed</h2>\n<ul>\n<li>Install <a href=\"https://github.com/ethereumclassic/ECIPs/blob/master/_specs/ecip-1110.md\">ECBP-1110 (Deactivate MESS)</a> for <strong>Mordor</strong> at block <code>10_400_000</code> (<a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/602\">#602</a>)</li>\n<li>Avoid hitting Cloudflare DNS record quota (<a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/598\">#598</a>)</li>\n</ul>\n<h2>Fixed</h2>\n<ul>\n<li>Fix mordor bootnode IP (<a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/604\">#604</a>)</li>\n</ul>\n<hr />\n<p>Comparison with last release: <a href=\"https://github.com/etclabscore/core-geth/compare/v1.12.17..v1.12.18\">v1.12.18..v1.12.17</a><br />\nDocker images published under <a href=\"https://hub.docker.com/r/etclabscore/core-geth/builds\" rel=\"nofollow\">etclabscore/core-geth</a>.</p>"
+                }
+            ],
+            "summary": "<h2>What's Changed</h2>\n<ul>\n<li>Install <a href=\"https://github.com/ethereumclassic/ECIPs/blob/master/_specs/ecip-1110.md\">ECBP-1110 (Deactivate MESS)</a> for <strong>Mordor</strong> at block <code>10_400_000</code> (<a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/602\">#602</a>)</li>\n<li>Avoid hitting Cloudflare DNS record quota (<a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/598\">#598</a>)</li>\n</ul>\n<h2>Fixed</h2>\n<ul>\n<li>Fix mordor bootnode IP (<a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/604\">#604</a>)</li>\n</ul>\n<hr />\n<p>Comparison with last release: <a href=\"https://github.com/etclabscore/core-geth/compare/v1.12.17..v1.12.18\">v1.12.18..v1.12.17</a><br />\nDocker images published under <a href=\"https://hub.docker.com/r/etclabscore/core-geth/builds\" rel=\"nofollow\">etclabscore/core-geth</a>.</p>",
+            "authors": [
+                {
+                    "name": "meowsbits"
+                }
+            ],
+            "author_detail": {
+                "name": "meowsbits"
+            },
+            "author": "meowsbits",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/45600330?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/241638997/v1.12.17",
+            "guidislink": true,
+            "link": "https://github.com/etclabscore/core-geth/releases/tag/v1.12.17",
+            "updated": "2023-12-06T20:34:08Z",
+            "updated_parsed": [
+                2023,
+                12,
+                6,
+                20,
+                34,
+                8,
+                2,
+                340,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/etclabscore/core-geth/releases/tag/v1.12.17"
+                }
+            ],
+            "title": "Aphrodite (v1.12.17)",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "Aphrodite (v1.12.17)"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>⚠️ This release is a mandatory upgrade for ETC clients, it includes upcoming activation values for the Spiral hardfork, scheduled for late January 2024. This release also includes <strong>an important fix for a miner DoS vulnerability</strong>, where an attacker could toggle mining intermittently by broadcasting statuses with fake total difficulties. For more information, please see the blog post/disclosure <a href=\"https://etccooperative.org/posts/2023-12-06-miner-autopause-vulnerability-disclosure-en\" rel=\"nofollow\">here</a>.</p>\n<p>All users are strongly encouraged to upgrade to this version or later.</p>\n<h2>What's Changed</h2>\n<ul>\n<li><a href=\"https://ecips.ethereumclassic.org/ECIPs/ecip-1109\" rel=\"nofollow\">Spiral hardfork</a> activation values for ETC mainnet are configured per spec. Block <code>19_250_000</code>, eta January 31, 2024.</li>\n<li><a href=\"https://github.com/ethereumclassic/ECIPs/blob/master/_specs/ecip-1100.md\">MESS (ECBP1100)</a> is scheduled to deactivate coincidentally with the Spiral hard fork.</li>\n</ul>\n<h2>Fixes</h2>\n<ul>\n<li>Fix miner auto-pause vulnerability, resolving <a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/issues/586\">#586</a> (<a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/596\">#596</a>).</li>\n</ul>"
+                }
+            ],
+            "summary": "<p>⚠️ This release is a mandatory upgrade for ETC clients, it includes upcoming activation values for the Spiral hardfork, scheduled for late January 2024. This release also includes <strong>an important fix for a miner DoS vulnerability</strong>, where an attacker could toggle mining intermittently by broadcasting statuses with fake total difficulties. For more information, please see the blog post/disclosure <a href=\"https://etccooperative.org/posts/2023-12-06-miner-autopause-vulnerability-disclosure-en\" rel=\"nofollow\">here</a>.</p>\n<p>All users are strongly encouraged to upgrade to this version or later.</p>\n<h2>What's Changed</h2>\n<ul>\n<li><a href=\"https://ecips.ethereumclassic.org/ECIPs/ecip-1109\" rel=\"nofollow\">Spiral hardfork</a> activation values for ETC mainnet are configured per spec. Block <code>19_250_000</code>, eta January 31, 2024.</li>\n<li><a href=\"https://github.com/ethereumclassic/ECIPs/blob/master/_specs/ecip-1100.md\">MESS (ECBP1100)</a> is scheduled to deactivate coincidentally with the Spiral hard fork.</li>\n</ul>\n<h2>Fixes</h2>\n<ul>\n<li>Fix miner auto-pause vulnerability, resolving <a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/issues/586\">#586</a> (<a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/596\">#596</a>).</li>\n</ul>",
+            "authors": [
+                {
+                    "name": "meowsbits"
+                }
+            ],
+            "author_detail": {
+                "name": "meowsbits"
+            },
+            "author": "meowsbits",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/45600330?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/241638997/v1.12.16",
+            "guidislink": true,
+            "link": "https://github.com/etclabscore/core-geth/releases/tag/v1.12.16",
+            "updated": "2023-11-08T22:48:18Z",
+            "updated_parsed": [
+                2023,
+                11,
+                8,
+                22,
+                48,
+                18,
+                2,
+                312,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/etclabscore/core-geth/releases/tag/v1.12.16"
+                }
+            ],
+            "title": "Real Eris (v1.12.16)",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "Real Eris (v1.12.16)"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>Fix a logistics issue with the latest release (v1.12.15) which, in fact, did <em>not</em> include the Mordor (Testnet) <a href=\"https://ecips.ethereumclassic.org/ECIPs/ecip-1109\" rel=\"nofollow\">Spiral</a> activation numbers! So this release <em>does</em> <em>actually</em> have the Spiral configuration for Mordor coded. 🤦 🚀<br />\nThe <code>master</code> branch has included the Spiral blocks for Mordor since merging <a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/571\">#571</a>.</p>\n<h3>Fixed</h3>\n<ul>\n<li>Mordor Spiral activation number (<code>9,957,000</code>).</li>\n<li>Fixed a silent-but-deadly error which caused geth, when having a colliding or otherwise unavailable authenticated HTTP address/port (which is enabled by default), to stall out immediately after start up. Now, an error is now thrown and geth will stop  (<a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/578\">#578</a>).</li>\n</ul>"
+                }
+            ],
+            "summary": "<p>Fix a logistics issue with the latest release (v1.12.15) which, in fact, did <em>not</em> include the Mordor (Testnet) <a href=\"https://ecips.ethereumclassic.org/ECIPs/ecip-1109\" rel=\"nofollow\">Spiral</a> activation numbers! So this release <em>does</em> <em>actually</em> have the Spiral configuration for Mordor coded. 🤦 🚀<br />\nThe <code>master</code> branch has included the Spiral blocks for Mordor since merging <a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/571\">#571</a>.</p>\n<h3>Fixed</h3>\n<ul>\n<li>Mordor Spiral activation number (<code>9,957,000</code>).</li>\n<li>Fixed a silent-but-deadly error which caused geth, when having a colliding or otherwise unavailable authenticated HTTP address/port (which is enabled by default), to stall out immediately after start up. Now, an error is now thrown and geth will stop  (<a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/578\">#578</a>).</li>\n</ul>",
+            "authors": [
+                {
+                    "name": "meowsbits"
+                }
+            ],
+            "author_detail": {
+                "name": "meowsbits"
+            },
+            "author": "meowsbits",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/45600330?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/241638997/v1.12.15",
+            "guidislink": true,
+            "link": "https://github.com/etclabscore/core-geth/releases/tag/v1.12.15",
+            "updated": "2023-10-26T12:22:27Z",
+            "updated_parsed": [
+                2023,
+                10,
+                26,
+                12,
+                22,
+                27,
+                3,
+                299,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/etclabscore/core-geth/releases/tag/v1.12.15"
+                }
+            ],
+            "title": "Eris (v1.12.15)",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "Eris (v1.12.15)"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<ul>\n<li>\n<p>Add block activation numbers for Ethereum Classic's Spiral fork for the Mordor network (<a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/571\">#571</a>). Specifications for this network upgrade are available in the <a href=\"https://ecips.ethereumclassic.org/ECIPs/ecip-1109\" rel=\"nofollow\">ECIP-1109</a></p>\n<p>This is expected to become active around November 7th 2023</p>\n</li>\n</ul>\n<p>⚠️ THIS IS A <strong>MANDATORY</strong> RELEASE FOR MORDOR CLIENTS* ⚠️</p>\n<p><sub>*: this release is not mandatory for mainnet clients</sub></p>"
+                }
+            ],
+            "summary": "<ul>\n<li>\n<p>Add block activation numbers for Ethereum Classic's Spiral fork for the Mordor network (<a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/571\">#571</a>). Specifications for this network upgrade are available in the <a href=\"https://ecips.ethereumclassic.org/ECIPs/ecip-1109\" rel=\"nofollow\">ECIP-1109</a></p>\n<p>This is expected to become active around November 7th 2023</p>\n</li>\n</ul>\n<p>⚠️ THIS IS A <strong>MANDATORY</strong> RELEASE FOR MORDOR CLIENTS* ⚠️</p>\n<p><sub>*: this release is not mandatory for mainnet clients</sub></p>",
+            "authors": [
+                {
+                    "name": "github-actions[bot]"
+                }
+            ],
+            "author_detail": {
+                "name": "github-actions[bot]"
+            },
+            "author": "github-actions[bot]",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/in/15368?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/241638997/v1.12.14",
+            "guidislink": true,
+            "link": "https://github.com/etclabscore/core-geth/releases/tag/v1.12.14",
+            "updated": "2023-09-21T20:50:27Z",
+            "updated_parsed": [
+                2023,
+                9,
+                21,
+                20,
+                50,
+                27,
+                3,
+                264,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/etclabscore/core-geth/releases/tag/v1.12.14"
+                }
+            ],
+            "title": "Poseidon (v1.12.14)",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "Poseidon (v1.12.14)"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>This release merges upstream through <a href=\"https://github.com/ethereum/go-ethereum/releases/v1.12.2\">ethereum/go-ethereum@v1.12.2</a>.</p>\n<h1>What's Changed</h1>\n<ul>\n<li>Merge ethereum/go-ethereum release v1.12.1</li>\n<li>Merge ethereum/go-ethereum release v1.12.2</li>\n</ul>\n<h1>Highlights</h1>\n<p>The list below is an abstract of noteworthy changes. For reference please consult the ethereum/go-ethereum release notes at their <a href=\"https://github.com/ethereum/go-ethereum/releases\">original source</a>. Notable divergences or changes we make to these upgrades will be noted here, below. There are none in this release, which contains all origin patches.</p>\n<ul>\n<li>Support for EIP-4844 Blobpool type transactions</li>\n<li>EVM opcodes for upcoming EIPs and their supporting logic, including CKZG and BLS encyrption.<br />\nNote that these additions and changes are implemented conditionally, and are not necessarily activated or even planned for Ethereum Classic.\n<ul>\n<li>EIP-3855's <code>PUSH0</code> instruction</li>\n<li>EIP-3860's rules for limiting and metering <em>initcode</em>.</li>\n<li>EIP-4844's <code>DATAHASH</code> instruction</li>\n<li>EIP-1153's <code>TSTORE</code>, <code>TLOAD</code> instructions</li>\n<li>EIP-5656's <code>MCOPY</code> instruction</li>\n<li>EIP-6780's <code>SELFDESTRUCT</code> rule that it can only happen in the same transaction</li>\n</ul>\n</li>\n<li>Developer mode uses simulated Beacon block sealing rules by default, ethash still an option</li>\n<li>Partial implementation of the new path-based storage scheme</li>\n<li>Partial implementation of Verkle tree logic</li>\n<li>Fixes a serious memory leak in snap sync</li>\n<li>Fixes <code>--nodiscover</code> to actually prevent discovery</li>\n</ul>\n<hr />\n<p>Comparison with last release: <a href=\"https://github.com/etclabscore/core-geth/compare/v1.12.13..v1.12.14\">v1.12.13..v1.12.14</a><br />\nDocker images published under <a href=\"https://hub.docker.com/r/etclabscore/core-geth/builds\" rel=\"nofollow\">etclabscore/core-geth</a>.</p>"
+                }
+            ],
+            "summary": "<p>This release merges upstream through <a href=\"https://github.com/ethereum/go-ethereum/releases/v1.12.2\">ethereum/go-ethereum@v1.12.2</a>.</p>\n<h1>What's Changed</h1>\n<ul>\n<li>Merge ethereum/go-ethereum release v1.12.1</li>\n<li>Merge ethereum/go-ethereum release v1.12.2</li>\n</ul>\n<h1>Highlights</h1>\n<p>The list below is an abstract of noteworthy changes. For reference please consult the ethereum/go-ethereum release notes at their <a href=\"https://github.com/ethereum/go-ethereum/releases\">original source</a>. Notable divergences or changes we make to these upgrades will be noted here, below. There are none in this release, which contains all origin patches.</p>\n<ul>\n<li>Support for EIP-4844 Blobpool type transactions</li>\n<li>EVM opcodes for upcoming EIPs and their supporting logic, including CKZG and BLS encyrption.<br />\nNote that these additions and changes are implemented conditionally, and are not necessarily activated or even planned for Ethereum Classic.\n<ul>\n<li>EIP-3855's <code>PUSH0</code> instruction</li>\n<li>EIP-3860's rules for limiting and metering <em>initcode</em>.</li>\n<li>EIP-4844's <code>DATAHASH</code> instruction</li>\n<li>EIP-1153's <code>TSTORE</code>, <code>TLOAD</code> instructions</li>\n<li>EIP-5656's <code>MCOPY</code> instruction</li>\n<li>EIP-6780's <code>SELFDESTRUCT</code> rule that it can only happen in the same transaction</li>\n</ul>\n</li>\n<li>Developer mode uses simulated Beacon block sealing rules by default, ethash still an option</li>\n<li>Partial implementation of the new path-based storage scheme</li>\n<li>Partial implementation of Verkle tree logic</li>\n<li>Fixes a serious memory leak in snap sync</li>\n<li>Fixes <code>--nodiscover</code> to actually prevent discovery</li>\n</ul>\n<hr />\n<p>Comparison with last release: <a href=\"https://github.com/etclabscore/core-geth/compare/v1.12.13..v1.12.14\">v1.12.13..v1.12.14</a><br />\nDocker images published under <a href=\"https://hub.docker.com/r/etclabscore/core-geth/builds\" rel=\"nofollow\">etclabscore/core-geth</a>.</p>",
+            "authors": [
+                {
+                    "name": "meowsbits"
+                }
+            ],
+            "author_detail": {
+                "name": "meowsbits"
+            },
+            "author": "meowsbits",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/45600330?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/241638997/v1.12.13",
+            "guidislink": true,
+            "link": "https://github.com/etclabscore/core-geth/releases/tag/v1.12.13",
+            "updated": "2023-07-07T21:34:15Z",
+            "updated_parsed": [
+                2023,
+                7,
+                7,
+                21,
+                34,
+                15,
+                4,
+                188,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/etclabscore/core-geth/releases/tag/v1.12.13"
+                }
+            ],
+            "title": "Alcyone (v1.12.13)",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "Alcyone (v1.12.13)"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>This release merges upstream up to <a href=\"https://github.com/ethereum/go-ethereum/tree/v1.12.0\">ethereum/go-ethereum@v1.12.0</a>.</p>\n<h1>What's Changed</h1>\n<ul>\n<li>\n<p>Merge ethereum/go-ethereum release <a href=\"https://github.com/ethereum/go-ethereum/releases/tag/v1.12.0\">v1.12.0</a>. <a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/551\">#551</a></p>\n</li>\n<li>\n<p>Drops Kotti chain support. <a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/552\">#552</a></p>\n<blockquote>\n<p>for syncing with Kotti, <a href=\"https://github.com/etclabscore/core-geth/releases/tag/v1.12.12\">v1.12.12</a> can be used. In advance, this <a href=\"https://github.com/etclabscore/core-geth/releases/tag/v1.12.13\">v1.12.13</a> can also be used by importing Kotti genesis in advance of syncing.</p>\n</blockquote>\n</li>\n</ul>\n<h1>Highlights</h1>\n<ul>\n<li>In this merge we had to revert the changes made upstream with regards proof-of-work removal.</li>\n<li>core-geth defaults to use <strong>Pebble</strong> as a backend if no existing database is found (<a class=\"issue-link js-issue-link\" href=\"https://github.com/ethereum/go-ethereum/pull/27136\">ethereum/go-ethereum#27136</a>). If a previous LevelDB database exists core-geth will keep using that, and if you must have LevelDB for some compatibility reasons, you can force it in Geth with the <code>--db.engine=leveldb</code> flag.</li>\n</ul>\n<hr />\n<p>Comparison with last release: <a href=\"https://github.com/etclabscore/core-geth/compare/v1.12.12..v1.12.13\">v1.12.12..v1.12.13</a><br />\nDocker images published under <a href=\"https://hub.docker.com/r/etclabscore/core-geth/builds\" rel=\"nofollow\">etclabscore/core-geth</a>.</p>"
+                }
+            ],
+            "summary": "<p>This release merges upstream up to <a href=\"https://github.com/ethereum/go-ethereum/tree/v1.12.0\">ethereum/go-ethereum@v1.12.0</a>.</p>\n<h1>What's Changed</h1>\n<ul>\n<li>\n<p>Merge ethereum/go-ethereum release <a href=\"https://github.com/ethereum/go-ethereum/releases/tag/v1.12.0\">v1.12.0</a>. <a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/551\">#551</a></p>\n</li>\n<li>\n<p>Drops Kotti chain support. <a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/552\">#552</a></p>\n<blockquote>\n<p>for syncing with Kotti, <a href=\"https://github.com/etclabscore/core-geth/releases/tag/v1.12.12\">v1.12.12</a> can be used. In advance, this <a href=\"https://github.com/etclabscore/core-geth/releases/tag/v1.12.13\">v1.12.13</a> can also be used by importing Kotti genesis in advance of syncing.</p>\n</blockquote>\n</li>\n</ul>\n<h1>Highlights</h1>\n<ul>\n<li>In this merge we had to revert the changes made upstream with regards proof-of-work removal.</li>\n<li>core-geth defaults to use <strong>Pebble</strong> as a backend if no existing database is found (<a class=\"issue-link js-issue-link\" href=\"https://github.com/ethereum/go-ethereum/pull/27136\">ethereum/go-ethereum#27136</a>). If a previous LevelDB database exists core-geth will keep using that, and if you must have LevelDB for some compatibility reasons, you can force it in Geth with the <code>--db.engine=leveldb</code> flag.</li>\n</ul>\n<hr />\n<p>Comparison with last release: <a href=\"https://github.com/etclabscore/core-geth/compare/v1.12.12..v1.12.13\">v1.12.12..v1.12.13</a><br />\nDocker images published under <a href=\"https://hub.docker.com/r/etclabscore/core-geth/builds\" rel=\"nofollow\">etclabscore/core-geth</a>.</p>",
+            "authors": [
+                {
+                    "name": "github-actions[bot]"
+                }
+            ],
+            "author_detail": {
+                "name": "github-actions[bot]"
+            },
+            "author": "github-actions[bot]",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/in/15368?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/241638997/v1.12.12",
+            "guidislink": true,
+            "link": "https://github.com/etclabscore/core-geth/releases/tag/v1.12.12",
+            "updated": "2023-05-30T14:33:09Z",
+            "updated_parsed": [
+                2023,
+                5,
+                30,
+                14,
+                33,
+                9,
+                1,
+                150,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/etclabscore/core-geth/releases/tag/v1.12.12"
+                }
+            ],
+            "title": "Ariadne (v1.12.12)",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "Ariadne (v1.12.12)"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>This is a security release of Core-Geth, addressing the <em>Ghost-128 SNaP</em> attack strategy described by <a href=\"https://twitter.com/kennyog/status/1658057298634309638\" rel=\"nofollow\">Paterson and Taverna</a>. See also <a href=\"https://etccooperative.org/posts/2023-05-15-addressing-practical-attacks-on-core-geth-synchronising-nodes-by-taverna-and-paterson-en\" rel=\"nofollow\">ETC Coop's blog post</a>. We encourage all users to upgrade to this version to reduce risk while synchronizing with the default <code>--syncmode=snap</code> strategy.</p>\n<h1>What's Changed</h1>\n<ul>\n<li>Merge ethereum/go-ethereum release <a href=\"https://github.com/ethereum/go-ethereum/releases/tag/v1.11.6\">v1.11.6</a> <a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/538\">#538</a></li>\n<li>Ghost-128 security patch <a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/544\">#544</a></li>\n</ul>\n<hr />\n<p>Comparison with last release: <a href=\"https://github.com/etclabscore/core-geth/compare/v1.12.11..v1.12.12\">v1.12.11..v1.12.12</a><br />\nDocker images published under <a href=\"https://hub.docker.com/r/etclabscore/core-geth/builds\" rel=\"nofollow\">etclabscore/core-geth</a>.</p>"
+                }
+            ],
+            "summary": "<p>This is a security release of Core-Geth, addressing the <em>Ghost-128 SNaP</em> attack strategy described by <a href=\"https://twitter.com/kennyog/status/1658057298634309638\" rel=\"nofollow\">Paterson and Taverna</a>. See also <a href=\"https://etccooperative.org/posts/2023-05-15-addressing-practical-attacks-on-core-geth-synchronising-nodes-by-taverna-and-paterson-en\" rel=\"nofollow\">ETC Coop's blog post</a>. We encourage all users to upgrade to this version to reduce risk while synchronizing with the default <code>--syncmode=snap</code> strategy.</p>\n<h1>What's Changed</h1>\n<ul>\n<li>Merge ethereum/go-ethereum release <a href=\"https://github.com/ethereum/go-ethereum/releases/tag/v1.11.6\">v1.11.6</a> <a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/538\">#538</a></li>\n<li>Ghost-128 security patch <a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/544\">#544</a></li>\n</ul>\n<hr />\n<p>Comparison with last release: <a href=\"https://github.com/etclabscore/core-geth/compare/v1.12.11..v1.12.12\">v1.12.11..v1.12.12</a><br />\nDocker images published under <a href=\"https://hub.docker.com/r/etclabscore/core-geth/builds\" rel=\"nofollow\">etclabscore/core-geth</a>.</p>",
+            "authors": [
+                {
+                    "name": "github-actions[bot]"
+                }
+            ],
+            "author_detail": {
+                "name": "github-actions[bot]"
+            },
+            "author": "github-actions[bot]",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/in/15368?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/241638997/v1.12.11",
+            "guidislink": true,
+            "link": "https://github.com/etclabscore/core-geth/releases/tag/v1.12.11",
+            "updated": "2023-05-17T12:51:54Z",
+            "updated_parsed": [
+                2023,
+                5,
+                17,
+                12,
+                51,
+                54,
+                2,
+                137,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/etclabscore/core-geth/releases/tag/v1.12.11"
+                }
+            ],
+            "title": "Iris (v1.12.11)",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "Iris (v1.12.11)"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>This is a security release of Geth, addressing the <em>SNaP</em> attack strategy described by <a href=\"https://twitter.com/kennyog/status/1658057298634309638\" rel=\"nofollow\">Paterson and Taverna</a>. See also <a href=\"https://etccooperative.org/posts/2023-05-15-addressing-practical-attacks-on-core-geth-synchronising-nodes-by-taverna-and-paterson-en\" rel=\"nofollow\">ETC Coop's blog post</a>.<br />\nMerging upstream through <a href=\"https://github.com/ethereum/go-ethereum/tree/v1.11.5\">ethereum/go-ethereum@v1.11.5</a>, this release also includes a security patch related to the transaction pool (<a href=\"https://github.com/ethereum/go-ethereum/releases/tag/v1.11.4\">v1.11.4</a>).</p>\n<h2>What's Changed</h2>\n<ul>\n<li>Merge ethereum/go-ethereum release <a href=\"https://github.com/ethereum/go-ethereum/releases/tag/v1.11.5\">v1.11.5</a> <a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/531\">#531</a></li>\n<li>PRNG used for header validation in snap sync uses a secure random library</li>\n<li>Remove additional core-geth configuration data types <a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/535\">#535</a></li>\n</ul>\n<h2>Highlights</h2>\n<ul>\n<li>eth/68 is the new best-default protocol</li>\n<li>2 <code>debug_</code> API methods gone, 4 new ones introduced.</li>\n<li>Added support for <strong>Pebble DB</strong></li>\n<li><code>personal</code> API is hashly deprecated, requiring opt-back-in with <code>--rpc.enabledeprecatedpersonal</code>.</li>\n<li>Removed iOS and Android builds.</li>\n<li><code>miner.etherbase</code> must now be explicitly specified.</li>\n</ul>\n<hr />\n<p>Comparison with last release: <a href=\"https://github.com/etclabscore/core-geth/compare/v1.12.10..v1.12.11\">v1.12.10..v1.12.11</a><br />\nDocker images published under <a href=\"https://hub.docker.com/r/etclabscore/core-geth/builds\" rel=\"nofollow\">etclabscore/core-geth</a>.</p>"
+                }
+            ],
+            "summary": "<p>This is a security release of Geth, addressing the <em>SNaP</em> attack strategy described by <a href=\"https://twitter.com/kennyog/status/1658057298634309638\" rel=\"nofollow\">Paterson and Taverna</a>. See also <a href=\"https://etccooperative.org/posts/2023-05-15-addressing-practical-attacks-on-core-geth-synchronising-nodes-by-taverna-and-paterson-en\" rel=\"nofollow\">ETC Coop's blog post</a>.<br />\nMerging upstream through <a href=\"https://github.com/ethereum/go-ethereum/tree/v1.11.5\">ethereum/go-ethereum@v1.11.5</a>, this release also includes a security patch related to the transaction pool (<a href=\"https://github.com/ethereum/go-ethereum/releases/tag/v1.11.4\">v1.11.4</a>).</p>\n<h2>What's Changed</h2>\n<ul>\n<li>Merge ethereum/go-ethereum release <a href=\"https://github.com/ethereum/go-ethereum/releases/tag/v1.11.5\">v1.11.5</a> <a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/531\">#531</a></li>\n<li>PRNG used for header validation in snap sync uses a secure random library</li>\n<li>Remove additional core-geth configuration data types <a class=\"issue-link js-issue-link\" href=\"https://github.com/etclabscore/core-geth/pull/535\">#535</a></li>\n</ul>\n<h2>Highlights</h2>\n<ul>\n<li>eth/68 is the new best-default protocol</li>\n<li>2 <code>debug_</code> API methods gone, 4 new ones introduced.</li>\n<li>Added support for <strong>Pebble DB</strong></li>\n<li><code>personal</code> API is hashly deprecated, requiring opt-back-in with <code>--rpc.enabledeprecatedpersonal</code>.</li>\n<li>Removed iOS and Android builds.</li>\n<li><code>miner.etherbase</code> must now be explicitly specified.</li>\n</ul>\n<hr />\n<p>Comparison with last release: <a href=\"https://github.com/etclabscore/core-geth/compare/v1.12.10..v1.12.11\">v1.12.10..v1.12.11</a><br />\nDocker images published under <a href=\"https://hub.docker.com/r/etclabscore/core-geth/builds\" rel=\"nofollow\">etclabscore/core-geth</a>.</p>",
+            "authors": [
+                {
+                    "name": "ziogaschr"
+                }
+            ],
+            "author_detail": {
+                "name": "ziogaschr"
+            },
+            "author": "ziogaschr",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/802700?s=60&v=4"
+                }
+            ],
+            "href": ""
+        }
+    ],
+    "feed": {
+        "language": "en-US",
+        "id": "tag:github.com,2008:https://github.com/etclabscore/core-geth/releases",
+        "guidislink": true,
+        "link": "https://github.com/etclabscore/core-geth/releases",
+        "links": [
+            {
+                "type": "text/html",
+                "rel": "alternate",
+                "href": "https://github.com/etclabscore/core-geth/releases"
+            },
+            {
+                "type": "application/atom+xml",
+                "rel": "self",
+                "href": "https://github.com/etclabscore/core-geth/releases.atom"
+            }
+        ],
+        "title": "Release notes from core-geth",
+        "title_detail": {
+            "type": "text/plain",
+            "language": "en-US",
+            "base": "",
+            "value": "Release notes from core-geth"
+        },
+        "updated": "2024-06-10T13:57:46Z",
+        "updated_parsed": [
+            2024,
+            6,
+            10,
+            13,
+            57,
+            46,
+            0,
+            162,
+            0
+        ]
+    },
+    "headers": {},
+    "encoding": "utf-8",
+    "version": "atom10",
+    "namespaces": {
+        "": "http://www.w3.org/2005/Atom",
+        "media": "http://search.yahoo.com/mrss/"
+    }
+}

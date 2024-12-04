@@ -1,0 +1,619 @@
+{
+    "bozo": false,
+    "entries": [
+        {
+            "id": "tag:github.com,2008:Repository/238316466/v0.13.9-rc.1",
+            "guidislink": true,
+            "link": "https://github.com/ava-labs/coreth/releases/tag/v0.13.9-rc.1",
+            "updated": "2024-11-15T21:01:15Z",
+            "updated_parsed": [
+                2024,
+                11,
+                15,
+                21,
+                1,
+                15,
+                4,
+                320,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/ava-labs/coreth/releases/tag/v0.13.9-rc.1"
+                }
+            ],
+            "title": "v0.13.9-rc.1",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v0.13.9-rc.1"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>bump avago to v1.11.13-rc.0 (<a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/688\">#688</a>)</p>"
+                }
+            ],
+            "summary": "<p>bump avago to v1.11.13-rc.0 (<a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/688\">#688</a>)</p>",
+            "authors": [
+                {
+                    "name": "ceyonur"
+                }
+            ],
+            "author_detail": {
+                "name": "ceyonur"
+            },
+            "author": "ceyonur",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/18367708?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/238316466/v0.13.9-rc.0",
+            "guidislink": true,
+            "link": "https://github.com/ava-labs/coreth/releases/tag/v0.13.9-rc.0",
+            "updated": "2024-11-13T22:42:19Z",
+            "updated_parsed": [
+                2024,
+                11,
+                13,
+                22,
+                42,
+                19,
+                2,
+                318,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/ava-labs/coreth/releases/tag/v0.13.9-rc.0"
+                }
+            ],
+            "title": "v0.13.9-rc.0",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v0.13.9-rc.0"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>sync subnet-evm to 981830ed + avalanchego v1.12.0-initial-poc.9 (<a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/686\">#686</a>)</p>"
+                }
+            ],
+            "summary": "<p>sync subnet-evm to 981830ed + avalanchego v1.12.0-initial-poc.9 (<a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/686\">#686</a>)</p>",
+            "authors": [
+                {
+                    "name": "darioush"
+                }
+            ],
+            "author_detail": {
+                "name": "darioush"
+            },
+            "author": "darioush",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/4575758?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/238316466/v0.13.8",
+            "guidislink": true,
+            "link": "https://github.com/ava-labs/coreth/releases/tag/v0.13.8",
+            "updated": "2024-09-18T22:29:20Z",
+            "updated_parsed": [
+                2024,
+                9,
+                18,
+                22,
+                29,
+                20,
+                2,
+                262,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/ava-labs/coreth/releases/tag/v0.13.8"
+                }
+            ],
+            "title": "v0.13.8",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v0.13.8"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<h2>What's Changed</h2>\n<ul>\n<li>eupgrade: lowering the base fee by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/604\">#604</a></li>\n<li>eupgrade/cancun: verify no blobs in header by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/611\">#611</a></li>\n<li>enables cancun at EUpgrade by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/610\">#610</a></li>\n<li>nits, update comments by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/617\">#617</a></li>\n<li>fix: use <code>avalanchego</code> new <code>*test</code> packages by <a class=\"user-mention notranslate\" href=\"https://github.com/ARR4N\">@ARR4N</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/620\">#620</a></li>\n<li>Supports ACP-118 messages (code sync from subnet-evm) by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/624\">#624</a></li>\n<li>chore: fix some function names by <a class=\"user-mention notranslate\" href=\"https://github.com/highcloudwind\">@highcloudwind</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/625\">#625</a></li>\n<li>Refactor upgrade schedule by <a class=\"user-mention notranslate\" href=\"https://github.com/aaronbuchwald\">@aaronbuchwald</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/613\">#613</a></li>\n<li>Allow local chains to specify their own config by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/627\">#627</a></li>\n<li>fix TestMempoolEthTxsAppGossipHandling by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/629\">#629</a></li>\n<li>Fix test tags by <a class=\"user-mention notranslate\" href=\"https://github.com/ceyonur\">@ceyonur</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/631\">#631</a></li>\n<li>rename etna by <a class=\"user-mention notranslate\" href=\"https://github.com/ceyonur\">@ceyonur</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/632\">#632</a></li>\n<li>get upgrade configs from context by <a class=\"user-mention notranslate\" href=\"https://github.com/ceyonur\">@ceyonur</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/630\">#630</a></li>\n<li>Refactor params config by <a class=\"user-mention notranslate\" href=\"https://github.com/ceyonur\">@ceyonur</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/634\">#634</a></li>\n<li>remove cross-chain handlers by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/628\">#628</a></li>\n<li>Upgrade configs use ctx by <a class=\"user-mention notranslate\" href=\"https://github.com/ceyonur\">@ceyonur</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/635\">#635</a></li>\n<li>gh actions: add skeleton for sync-subnet-evm-branch by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/639\">#639</a></li>\n<li>Remove memsize by <a class=\"user-mention notranslate\" href=\"https://github.com/yacovm\">@yacovm</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/642\">#642</a></li>\n<li>Sync to changes in subnet-evm up to 252592ae by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/645\">#645</a></li>\n<li>mempool: inline call to has by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/646\">#646</a></li>\n<li>geth update to v1.13.14 by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/633\">#633</a></li>\n<li>fix modifying common.Big1 by <a class=\"user-mention notranslate\" href=\"https://github.com/ceyonur\">@ceyonur</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/649\">#649</a></li>\n<li>prepare v0.13.8 by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/654\">#654</a></li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/ARR4N\">@ARR4N</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/620\">#620</a></li>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/highcloudwind\">@highcloudwind</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/625\">#625</a></li>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/yacovm\">@yacovm</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/642\">#642</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/ava-labs/coreth/compare/v0.13.7...v0.13.8\"><tt>v0.13.7...v0.13.8</tt></a></p>"
+                }
+            ],
+            "summary": "<h2>What's Changed</h2>\n<ul>\n<li>eupgrade: lowering the base fee by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/604\">#604</a></li>\n<li>eupgrade/cancun: verify no blobs in header by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/611\">#611</a></li>\n<li>enables cancun at EUpgrade by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/610\">#610</a></li>\n<li>nits, update comments by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/617\">#617</a></li>\n<li>fix: use <code>avalanchego</code> new <code>*test</code> packages by <a class=\"user-mention notranslate\" href=\"https://github.com/ARR4N\">@ARR4N</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/620\">#620</a></li>\n<li>Supports ACP-118 messages (code sync from subnet-evm) by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/624\">#624</a></li>\n<li>chore: fix some function names by <a class=\"user-mention notranslate\" href=\"https://github.com/highcloudwind\">@highcloudwind</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/625\">#625</a></li>\n<li>Refactor upgrade schedule by <a class=\"user-mention notranslate\" href=\"https://github.com/aaronbuchwald\">@aaronbuchwald</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/613\">#613</a></li>\n<li>Allow local chains to specify their own config by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/627\">#627</a></li>\n<li>fix TestMempoolEthTxsAppGossipHandling by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/629\">#629</a></li>\n<li>Fix test tags by <a class=\"user-mention notranslate\" href=\"https://github.com/ceyonur\">@ceyonur</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/631\">#631</a></li>\n<li>rename etna by <a class=\"user-mention notranslate\" href=\"https://github.com/ceyonur\">@ceyonur</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/632\">#632</a></li>\n<li>get upgrade configs from context by <a class=\"user-mention notranslate\" href=\"https://github.com/ceyonur\">@ceyonur</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/630\">#630</a></li>\n<li>Refactor params config by <a class=\"user-mention notranslate\" href=\"https://github.com/ceyonur\">@ceyonur</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/634\">#634</a></li>\n<li>remove cross-chain handlers by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/628\">#628</a></li>\n<li>Upgrade configs use ctx by <a class=\"user-mention notranslate\" href=\"https://github.com/ceyonur\">@ceyonur</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/635\">#635</a></li>\n<li>gh actions: add skeleton for sync-subnet-evm-branch by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/639\">#639</a></li>\n<li>Remove memsize by <a class=\"user-mention notranslate\" href=\"https://github.com/yacovm\">@yacovm</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/642\">#642</a></li>\n<li>Sync to changes in subnet-evm up to 252592ae by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/645\">#645</a></li>\n<li>mempool: inline call to has by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/646\">#646</a></li>\n<li>geth update to v1.13.14 by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/633\">#633</a></li>\n<li>fix modifying common.Big1 by <a class=\"user-mention notranslate\" href=\"https://github.com/ceyonur\">@ceyonur</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/649\">#649</a></li>\n<li>prepare v0.13.8 by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/654\">#654</a></li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/ARR4N\">@ARR4N</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/620\">#620</a></li>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/highcloudwind\">@highcloudwind</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/625\">#625</a></li>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/yacovm\">@yacovm</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/642\">#642</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/ava-labs/coreth/compare/v0.13.7...v0.13.8\"><tt>v0.13.7...v0.13.8</tt></a></p>",
+            "authors": [
+                {
+                    "name": "darioush"
+                }
+            ],
+            "author_detail": {
+                "name": "darioush"
+            },
+            "author": "darioush",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/4575758?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/238316466/v0.13.8-fix-genesis-upgrade",
+            "guidislink": true,
+            "link": "https://github.com/ava-labs/coreth/releases/tag/v0.13.8-fix-genesis-upgrade",
+            "updated": "2024-08-08T15:14:52Z",
+            "updated_parsed": [
+                2024,
+                8,
+                8,
+                15,
+                14,
+                52,
+                3,
+                221,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/ava-labs/coreth/releases/tag/v0.13.8-fix-genesis-upgrade"
+                }
+            ],
+            "title": "v0.13.8-fix-genesis-upgrade",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v0.13.8-fix-genesis-upgrade"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>Allow local chains to specify their own config (<a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/627\">#627</a>)</p>"
+                }
+            ],
+            "summary": "<p>Allow local chains to specify their own config (<a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/627\">#627</a>)</p>",
+            "authors": [
+                {
+                    "name": "darioush"
+                }
+            ],
+            "author_detail": {
+                "name": "darioush"
+            },
+            "author": "darioush",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/4575758?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/238316466/remove-crosschain-coreth",
+            "guidislink": true,
+            "link": "https://github.com/ava-labs/coreth/releases/tag/remove-crosschain-coreth",
+            "updated": "2024-08-08T16:08:39Z",
+            "updated_parsed": [
+                2024,
+                8,
+                8,
+                16,
+                8,
+                39,
+                3,
+                221,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/ava-labs/coreth/releases/tag/remove-crosschain-coreth"
+                }
+            ],
+            "title": "remove-crosschain-coreth",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "remove-crosschain-coreth"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>remove cross-chain handlers</p>"
+                }
+            ],
+            "summary": "<p>remove cross-chain handlers</p>",
+            "authors": [
+                {
+                    "name": "darioush"
+                }
+            ],
+            "author_detail": {
+                "name": "darioush"
+            },
+            "author": "darioush",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/4575758?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/238316466/v0.13.7-acp-118-handlers",
+            "guidislink": true,
+            "link": "https://github.com/ava-labs/coreth/releases/tag/v0.13.7-acp-118-handlers",
+            "updated": "2024-08-07T14:07:06Z",
+            "updated_parsed": [
+                2024,
+                8,
+                7,
+                14,
+                7,
+                6,
+                2,
+                220,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/ava-labs/coreth/releases/tag/v0.13.7-acp-118-handlers"
+                }
+            ],
+            "title": "v0.13.7-acp-118-handlers",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v0.13.7-acp-118-handlers"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>Supports ACP-118 messages (code sync from subnet-evm) (<a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/624\">#624</a>)</p>"
+                }
+            ],
+            "summary": "<p>Supports ACP-118 messages (code sync from subnet-evm) (<a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/624\">#624</a>)</p>",
+            "authors": [
+                {
+                    "name": "darioush"
+                }
+            ],
+            "author_detail": {
+                "name": "darioush"
+            },
+            "author": "darioush",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/4575758?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/238316466/with-avalanchego-test-pkg",
+            "guidislink": true,
+            "link": "https://github.com/ava-labs/coreth/releases/tag/with-avalanchego-test-pkg",
+            "updated": "2024-08-01T12:39:01Z",
+            "updated_parsed": [
+                2024,
+                8,
+                1,
+                12,
+                39,
+                1,
+                3,
+                214,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/ava-labs/coreth/releases/tag/with-avalanchego-test-pkg"
+                }
+            ],
+            "title": "with-avalanchego-test-pkg",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "with-avalanchego-test-pkg"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>The introduction of <code>*test</code> packages in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3238\">ava-labs/avalanchego#3238</a> bre…</p>"
+                }
+            ],
+            "summary": "<p>The introduction of <code>*test</code> packages in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/avalanchego/pull/3238\">ava-labs/avalanchego#3238</a> bre…</p>",
+            "authors": [
+                {
+                    "name": "ARR4N"
+                }
+            ],
+            "author_detail": {
+                "name": "ARR4N"
+            },
+            "author": "ARR4N",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/519948?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/238316466/v0.13.7",
+            "guidislink": true,
+            "link": "https://github.com/ava-labs/coreth/releases/tag/v0.13.7",
+            "updated": "2024-07-23T19:31:54Z",
+            "updated_parsed": [
+                2024,
+                7,
+                23,
+                19,
+                31,
+                54,
+                1,
+                205,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/ava-labs/coreth/releases/tag/v0.13.7"
+                }
+            ],
+            "title": "v0.13.7",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v0.13.7"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<h2>What's Changed</h2>\n<ul>\n<li>Update to latest p2p API by <a class=\"user-mention notranslate\" href=\"https://github.com/joshua-kim\">@joshua-kim</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/594\">#594</a></li>\n<li>bump avalanchego to v1.11.10-rc.0 by <a class=\"user-mention notranslate\" href=\"https://github.com/ceyonur\">@ceyonur</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/596\">#596</a></li>\n<li>Fix VM.GetBlockIDAtHeight by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/595\">#595</a></li>\n<li>[ci] Add actionlint job by <a class=\"user-mention notranslate\" href=\"https://github.com/marun\">@marun</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/598\">#598</a></li>\n<li>Remove block.Status by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/593\">#593</a></li>\n<li>eupgrade: base definitions by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/603\">#603</a></li>\n<li>Use <code>avax.GetAtomicUTXOs</code> by <a class=\"user-mention notranslate\" href=\"https://github.com/dhrubabasu\">@dhrubabasu</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/606\">#606</a></li>\n<li>Update avalanchego v1.11.10 prerelease by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/607\">#607</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/ava-labs/coreth/compare/v0.13.6-rc.1...v0.13.7\"><tt>v0.13.6-rc.1...v0.13.7</tt></a></p>"
+                }
+            ],
+            "summary": "<h2>What's Changed</h2>\n<ul>\n<li>Update to latest p2p API by <a class=\"user-mention notranslate\" href=\"https://github.com/joshua-kim\">@joshua-kim</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/594\">#594</a></li>\n<li>bump avalanchego to v1.11.10-rc.0 by <a class=\"user-mention notranslate\" href=\"https://github.com/ceyonur\">@ceyonur</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/596\">#596</a></li>\n<li>Fix VM.GetBlockIDAtHeight by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/595\">#595</a></li>\n<li>[ci] Add actionlint job by <a class=\"user-mention notranslate\" href=\"https://github.com/marun\">@marun</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/598\">#598</a></li>\n<li>Remove block.Status by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/593\">#593</a></li>\n<li>eupgrade: base definitions by <a class=\"user-mention notranslate\" href=\"https://github.com/darioush\">@darioush</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/603\">#603</a></li>\n<li>Use <code>avax.GetAtomicUTXOs</code> by <a class=\"user-mention notranslate\" href=\"https://github.com/dhrubabasu\">@dhrubabasu</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/606\">#606</a></li>\n<li>Update avalanchego v1.11.10 prerelease by <a class=\"user-mention notranslate\" href=\"https://github.com/StephenButtolph\">@StephenButtolph</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/ava-labs/coreth/pull/607\">#607</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/ava-labs/coreth/compare/v0.13.6-rc.1...v0.13.7\"><tt>v0.13.6-rc.1...v0.13.7</tt></a></p>",
+            "authors": [
+                {
+                    "name": "ceyonur"
+                }
+            ],
+            "author_detail": {
+                "name": "ceyonur"
+            },
+            "author": "ceyonur",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/18367708?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/238316466/v0.13.7-rc.0",
+            "guidislink": true,
+            "link": "https://github.com/ava-labs/coreth/releases/tag/v0.13.7-rc.0",
+            "updated": "2024-07-22T20:13:47Z",
+            "updated_parsed": [
+                2024,
+                7,
+                22,
+                20,
+                13,
+                47,
+                0,
+                204,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/ava-labs/coreth/releases/tag/v0.13.7-rc.0"
+                }
+            ],
+            "title": "v0.13.7-rc.0: eupgrade: base definitions (#603)",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v0.13.7-rc.0: eupgrade: base definitions (#603)"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<ul>\n<li>\n<p>eupgrade: base definitions</p>\n</li>\n<li>\n<p>updates</p>\n</li>\n<li>\n<p>nit: consistently use EUpgrade for replace later</p>\n</li>\n<li>\n<p>update test configs</p>\n</li>\n<li>\n<p>refactor json genesis specs in vm_test.go</p>\n</li>\n<li>\n<p>Update params/config.go</p>\n</li>\n</ul>\n<p>Signed-off-by: Darioush Jalali <a href=\"mailto:darioush.jalali@avalabs.org\">darioush.jalali@avalabs.org</a></p>\n<hr />\n<p>Signed-off-by: Darioush Jalali <a href=\"mailto:darioush.jalali@avalabs.org\">darioush.jalali@avalabs.org</a></p>"
+                }
+            ],
+            "summary": "<ul>\n<li>\n<p>eupgrade: base definitions</p>\n</li>\n<li>\n<p>updates</p>\n</li>\n<li>\n<p>nit: consistently use EUpgrade for replace later</p>\n</li>\n<li>\n<p>update test configs</p>\n</li>\n<li>\n<p>refactor json genesis specs in vm_test.go</p>\n</li>\n<li>\n<p>Update params/config.go</p>\n</li>\n</ul>\n<p>Signed-off-by: Darioush Jalali <a href=\"mailto:darioush.jalali@avalabs.org\">darioush.jalali@avalabs.org</a></p>\n<hr />\n<p>Signed-off-by: Darioush Jalali <a href=\"mailto:darioush.jalali@avalabs.org\">darioush.jalali@avalabs.org</a></p>",
+            "authors": [
+                {
+                    "name": "darioush"
+                }
+            ],
+            "author_detail": {
+                "name": "darioush"
+            },
+            "author": "darioush",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/4575758?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/238316466/v0.13.7-remove-status",
+            "guidislink": true,
+            "link": "https://github.com/ava-labs/coreth/releases/tag/v0.13.7-remove-status",
+            "updated": "2024-07-05T19:34:24Z",
+            "updated_parsed": [
+                2024,
+                7,
+                5,
+                19,
+                34,
+                24,
+                4,
+                187,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/ava-labs/coreth/releases/tag/v0.13.7-remove-status"
+                }
+            ],
+            "title": "v0.13.7-remove-status",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v0.13.7-remove-status"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>merged</p>"
+                }
+            ],
+            "summary": "<p>merged</p>",
+            "authors": [
+                {
+                    "name": "StephenButtolph"
+                }
+            ],
+            "author_detail": {
+                "name": "StephenButtolph"
+            },
+            "author": "StephenButtolph",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/22109487?s=60&v=4"
+                }
+            ],
+            "href": ""
+        }
+    ],
+    "feed": {
+        "language": "en-US",
+        "id": "tag:github.com,2008:https://github.com/ava-labs/coreth/releases",
+        "guidislink": true,
+        "link": "https://github.com/ava-labs/coreth/releases",
+        "links": [
+            {
+                "type": "text/html",
+                "rel": "alternate",
+                "href": "https://github.com/ava-labs/coreth/releases"
+            },
+            {
+                "type": "application/atom+xml",
+                "rel": "self",
+                "href": "https://github.com/ava-labs/coreth/releases.atom"
+            }
+        ],
+        "title": "Release notes from coreth",
+        "title_detail": {
+            "type": "text/plain",
+            "language": "en-US",
+            "base": "",
+            "value": "Release notes from coreth"
+        },
+        "updated": "2024-11-15T21:01:15Z",
+        "updated_parsed": [
+            2024,
+            11,
+            15,
+            21,
+            1,
+            15,
+            4,
+            320,
+            0
+        ]
+    },
+    "headers": {},
+    "encoding": "utf-8",
+    "version": "atom10",
+    "namespaces": {
+        "": "http://www.w3.org/2005/Atom",
+        "media": "http://search.yahoo.com/mrss/"
+    }
+}

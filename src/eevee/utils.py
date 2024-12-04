@@ -26,3 +26,8 @@ def load_yaml(f: str | Path) -> Any:
 def load_json(f: str | Path) -> Any:
     with open(f) as fp:
         return json.load(fp)
+
+
+def save_json(obj: Any, f: str | Path) -> None:
+    with open(f, "w", encoding="utf-8") as fp:
+        json.dump(obj, fp, indent=4, ensure_ascii=False)

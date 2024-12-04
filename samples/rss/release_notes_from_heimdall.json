@@ -1,0 +1,619 @@
+{
+    "bozo": false,
+    "entries": [
+        {
+            "id": "tag:github.com,2008:Repository/155697390/v1.1.0-beta",
+            "guidislink": true,
+            "link": "https://github.com/maticnetwork/heimdall/releases/tag/v1.1.0-beta",
+            "updated": "2024-11-27T07:28:44Z",
+            "updated_parsed": [
+                2024,
+                11,
+                27,
+                7,
+                28,
+                44,
+                2,
+                332,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/maticnetwork/heimdall/releases/tag/v1.1.0-beta"
+                }
+            ],
+            "title": "v1.1.0-beta",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.1.0-beta"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>This release primarily contains :</p>\n<ul>\n<li>Changes proposed in <a href=\"https://forum.polygon.technology/t/pip-52-execution-derived-randomness-for-producer-selection/20193\" rel=\"nofollow\">PIP-52</a> which will be activated by the <code>Jorvik</code> <strong>hardfork</strong> on <strong>amoy testnet</strong>.</li>\n<li>Enabling of GRPC communication between heimdall and bor.</li>\n<li>Optimizations for exporting app module state.</li>\n<li>Bug fixes as usual.</li>\n</ul>\n<h2>What's Changed</h2>\n<ul>\n<li>Docs fix spelling issues by <a class=\"user-mention notranslate\" href=\"https://github.com/nnsW3\">@nnsW3</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1194\">#1194</a></li>\n<li>Optimization of export genesis command by <a class=\"user-mention notranslate\" href=\"https://github.com/avalkov\">@avalkov</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1195\">#1195</a></li>\n<li>Limit bytes during response body read / NPE fix by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1202\">#1202</a></li>\n<li>Implement gRPC bidirectional communication between heimdall and bor by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1203\">#1203</a></li>\n<li>Enhance GetBridgeDBInstance: Add Error Handling for LevelDB Initialization by <a class=\"user-mention notranslate\" href=\"https://github.com/vinayak0035\">@vinayak0035</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1201\">#1201</a></li>\n<li>gRPC edge cases by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1204\">#1204</a></li>\n<li>Fix DefaultBorGRPCUrl by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1205\">#1205</a></li>\n<li>Fix gRPC test due to new encoding by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1206\">#1206</a></li>\n<li>Change parameters for bor producer selection algorithm by <a class=\"user-mention notranslate\" href=\"https://github.com/Raneet10\">@Raneet10</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1208\">#1208</a></li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/nnsW3\">@nnsW3</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1194\">#1194</a></li>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/avalkov\">@avalkov</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1195\">#1195</a></li>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/vinayak0035\">@vinayak0035</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1201\">#1201</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/heimdall/compare/v1.0.10...v1.1.0-beta\"><tt>v1.0.10...v1.1.0-beta</tt></a></p>"
+                }
+            ],
+            "summary": "<p>This release primarily contains :</p>\n<ul>\n<li>Changes proposed in <a href=\"https://forum.polygon.technology/t/pip-52-execution-derived-randomness-for-producer-selection/20193\" rel=\"nofollow\">PIP-52</a> which will be activated by the <code>Jorvik</code> <strong>hardfork</strong> on <strong>amoy testnet</strong>.</li>\n<li>Enabling of GRPC communication between heimdall and bor.</li>\n<li>Optimizations for exporting app module state.</li>\n<li>Bug fixes as usual.</li>\n</ul>\n<h2>What's Changed</h2>\n<ul>\n<li>Docs fix spelling issues by <a class=\"user-mention notranslate\" href=\"https://github.com/nnsW3\">@nnsW3</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1194\">#1194</a></li>\n<li>Optimization of export genesis command by <a class=\"user-mention notranslate\" href=\"https://github.com/avalkov\">@avalkov</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1195\">#1195</a></li>\n<li>Limit bytes during response body read / NPE fix by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1202\">#1202</a></li>\n<li>Implement gRPC bidirectional communication between heimdall and bor by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1203\">#1203</a></li>\n<li>Enhance GetBridgeDBInstance: Add Error Handling for LevelDB Initialization by <a class=\"user-mention notranslate\" href=\"https://github.com/vinayak0035\">@vinayak0035</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1201\">#1201</a></li>\n<li>gRPC edge cases by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1204\">#1204</a></li>\n<li>Fix DefaultBorGRPCUrl by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1205\">#1205</a></li>\n<li>Fix gRPC test due to new encoding by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1206\">#1206</a></li>\n<li>Change parameters for bor producer selection algorithm by <a class=\"user-mention notranslate\" href=\"https://github.com/Raneet10\">@Raneet10</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1208\">#1208</a></li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/nnsW3\">@nnsW3</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1194\">#1194</a></li>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/avalkov\">@avalkov</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1195\">#1195</a></li>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/vinayak0035\">@vinayak0035</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1201\">#1201</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/heimdall/compare/v1.0.10...v1.1.0-beta\"><tt>v1.0.10...v1.1.0-beta</tt></a></p>",
+            "authors": [
+                {
+                    "name": "Raneet10"
+                }
+            ],
+            "author_detail": {
+                "name": "Raneet10"
+            },
+            "author": "Raneet10",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/35629432?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/155697390/v1.0.10",
+            "guidislink": true,
+            "link": "https://github.com/maticnetwork/heimdall/releases/tag/v1.0.10",
+            "updated": "2024-10-09T15:02:56Z",
+            "updated_parsed": [
+                2024,
+                10,
+                9,
+                15,
+                2,
+                56,
+                2,
+                283,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/maticnetwork/heimdall/releases/tag/v1.0.10"
+                }
+            ],
+            "title": "v1.0.10",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.0.10"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<h2>What's Changed</h2>\n<ul>\n<li>Fix typos by <a class=\"user-mention notranslate\" href=\"https://github.com/omahs\">@omahs</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1182\">#1182</a></li>\n<li>Refactored packager tooling, cleanup, shasums, etc. by <a class=\"user-mention notranslate\" href=\"https://github.com/djpolygon\">@djpolygon</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1185\">#1185</a></li>\n<li>Adding rpm packagers by <a class=\"user-mention notranslate\" href=\"https://github.com/djpolygon\">@djpolygon</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1187\">#1187</a></li>\n<li>Backport master to develop by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1190\">#1190</a></li>\n<li>v1.0.10 by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1191\">#1191</a></li>\n<li>chg: bump go in packager deb by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1192\">#1192</a></li>\n<li>bump go in packager deb by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1193\">#1193</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/heimdall/compare/v1.0.9...v1.0.10\"><tt>v1.0.9...v1.0.10</tt></a></p>"
+                }
+            ],
+            "summary": "<h2>What's Changed</h2>\n<ul>\n<li>Fix typos by <a class=\"user-mention notranslate\" href=\"https://github.com/omahs\">@omahs</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1182\">#1182</a></li>\n<li>Refactored packager tooling, cleanup, shasums, etc. by <a class=\"user-mention notranslate\" href=\"https://github.com/djpolygon\">@djpolygon</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1185\">#1185</a></li>\n<li>Adding rpm packagers by <a class=\"user-mention notranslate\" href=\"https://github.com/djpolygon\">@djpolygon</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1187\">#1187</a></li>\n<li>Backport master to develop by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1190\">#1190</a></li>\n<li>v1.0.10 by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1191\">#1191</a></li>\n<li>chg: bump go in packager deb by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1192\">#1192</a></li>\n<li>bump go in packager deb by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1193\">#1193</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/heimdall/compare/v1.0.9...v1.0.10\"><tt>v1.0.9...v1.0.10</tt></a></p>",
+            "authors": [
+                {
+                    "name": "marcello33"
+                }
+            ],
+            "author_detail": {
+                "name": "marcello33"
+            },
+            "author": "marcello33",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/19923858?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/155697390/v1.0.9",
+            "guidislink": true,
+            "link": "https://github.com/maticnetwork/heimdall/releases/tag/v1.0.9",
+            "updated": "2024-10-09T14:58:13Z",
+            "updated_parsed": [
+                2024,
+                10,
+                9,
+                14,
+                58,
+                13,
+                2,
+                283,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/maticnetwork/heimdall/releases/tag/v1.0.9"
+                }
+            ],
+            "title": "v1.0.9",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.0.9"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>This release contains some improvements and bug fixes.</p>\n<h2>What's Changed</h2>\n<ul>\n<li>Backport master to develop by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1168\">#1168</a></li>\n<li>Handle account sequence correctly in bridge by <a class=\"user-mention notranslate\" href=\"https://github.com/Raneet10\">@Raneet10</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1170\">#1170</a></li>\n<li>server: add status endpoint from tendermint by <a class=\"user-mention notranslate\" href=\"https://github.com/manav2401\">@manav2401</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1175\">#1175</a></li>\n<li>build(deps): bump github.com/rs/cors from 1.10.1 to 1.11.0 by <a class=\"user-mention notranslate\" href=\"https://github.com/dependabot\">@dependabot</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1176\">#1176</a></li>\n<li>bor: increase max limit for list span api by <a class=\"user-mention notranslate\" href=\"https://github.com/shohamc1\">@shohamc1</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1180\">#1180</a></li>\n<li>Update artifacts upload/download actions version by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1186\">#1186</a></li>\n<li>Return checkpoint IDs in <code>checkpoints/list</code> by <a class=\"user-mention notranslate\" href=\"https://github.com/shohamc1\">@shohamc1</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1183\">#1183</a></li>\n<li>bridge: selfheal bugfix for statusCheck condition by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1181\">#1181</a></li>\n<li>v1.0.9 by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1189\">#1189</a></li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/shohamc1\">@shohamc1</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1180\">#1180</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/heimdall/compare/v1.0.7...v1.0.9\"><tt>v1.0.7...v1.0.9</tt></a></p>"
+                }
+            ],
+            "summary": "<p>This release contains some improvements and bug fixes.</p>\n<h2>What's Changed</h2>\n<ul>\n<li>Backport master to develop by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1168\">#1168</a></li>\n<li>Handle account sequence correctly in bridge by <a class=\"user-mention notranslate\" href=\"https://github.com/Raneet10\">@Raneet10</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1170\">#1170</a></li>\n<li>server: add status endpoint from tendermint by <a class=\"user-mention notranslate\" href=\"https://github.com/manav2401\">@manav2401</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1175\">#1175</a></li>\n<li>build(deps): bump github.com/rs/cors from 1.10.1 to 1.11.0 by <a class=\"user-mention notranslate\" href=\"https://github.com/dependabot\">@dependabot</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1176\">#1176</a></li>\n<li>bor: increase max limit for list span api by <a class=\"user-mention notranslate\" href=\"https://github.com/shohamc1\">@shohamc1</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1180\">#1180</a></li>\n<li>Update artifacts upload/download actions version by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1186\">#1186</a></li>\n<li>Return checkpoint IDs in <code>checkpoints/list</code> by <a class=\"user-mention notranslate\" href=\"https://github.com/shohamc1\">@shohamc1</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1183\">#1183</a></li>\n<li>bridge: selfheal bugfix for statusCheck condition by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1181\">#1181</a></li>\n<li>v1.0.9 by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1189\">#1189</a></li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/shohamc1\">@shohamc1</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1180\">#1180</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/heimdall/compare/v1.0.7...v1.0.9\"><tt>v1.0.7...v1.0.9</tt></a></p>",
+            "authors": [
+                {
+                    "name": "marcello33"
+                }
+            ],
+            "author_detail": {
+                "name": "marcello33"
+            },
+            "author": "marcello33",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/19923858?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/155697390/v1.0.9-beta",
+            "guidislink": true,
+            "link": "https://github.com/maticnetwork/heimdall/releases/tag/v1.0.9-beta",
+            "updated": "2024-10-02T09:50:23Z",
+            "updated_parsed": [
+                2024,
+                10,
+                2,
+                9,
+                50,
+                23,
+                2,
+                276,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/maticnetwork/heimdall/releases/tag/v1.0.9-beta"
+                }
+            ],
+            "title": "v1.0.9-beta",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.0.9-beta"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<h2>What's Changed</h2>\n<ul>\n<li>Backport master to develop by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1168\">#1168</a></li>\n<li>Handle account sequence correctly in bridge by <a class=\"user-mention notranslate\" href=\"https://github.com/Raneet10\">@Raneet10</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1170\">#1170</a></li>\n<li>server: add status endpoint from tendermint by <a class=\"user-mention notranslate\" href=\"https://github.com/manav2401\">@manav2401</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1175\">#1175</a></li>\n<li>build(deps): bump github.com/rs/cors from 1.10.1 to 1.11.0 by <a class=\"user-mention notranslate\" href=\"https://github.com/dependabot\">@dependabot</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1176\">#1176</a></li>\n<li>bor: increase max limit for list span api by <a class=\"user-mention notranslate\" href=\"https://github.com/shohamc1\">@shohamc1</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1180\">#1180</a></li>\n<li>Update artifacts upload/download actions version by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1186\">#1186</a></li>\n<li>Return checkpoint IDs in <code>checkpoints/list</code> by <a class=\"user-mention notranslate\" href=\"https://github.com/shohamc1\">@shohamc1</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1183\">#1183</a></li>\n<li>bridge: selfheal bugfix for statusCheck condition by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1181\">#1181</a></li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/shohamc1\">@shohamc1</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1180\">#1180</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/heimdall/compare/v1.0.7...v1.0.9-beta\"><tt>v1.0.7...v1.0.9-beta</tt></a></p>"
+                }
+            ],
+            "summary": "<h2>What's Changed</h2>\n<ul>\n<li>Backport master to develop by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1168\">#1168</a></li>\n<li>Handle account sequence correctly in bridge by <a class=\"user-mention notranslate\" href=\"https://github.com/Raneet10\">@Raneet10</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1170\">#1170</a></li>\n<li>server: add status endpoint from tendermint by <a class=\"user-mention notranslate\" href=\"https://github.com/manav2401\">@manav2401</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1175\">#1175</a></li>\n<li>build(deps): bump github.com/rs/cors from 1.10.1 to 1.11.0 by <a class=\"user-mention notranslate\" href=\"https://github.com/dependabot\">@dependabot</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1176\">#1176</a></li>\n<li>bor: increase max limit for list span api by <a class=\"user-mention notranslate\" href=\"https://github.com/shohamc1\">@shohamc1</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1180\">#1180</a></li>\n<li>Update artifacts upload/download actions version by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1186\">#1186</a></li>\n<li>Return checkpoint IDs in <code>checkpoints/list</code> by <a class=\"user-mention notranslate\" href=\"https://github.com/shohamc1\">@shohamc1</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1183\">#1183</a></li>\n<li>bridge: selfheal bugfix for statusCheck condition by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1181\">#1181</a></li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/shohamc1\">@shohamc1</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1180\">#1180</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/heimdall/compare/v1.0.7...v1.0.9-beta\"><tt>v1.0.7...v1.0.9-beta</tt></a></p>",
+            "authors": [
+                {
+                    "name": "marcello33"
+                }
+            ],
+            "author_detail": {
+                "name": "marcello33"
+            },
+            "author": "marcello33",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/19923858?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/155697390/v1.0.8-beta",
+            "guidislink": true,
+            "link": "https://github.com/maticnetwork/heimdall/releases/tag/v1.0.8-beta",
+            "updated": "2024-07-16T07:23:39Z",
+            "updated_parsed": [
+                2024,
+                7,
+                16,
+                7,
+                23,
+                39,
+                1,
+                198,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/maticnetwork/heimdall/releases/tag/v1.0.8-beta"
+                }
+            ],
+            "title": "v1.0.8-beta",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.0.8-beta"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>This is a maintenance release for heimdall which adds a new <code>/status</code> endpoint to heimdall's rest-server.</p>\n<h2>What's Changed</h2>\n<ul>\n<li>server: add status endpoint from tendermint by <a class=\"user-mention notranslate\" href=\"https://github.com/manav2401\">@manav2401</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1175\">#1175</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/heimdall/compare/v1.0.7...v1.0.8-beta\"><tt>v1.0.7...v1.0.8-beta</tt></a></p>"
+                }
+            ],
+            "summary": "<p>This is a maintenance release for heimdall which adds a new <code>/status</code> endpoint to heimdall's rest-server.</p>\n<h2>What's Changed</h2>\n<ul>\n<li>server: add status endpoint from tendermint by <a class=\"user-mention notranslate\" href=\"https://github.com/manav2401\">@manav2401</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1175\">#1175</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/heimdall/compare/v1.0.7...v1.0.8-beta\"><tt>v1.0.7...v1.0.8-beta</tt></a></p>",
+            "authors": [
+                {
+                    "name": "manav2401"
+                }
+            ],
+            "author_detail": {
+                "name": "manav2401"
+            },
+            "author": "manav2401",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/36959497?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/155697390/v1.0.7",
+            "guidislink": true,
+            "link": "https://github.com/maticnetwork/heimdall/releases/tag/v1.0.7",
+            "updated": "2024-06-05T14:36:41Z",
+            "updated_parsed": [
+                2024,
+                6,
+                5,
+                14,
+                36,
+                41,
+                2,
+                157,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/maticnetwork/heimdall/releases/tag/v1.0.7"
+                }
+            ],
+            "title": "v1.0.7",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.0.7"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>This release contains minor improvements and bug fixes.</p>\n<h2>What's Changed</h2>\n<ul>\n<li>chore: enforce capitalisation in flags description by <a class=\"user-mention notranslate\" href=\"https://github.com/leovct\">@leovct</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1137\">#1137</a></li>\n<li>Fix path for <code>matic-cli</code> dockerized tests by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1139\">#1139</a></li>\n<li>POS-2399: ganache bug workaround to reduce <code>smoke_test</code> time in CI by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1141\">#1141</a></li>\n<li>Bump dependencies by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1145\">#1145</a></li>\n<li>Fix typos by <a class=\"user-mention notranslate\" href=\"https://github.com/AaronChen0\">@AaronChen0</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1144\">#1144</a></li>\n<li>Upload <code>milestones</code> audit by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1151\">#1151</a></li>\n<li>checkpoint: list api increase max limit by <a class=\"user-mention notranslate\" href=\"https://github.com/taratorio\">@taratorio</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1154\">#1154</a></li>\n<li>update: tendermint version by <a class=\"user-mention notranslate\" href=\"https://github.com/anshalshukla\">@anshalshukla</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1156\">#1156</a></li>\n<li>chore: remove repetitive words in comments by <a class=\"user-mention notranslate\" href=\"https://github.com/worrycare\">@worrycare</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1155\">#1155</a></li>\n<li>Bump golang.org/x/net from 0.17.0 to 0.23.0 by <a class=\"user-mention notranslate\" href=\"https://github.com/dependabot\">@dependabot</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1160\">#1160</a></li>\n<li>POS-2399: ganache bug workaround to reduce <code>smoke_test</code> time in CI by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1164\">#1164</a></li>\n<li>Update bor and geth dependencies by <a class=\"user-mention notranslate\" href=\"https://github.com/manav2401\">@manav2401</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1162\">#1162</a></li>\n<li>Backport master to develop by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1165\">#1165</a></li>\n<li>Merge v1.0.7 to master  by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1167\">#1167</a></li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/leovct\">@leovct</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1137\">#1137</a></li>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/AaronChen0\">@AaronChen0</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1144\">#1144</a></li>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/taratorio\">@taratorio</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1154\">#1154</a></li>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/worrycare\">@worrycare</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1155\">#1155</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/heimdall/compare/v1.0.6...v1.0.7\"><tt>v1.0.6...v1.0.7</tt></a></p>"
+                }
+            ],
+            "summary": "<p>This release contains minor improvements and bug fixes.</p>\n<h2>What's Changed</h2>\n<ul>\n<li>chore: enforce capitalisation in flags description by <a class=\"user-mention notranslate\" href=\"https://github.com/leovct\">@leovct</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1137\">#1137</a></li>\n<li>Fix path for <code>matic-cli</code> dockerized tests by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1139\">#1139</a></li>\n<li>POS-2399: ganache bug workaround to reduce <code>smoke_test</code> time in CI by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1141\">#1141</a></li>\n<li>Bump dependencies by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1145\">#1145</a></li>\n<li>Fix typos by <a class=\"user-mention notranslate\" href=\"https://github.com/AaronChen0\">@AaronChen0</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1144\">#1144</a></li>\n<li>Upload <code>milestones</code> audit by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1151\">#1151</a></li>\n<li>checkpoint: list api increase max limit by <a class=\"user-mention notranslate\" href=\"https://github.com/taratorio\">@taratorio</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1154\">#1154</a></li>\n<li>update: tendermint version by <a class=\"user-mention notranslate\" href=\"https://github.com/anshalshukla\">@anshalshukla</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1156\">#1156</a></li>\n<li>chore: remove repetitive words in comments by <a class=\"user-mention notranslate\" href=\"https://github.com/worrycare\">@worrycare</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1155\">#1155</a></li>\n<li>Bump golang.org/x/net from 0.17.0 to 0.23.0 by <a class=\"user-mention notranslate\" href=\"https://github.com/dependabot\">@dependabot</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1160\">#1160</a></li>\n<li>POS-2399: ganache bug workaround to reduce <code>smoke_test</code> time in CI by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1164\">#1164</a></li>\n<li>Update bor and geth dependencies by <a class=\"user-mention notranslate\" href=\"https://github.com/manav2401\">@manav2401</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1162\">#1162</a></li>\n<li>Backport master to develop by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1165\">#1165</a></li>\n<li>Merge v1.0.7 to master  by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1167\">#1167</a></li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/leovct\">@leovct</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1137\">#1137</a></li>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/AaronChen0\">@AaronChen0</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1144\">#1144</a></li>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/taratorio\">@taratorio</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1154\">#1154</a></li>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/worrycare\">@worrycare</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1155\">#1155</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/heimdall/compare/v1.0.6...v1.0.7\"><tt>v1.0.6...v1.0.7</tt></a></p>",
+            "authors": [
+                {
+                    "name": "marcello33"
+                }
+            ],
+            "author_detail": {
+                "name": "marcello33"
+            },
+            "author": "marcello33",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/19923858?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/155697390/v1.0.7-beta",
+            "guidislink": true,
+            "link": "https://github.com/maticnetwork/heimdall/releases/tag/v1.0.7-beta",
+            "updated": "2024-06-04T06:10:11Z",
+            "updated_parsed": [
+                2024,
+                6,
+                4,
+                6,
+                10,
+                11,
+                1,
+                156,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/maticnetwork/heimdall/releases/tag/v1.0.7-beta"
+                }
+            ],
+            "title": "v1.0.7-beta",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.0.7-beta"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>This release contains minor improvements and bug fixes.</p>\n<h2>What's Changed</h2>\n<ul>\n<li>chore: enforce capitalisation in flags description by <a class=\"user-mention notranslate\" href=\"https://github.com/leovct\">@leovct</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1137\">#1137</a></li>\n<li>Fix path for <code>matic-cli</code> dockerized tests by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1139\">#1139</a></li>\n<li>POS-2399: ganache bug workaround to reduce <code>smoke_test</code> time in CI by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1141\">#1141</a></li>\n<li>Bump dependencies by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1145\">#1145</a></li>\n<li>Fix typos by <a class=\"user-mention notranslate\" href=\"https://github.com/AaronChen0\">@AaronChen0</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1144\">#1144</a></li>\n<li>Upload <code>milestones</code> audit by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1151\">#1151</a></li>\n<li>checkpoint: list api increase max limit by <a class=\"user-mention notranslate\" href=\"https://github.com/taratorio\">@taratorio</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1154\">#1154</a></li>\n<li>update: tendermint version by <a class=\"user-mention notranslate\" href=\"https://github.com/anshalshukla\">@anshalshukla</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1156\">#1156</a></li>\n<li>chore: remove repetitive words in comments by <a class=\"user-mention notranslate\" href=\"https://github.com/worrycare\">@worrycare</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1155\">#1155</a></li>\n<li>Bump golang.org/x/net from 0.17.0 to 0.23.0 by <a class=\"user-mention notranslate\" href=\"https://github.com/dependabot\">@dependabot</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1160\">#1160</a></li>\n<li>POS-2399: ganache bug workaround to reduce <code>smoke_test</code> time in CI by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1164\">#1164</a></li>\n<li>Update bor and geth dependencies by <a class=\"user-mention notranslate\" href=\"https://github.com/manav2401\">@manav2401</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1162\">#1162</a></li>\n<li>Backport master to develop by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1165\">#1165</a></li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/leovct\">@leovct</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1137\">#1137</a></li>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/AaronChen0\">@AaronChen0</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1144\">#1144</a></li>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/taratorio\">@taratorio</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1154\">#1154</a></li>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/worrycare\">@worrycare</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1155\">#1155</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/heimdall/compare/v1.0.6...v1.0.7-beta\"><tt>v1.0.6...v1.0.7-beta</tt></a></p>"
+                }
+            ],
+            "summary": "<p>This release contains minor improvements and bug fixes.</p>\n<h2>What's Changed</h2>\n<ul>\n<li>chore: enforce capitalisation in flags description by <a class=\"user-mention notranslate\" href=\"https://github.com/leovct\">@leovct</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1137\">#1137</a></li>\n<li>Fix path for <code>matic-cli</code> dockerized tests by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1139\">#1139</a></li>\n<li>POS-2399: ganache bug workaround to reduce <code>smoke_test</code> time in CI by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1141\">#1141</a></li>\n<li>Bump dependencies by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1145\">#1145</a></li>\n<li>Fix typos by <a class=\"user-mention notranslate\" href=\"https://github.com/AaronChen0\">@AaronChen0</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1144\">#1144</a></li>\n<li>Upload <code>milestones</code> audit by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1151\">#1151</a></li>\n<li>checkpoint: list api increase max limit by <a class=\"user-mention notranslate\" href=\"https://github.com/taratorio\">@taratorio</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1154\">#1154</a></li>\n<li>update: tendermint version by <a class=\"user-mention notranslate\" href=\"https://github.com/anshalshukla\">@anshalshukla</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1156\">#1156</a></li>\n<li>chore: remove repetitive words in comments by <a class=\"user-mention notranslate\" href=\"https://github.com/worrycare\">@worrycare</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1155\">#1155</a></li>\n<li>Bump golang.org/x/net from 0.17.0 to 0.23.0 by <a class=\"user-mention notranslate\" href=\"https://github.com/dependabot\">@dependabot</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1160\">#1160</a></li>\n<li>POS-2399: ganache bug workaround to reduce <code>smoke_test</code> time in CI by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1164\">#1164</a></li>\n<li>Update bor and geth dependencies by <a class=\"user-mention notranslate\" href=\"https://github.com/manav2401\">@manav2401</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1162\">#1162</a></li>\n<li>Backport master to develop by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1165\">#1165</a></li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/leovct\">@leovct</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1137\">#1137</a></li>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/AaronChen0\">@AaronChen0</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1144\">#1144</a></li>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/taratorio\">@taratorio</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1154\">#1154</a></li>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/worrycare\">@worrycare</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1155\">#1155</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/heimdall/compare/v1.0.6...v1.0.7-beta\"><tt>v1.0.6...v1.0.7-beta</tt></a></p>",
+            "authors": [
+                {
+                    "name": "marcello33"
+                }
+            ],
+            "author_detail": {
+                "name": "marcello33"
+            },
+            "author": "marcello33",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/19923858?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/155697390/v1.0.6",
+            "guidislink": true,
+            "link": "https://github.com/maticnetwork/heimdall/releases/tag/v1.0.6",
+            "updated": "2024-05-23T15:20:51Z",
+            "updated_parsed": [
+                2024,
+                5,
+                23,
+                15,
+                20,
+                51,
+                3,
+                144,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/maticnetwork/heimdall/releases/tag/v1.0.6"
+                }
+            ],
+            "title": "v1.0.6",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.0.6"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>This release contains a fix for the milestone/checkpoint module</p>\n<h2>What's Changed</h2>\n<ul>\n<li>Fix bb-31177 by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1163\">#1163</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/heimdall/compare/v1.0.5...v1.0.6\"><tt>v1.0.5...v1.0.6</tt></a></p>"
+                }
+            ],
+            "summary": "<p>This release contains a fix for the milestone/checkpoint module</p>\n<h2>What's Changed</h2>\n<ul>\n<li>Fix bb-31177 by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1163\">#1163</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/heimdall/compare/v1.0.5...v1.0.6\"><tt>v1.0.5...v1.0.6</tt></a></p>",
+            "authors": [
+                {
+                    "name": "marcello33"
+                }
+            ],
+            "author_detail": {
+                "name": "marcello33"
+            },
+            "author": "marcello33",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/19923858?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/155697390/v1.0.6-beta-1",
+            "guidislink": true,
+            "link": "https://github.com/maticnetwork/heimdall/releases/tag/v1.0.6-beta-1",
+            "updated": "2024-05-06T11:14:48Z",
+            "updated_parsed": [
+                2024,
+                5,
+                6,
+                11,
+                14,
+                48,
+                0,
+                127,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/maticnetwork/heimdall/releases/tag/v1.0.6-beta-1"
+                }
+            ],
+            "title": "v1.0.6-beta-1",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.0.6-beta-1"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/heimdall/compare/v1.0.5...v1.0.6-beta-1\"><tt>v1.0.5...v1.0.6-beta-1</tt></a></p>"
+                }
+            ],
+            "summary": "<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/heimdall/compare/v1.0.5...v1.0.6-beta-1\"><tt>v1.0.5...v1.0.6-beta-1</tt></a></p>",
+            "authors": [
+                {
+                    "name": "anshalshukla"
+                }
+            ],
+            "author_detail": {
+                "name": "anshalshukla"
+            },
+            "author": "anshalshukla",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/53994948?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/155697390/v1.0.5",
+            "guidislink": true,
+            "link": "https://github.com/maticnetwork/heimdall/releases/tag/v1.0.5",
+            "updated": "2024-03-26T06:16:24Z",
+            "updated_parsed": [
+                2024,
+                3,
+                26,
+                6,
+                16,
+                24,
+                1,
+                86,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/maticnetwork/heimdall/releases/tag/v1.0.5"
+                }
+            ],
+            "title": "v1.0.5",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.0.5"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>This release contains a bug fix.</p>\n<h2>What's Changed</h2>\n<ul>\n<li>Bump google.golang.org/protobuf from 1.31.0 to 1.33.0 by <a class=\"user-mention notranslate\" href=\"https://github.com/dependabot\">@dependabot</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1147\">#1147</a></li>\n<li>bridge, staking: chg: bug fix by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1149\">#1149</a></li>\n<li>Bump version to v1.0.5 by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1150\">#1150</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/heimdall/compare/v1.0.4...v1.0.5\"><tt>v1.0.4...v1.0.5</tt></a></p>"
+                }
+            ],
+            "summary": "<p>This release contains a bug fix.</p>\n<h2>What's Changed</h2>\n<ul>\n<li>Bump google.golang.org/protobuf from 1.31.0 to 1.33.0 by <a class=\"user-mention notranslate\" href=\"https://github.com/dependabot\">@dependabot</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1147\">#1147</a></li>\n<li>bridge, staking: chg: bug fix by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1149\">#1149</a></li>\n<li>Bump version to v1.0.5 by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/heimdall/pull/1150\">#1150</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/heimdall/compare/v1.0.4...v1.0.5\"><tt>v1.0.4...v1.0.5</tt></a></p>",
+            "authors": [
+                {
+                    "name": "marcello33"
+                }
+            ],
+            "author_detail": {
+                "name": "marcello33"
+            },
+            "author": "marcello33",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/19923858?s=60&v=4"
+                }
+            ],
+            "href": ""
+        }
+    ],
+    "feed": {
+        "language": "en-US",
+        "id": "tag:github.com,2008:https://github.com/maticnetwork/heimdall/releases",
+        "guidislink": true,
+        "link": "https://github.com/maticnetwork/heimdall/releases",
+        "links": [
+            {
+                "type": "text/html",
+                "rel": "alternate",
+                "href": "https://github.com/maticnetwork/heimdall/releases"
+            },
+            {
+                "type": "application/atom+xml",
+                "rel": "self",
+                "href": "https://github.com/maticnetwork/heimdall/releases.atom"
+            }
+        ],
+        "title": "Release notes from heimdall",
+        "title_detail": {
+            "type": "text/plain",
+            "language": "en-US",
+            "base": "",
+            "value": "Release notes from heimdall"
+        },
+        "updated": "2024-11-27T06:00:20Z",
+        "updated_parsed": [
+            2024,
+            11,
+            27,
+            6,
+            0,
+            20,
+            2,
+            332,
+            0
+        ]
+    },
+    "headers": {},
+    "encoding": "utf-8",
+    "version": "atom10",
+    "namespaces": {
+        "": "http://www.w3.org/2005/Atom",
+        "media": "http://search.yahoo.com/mrss/"
+    }
+}

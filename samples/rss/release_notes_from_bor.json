@@ -1,0 +1,619 @@
+{
+    "bozo": false,
+    "entries": [
+        {
+            "id": "tag:github.com,2008:Repository/218343552/v1.5.2",
+            "guidislink": true,
+            "link": "https://github.com/maticnetwork/bor/releases/tag/v1.5.2",
+            "updated": "2024-10-30T15:55:36Z",
+            "updated_parsed": [
+                2024,
+                10,
+                30,
+                15,
+                55,
+                36,
+                2,
+                304,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/maticnetwork/bor/releases/tag/v1.5.2"
+                }
+            ],
+            "title": "v1.5.2",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.5.2"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<h2>What's Changed</h2>\n<ul>\n<li>Fix getBlockTransactionCountByNumber/Hash by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1365\">#1365</a></li>\n<li>Bump version to v1.5.2 by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1366\">#1366</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/bor/compare/v1.5.1...v1.5.2\"><tt>v1.5.1...v1.5.2</tt></a></p>"
+                }
+            ],
+            "summary": "<h2>What's Changed</h2>\n<ul>\n<li>Fix getBlockTransactionCountByNumber/Hash by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1365\">#1365</a></li>\n<li>Bump version to v1.5.2 by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1366\">#1366</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/bor/compare/v1.5.1...v1.5.2\"><tt>v1.5.1...v1.5.2</tt></a></p>",
+            "authors": [
+                {
+                    "name": "github-actions[bot]"
+                }
+            ],
+            "author_detail": {
+                "name": "github-actions[bot]"
+            },
+            "author": "github-actions[bot]",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/in/15368?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/218343552/v1.5.1",
+            "guidislink": true,
+            "link": "https://github.com/maticnetwork/bor/releases/tag/v1.5.1",
+            "updated": "2024-10-30T14:50:56Z",
+            "updated_parsed": [
+                2024,
+                10,
+                30,
+                14,
+                50,
+                56,
+                2,
+                304,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/maticnetwork/bor/releases/tag/v1.5.1"
+                }
+            ],
+            "title": "v1.5.1",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.5.1"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<h2>What's Changed</h2>\n<ul>\n<li>Fix bor logs missing by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1361\">#1361</a></li>\n<li>Fix panic on nil block in ethstats by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1360\">#1360</a></li>\n<li>Bump version to v1.5.1 by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1362\">#1362</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/bor/compare/v1.5.0...v1.5.1\"><tt>v1.5.0...v1.5.1</tt></a></p>"
+                }
+            ],
+            "summary": "<h2>What's Changed</h2>\n<ul>\n<li>Fix bor logs missing by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1361\">#1361</a></li>\n<li>Fix panic on nil block in ethstats by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1360\">#1360</a></li>\n<li>Bump version to v1.5.1 by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1362\">#1362</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/bor/compare/v1.5.0...v1.5.1\"><tt>v1.5.0...v1.5.1</tt></a></p>",
+            "authors": [
+                {
+                    "name": "github-actions[bot]"
+                }
+            ],
+            "author_detail": {
+                "name": "github-actions[bot]"
+            },
+            "author": "github-actions[bot]",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/in/15368?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/218343552/v1.5.0",
+            "guidislink": true,
+            "link": "https://github.com/maticnetwork/bor/releases/tag/v1.5.0",
+            "updated": "2024-10-28T15:27:52Z",
+            "updated_parsed": [
+                2024,
+                10,
+                28,
+                15,
+                27,
+                52,
+                0,
+                302,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/maticnetwork/bor/releases/tag/v1.5.0"
+                }
+            ],
+            "title": "v1.5.0",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.5.0"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<h2>What's Changed</h2>\n<ul>\n<li>Add test for concurrent revert in MVHashmap by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1326\">#1326</a></li>\n<li>Log info about mismatched valset by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1325\">#1325</a></li>\n<li>Upstream merge 1.14.6 by <a class=\"user-mention notranslate\" href=\"https://github.com/anshalshukla\">@anshalshukla</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1300\">#1300</a></li>\n<li>Backporting master to develop by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1341\">#1341</a></li>\n<li>Fix panic in eth_getLogs by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1342\">#1342</a></li>\n<li>internal/cli: add prometheus sever timeouts by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1344\">#1344</a></li>\n<li>Adding refactored packager, adding pbss configs, removal of mumbai ( … by <a class=\"user-mention notranslate\" href=\"https://github.com/djpolygon\">@djpolygon</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1311\">#1311</a></li>\n<li>Adding rpm packagers by <a class=\"user-mention notranslate\" href=\"https://github.com/djpolygon\">@djpolygon</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1339\">#1339</a></li>\n<li>Check block number and timestamp options when filtering conditional transactions by <a class=\"user-mention notranslate\" href=\"https://github.com/jj1980a\">@jj1980a</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1350\">#1350</a></li>\n<li>Add discovery.dns by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1355\">#1355</a></li>\n<li>Changing names of pbss profiles for consistency in deb and rpm by <a class=\"user-mention notranslate\" href=\"https://github.com/djpolygon\">@djpolygon</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1356\">#1356</a></li>\n<li>Updating uploader by <a class=\"user-mention notranslate\" href=\"https://github.com/djpolygon\">@djpolygon</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1357\">#1357</a></li>\n<li>v1.5.0 candidate by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1359\">#1359</a></li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/jj1980a\">@jj1980a</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1350\">#1350</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/bor/compare/v1.4.1...v1.5.0\"><tt>v1.4.1...v1.5.0</tt></a></p>"
+                }
+            ],
+            "summary": "<h2>What's Changed</h2>\n<ul>\n<li>Add test for concurrent revert in MVHashmap by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1326\">#1326</a></li>\n<li>Log info about mismatched valset by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1325\">#1325</a></li>\n<li>Upstream merge 1.14.6 by <a class=\"user-mention notranslate\" href=\"https://github.com/anshalshukla\">@anshalshukla</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1300\">#1300</a></li>\n<li>Backporting master to develop by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1341\">#1341</a></li>\n<li>Fix panic in eth_getLogs by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1342\">#1342</a></li>\n<li>internal/cli: add prometheus sever timeouts by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1344\">#1344</a></li>\n<li>Adding refactored packager, adding pbss configs, removal of mumbai ( … by <a class=\"user-mention notranslate\" href=\"https://github.com/djpolygon\">@djpolygon</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1311\">#1311</a></li>\n<li>Adding rpm packagers by <a class=\"user-mention notranslate\" href=\"https://github.com/djpolygon\">@djpolygon</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1339\">#1339</a></li>\n<li>Check block number and timestamp options when filtering conditional transactions by <a class=\"user-mention notranslate\" href=\"https://github.com/jj1980a\">@jj1980a</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1350\">#1350</a></li>\n<li>Add discovery.dns by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1355\">#1355</a></li>\n<li>Changing names of pbss profiles for consistency in deb and rpm by <a class=\"user-mention notranslate\" href=\"https://github.com/djpolygon\">@djpolygon</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1356\">#1356</a></li>\n<li>Updating uploader by <a class=\"user-mention notranslate\" href=\"https://github.com/djpolygon\">@djpolygon</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1357\">#1357</a></li>\n<li>v1.5.0 candidate by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1359\">#1359</a></li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/jj1980a\">@jj1980a</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1350\">#1350</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/bor/compare/v1.4.1...v1.5.0\"><tt>v1.4.1...v1.5.0</tt></a></p>",
+            "authors": [
+                {
+                    "name": "github-actions[bot]"
+                }
+            ],
+            "author_detail": {
+                "name": "github-actions[bot]"
+            },
+            "author": "github-actions[bot]",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/in/15368?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/218343552/v1.5.0-beta6",
+            "guidislink": true,
+            "link": "https://github.com/maticnetwork/bor/releases/tag/v1.5.0-beta6",
+            "updated": "2024-10-23T02:30:11Z",
+            "updated_parsed": [
+                2024,
+                10,
+                23,
+                2,
+                30,
+                11,
+                2,
+                297,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/maticnetwork/bor/releases/tag/v1.5.0-beta6"
+                }
+            ],
+            "title": "v1.5.0-beta6",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.5.0-beta6"
+            },
+            "content": [
+                {
+                    "type": "text/plain",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "No content."
+                }
+            ],
+            "summary": "No content.",
+            "authors": [
+                {
+                    "name": "github-actions[bot]"
+                }
+            ],
+            "author_detail": {
+                "name": "github-actions[bot]"
+            },
+            "author": "github-actions[bot]",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/in/15368?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/218343552/v1.5.0-beta5",
+            "guidislink": true,
+            "link": "https://github.com/maticnetwork/bor/releases/tag/v1.5.0-beta5",
+            "updated": "2024-10-17T04:02:07Z",
+            "updated_parsed": [
+                2024,
+                10,
+                17,
+                4,
+                2,
+                7,
+                3,
+                291,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/maticnetwork/bor/releases/tag/v1.5.0-beta5"
+                }
+            ],
+            "title": "v1.5.0-beta5",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.5.0-beta5"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<h2>What's Changed</h2>\n<ul>\n<li>Changing names of pbss profiles for consistency in deb and rpm by <a class=\"user-mention notranslate\" href=\"https://github.com/djpolygon\">@djpolygon</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1356\">#1356</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/bor/compare/v1.5.0-beta4...v1.5.0-beta5\"><tt>v1.5.0-beta4...v1.5.0-beta5</tt></a></p>"
+                }
+            ],
+            "summary": "<h2>What's Changed</h2>\n<ul>\n<li>Changing names of pbss profiles for consistency in deb and rpm by <a class=\"user-mention notranslate\" href=\"https://github.com/djpolygon\">@djpolygon</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1356\">#1356</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/bor/compare/v1.5.0-beta4...v1.5.0-beta5\"><tt>v1.5.0-beta4...v1.5.0-beta5</tt></a></p>",
+            "authors": [
+                {
+                    "name": "github-actions[bot]"
+                }
+            ],
+            "author_detail": {
+                "name": "github-actions[bot]"
+            },
+            "author": "github-actions[bot]",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/in/15368?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/218343552/v1.5.0-beta4",
+            "guidislink": true,
+            "link": "https://github.com/maticnetwork/bor/releases/tag/v1.5.0-beta4",
+            "updated": "2024-10-15T18:49:12Z",
+            "updated_parsed": [
+                2024,
+                10,
+                15,
+                18,
+                49,
+                12,
+                1,
+                289,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/maticnetwork/bor/releases/tag/v1.5.0-beta4"
+                }
+            ],
+            "title": "v1.5.0-beta4",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.5.0-beta4"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<h2>What's Changed</h2>\n<ul>\n<li>Adding refactored packager, adding pbss configs, removal of mumbai ( … by <a class=\"user-mention notranslate\" href=\"https://github.com/djpolygon\">@djpolygon</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1311\">#1311</a></li>\n<li>Adding rpm packagers by <a class=\"user-mention notranslate\" href=\"https://github.com/djpolygon\">@djpolygon</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1339\">#1339</a></li>\n<li>Check block number and timestamp options when filtering conditional transactions by <a class=\"user-mention notranslate\" href=\"https://github.com/jj1980a\">@jj1980a</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1350\">#1350</a></li>\n<li>Add discovery.dns by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1355\">#1355</a></li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/jj1980a\">@jj1980a</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1350\">#1350</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/bor/compare/v1.5.0-beta3...v1.5.0-beta4\"><tt>v1.5.0-beta3...v1.5.0-beta4</tt></a></p>"
+                }
+            ],
+            "summary": "<h2>What's Changed</h2>\n<ul>\n<li>Adding refactored packager, adding pbss configs, removal of mumbai ( … by <a class=\"user-mention notranslate\" href=\"https://github.com/djpolygon\">@djpolygon</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1311\">#1311</a></li>\n<li>Adding rpm packagers by <a class=\"user-mention notranslate\" href=\"https://github.com/djpolygon\">@djpolygon</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1339\">#1339</a></li>\n<li>Check block number and timestamp options when filtering conditional transactions by <a class=\"user-mention notranslate\" href=\"https://github.com/jj1980a\">@jj1980a</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1350\">#1350</a></li>\n<li>Add discovery.dns by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1355\">#1355</a></li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/jj1980a\">@jj1980a</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1350\">#1350</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/bor/compare/v1.5.0-beta3...v1.5.0-beta4\"><tt>v1.5.0-beta3...v1.5.0-beta4</tt></a></p>",
+            "authors": [
+                {
+                    "name": "github-actions[bot]"
+                }
+            ],
+            "author_detail": {
+                "name": "github-actions[bot]"
+            },
+            "author": "github-actions[bot]",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/in/15368?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/218343552/v1.5.0-beta3",
+            "guidislink": true,
+            "link": "https://github.com/maticnetwork/bor/releases/tag/v1.5.0-beta3",
+            "updated": "2024-10-09T16:49:05Z",
+            "updated_parsed": [
+                2024,
+                10,
+                9,
+                16,
+                49,
+                5,
+                2,
+                283,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/maticnetwork/bor/releases/tag/v1.5.0-beta3"
+                }
+            ],
+            "title": "v1.5.0-beta3",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.5.0-beta3"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<h2>What's Changed</h2>\n<ul>\n<li>internal/cli: add prometheus sever timeouts by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1344\">#1344</a></li>\n<li><a href=\"https://github.com/maticnetwork/bor/commit/a7578a3ceab74b0551b115dd1a3250d7e870a329\">Fix panic on getting safe block</a></li>\n<li><a href=\"https://github.com/maticnetwork/bor/commit/48bdfa7ffbfb8da50fbc3bbef54882d3b80e698f\">Fix tx index limit not being used correctly</a></li>\n<li><a href=\"https://github.com/maticnetwork/bor/commit/3b9f73ab6993459bf5b1f0059bb90612fc9fef06\">Fix bor tx missing</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/bor/compare/v1.5.0-beta2...v1.5.0-beta3\"><tt>v1.5.0-beta2...v1.5.0-beta3</tt></a></p>"
+                }
+            ],
+            "summary": "<h2>What's Changed</h2>\n<ul>\n<li>internal/cli: add prometheus sever timeouts by <a class=\"user-mention notranslate\" href=\"https://github.com/marcello33\">@marcello33</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1344\">#1344</a></li>\n<li><a href=\"https://github.com/maticnetwork/bor/commit/a7578a3ceab74b0551b115dd1a3250d7e870a329\">Fix panic on getting safe block</a></li>\n<li><a href=\"https://github.com/maticnetwork/bor/commit/48bdfa7ffbfb8da50fbc3bbef54882d3b80e698f\">Fix tx index limit not being used correctly</a></li>\n<li><a href=\"https://github.com/maticnetwork/bor/commit/3b9f73ab6993459bf5b1f0059bb90612fc9fef06\">Fix bor tx missing</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/bor/compare/v1.5.0-beta2...v1.5.0-beta3\"><tt>v1.5.0-beta2...v1.5.0-beta3</tt></a></p>",
+            "authors": [
+                {
+                    "name": "github-actions[bot]"
+                }
+            ],
+            "author_detail": {
+                "name": "github-actions[bot]"
+            },
+            "author": "github-actions[bot]",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/in/15368?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/218343552/v1.5.0-beta2",
+            "guidislink": true,
+            "link": "https://github.com/maticnetwork/bor/releases/tag/v1.5.0-beta2",
+            "updated": "2024-10-04T17:59:14Z",
+            "updated_parsed": [
+                2024,
+                10,
+                4,
+                17,
+                59,
+                14,
+                4,
+                278,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/maticnetwork/bor/releases/tag/v1.5.0-beta2"
+                }
+            ],
+            "title": "v1.5.0-beta2",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.5.0-beta2"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<h2>What's Changed</h2>\n<ul>\n<li>Fix panic in eth_getLogs by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1342\">#1342</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/bor/compare/v1.5.0-beta...v1.5.0-beta2\"><tt>v1.5.0-beta...v1.5.0-beta2</tt></a></p>"
+                }
+            ],
+            "summary": "<h2>What's Changed</h2>\n<ul>\n<li>Fix panic in eth_getLogs by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1342\">#1342</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/bor/compare/v1.5.0-beta...v1.5.0-beta2\"><tt>v1.5.0-beta...v1.5.0-beta2</tt></a></p>",
+            "authors": [
+                {
+                    "name": "github-actions[bot]"
+                }
+            ],
+            "author_detail": {
+                "name": "github-actions[bot]"
+            },
+            "author": "github-actions[bot]",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/in/15368?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/218343552/v1.5.0-beta",
+            "guidislink": true,
+            "link": "https://github.com/maticnetwork/bor/releases/tag/v1.5.0-beta",
+            "updated": "2024-10-03T17:49:48Z",
+            "updated_parsed": [
+                2024,
+                10,
+                3,
+                17,
+                49,
+                48,
+                3,
+                277,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/maticnetwork/bor/releases/tag/v1.5.0-beta"
+                }
+            ],
+            "title": "v1.5.0-beta",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.5.0-beta"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>The major change in this release is the commits merged from <a href=\"https://github.com/ethereum/go-ethereum/\">go-ethereum </a> up to geth 1.14.6.</p>\n<h2>What's Changed</h2>\n<ul>\n<li>Add test for concurrent revert in MVHashmap by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1326\">#1326</a></li>\n<li>Log info about mismatched valset by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1325\">#1325</a></li>\n<li>Upstream merge 1.14.6 by <a class=\"user-mention notranslate\" href=\"https://github.com/anshalshukla\">@anshalshukla</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1300\">#1300</a></li>\n<li>Backporting master to develop by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1341\">#1341</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/bor/compare/v1.4.1...v1.5.0-beta\"><tt>v1.4.1...v1.5.0-beta</tt></a></p>"
+                }
+            ],
+            "summary": "<p>The major change in this release is the commits merged from <a href=\"https://github.com/ethereum/go-ethereum/\">go-ethereum </a> up to geth 1.14.6.</p>\n<h2>What's Changed</h2>\n<ul>\n<li>Add test for concurrent revert in MVHashmap by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1326\">#1326</a></li>\n<li>Log info about mismatched valset by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1325\">#1325</a></li>\n<li>Upstream merge 1.14.6 by <a class=\"user-mention notranslate\" href=\"https://github.com/anshalshukla\">@anshalshukla</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1300\">#1300</a></li>\n<li>Backporting master to develop by <a class=\"user-mention notranslate\" href=\"https://github.com/cffls\">@cffls</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/maticnetwork/bor/pull/1341\">#1341</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/bor/compare/v1.4.1...v1.5.0-beta\"><tt>v1.4.1...v1.5.0-beta</tt></a></p>",
+            "authors": [
+                {
+                    "name": "cffls"
+                }
+            ],
+            "author_detail": {
+                "name": "cffls"
+            },
+            "author": "cffls",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/48079971?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/218343552/v1.4.1",
+            "guidislink": true,
+            "link": "https://github.com/maticnetwork/bor/releases/tag/v1.4.1",
+            "updated": "2024-09-18T15:59:26Z",
+            "updated_parsed": [
+                2024,
+                9,
+                18,
+                15,
+                59,
+                26,
+                2,
+                262,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/maticnetwork/bor/releases/tag/v1.4.1"
+                }
+            ],
+            "title": "v1.4.1",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "v1.4.1"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<h2>What's Changed</h2>\n<ul>\n<li>Fixed a bug in parallel executor. The bug could possibly cause parallel executor to compute a different block hash from a regular (serial) executor in some rare scenarios.</li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/bor/compare/v1.4.0...v1.4.1\"><tt>v1.4.0...v1.4.1</tt></a></p>"
+                }
+            ],
+            "summary": "<h2>What's Changed</h2>\n<ul>\n<li>Fixed a bug in parallel executor. The bug could possibly cause parallel executor to compute a different block hash from a regular (serial) executor in some rare scenarios.</li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/maticnetwork/bor/compare/v1.4.0...v1.4.1\"><tt>v1.4.0...v1.4.1</tt></a></p>",
+            "authors": [
+                {
+                    "name": "cffls"
+                }
+            ],
+            "author_detail": {
+                "name": "cffls"
+            },
+            "author": "cffls",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/48079971?s=60&v=4"
+                }
+            ],
+            "href": ""
+        }
+    ],
+    "feed": {
+        "language": "en-US",
+        "id": "tag:github.com,2008:https://github.com/maticnetwork/bor/releases",
+        "guidislink": true,
+        "link": "https://github.com/maticnetwork/bor/releases",
+        "links": [
+            {
+                "type": "text/html",
+                "rel": "alternate",
+                "href": "https://github.com/maticnetwork/bor/releases"
+            },
+            {
+                "type": "application/atom+xml",
+                "rel": "self",
+                "href": "https://github.com/maticnetwork/bor/releases.atom"
+            }
+        ],
+        "title": "Release notes from bor",
+        "title_detail": {
+            "type": "text/plain",
+            "language": "en-US",
+            "base": "",
+            "value": "Release notes from bor"
+        },
+        "updated": "2024-10-30T14:45:43Z",
+        "updated_parsed": [
+            2024,
+            10,
+            30,
+            14,
+            45,
+            43,
+            2,
+            304,
+            0
+        ]
+    },
+    "headers": {},
+    "encoding": "utf-8",
+    "version": "atom10",
+    "namespaces": {
+        "": "http://www.w3.org/2005/Atom",
+        "media": "http://search.yahoo.com/mrss/"
+    }
+}

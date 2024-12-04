@@ -1,0 +1,619 @@
+{
+    "bozo": false,
+    "entries": [
+        {
+            "id": "tag:github.com,2008:Repository/241277774/24.12.0-RC1",
+            "guidislink": true,
+            "link": "https://github.com/Consensys/web3signer/releases/tag/24.12.0-RC1",
+            "updated": "2024-12-02T09:45:33Z",
+            "updated_parsed": [
+                2024,
+                12,
+                2,
+                9,
+                45,
+                33,
+                0,
+                337,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/Consensys/web3signer/releases/tag/24.12.0-RC1"
+                }
+            ],
+            "title": "24.12.0-RC1",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "24.12.0-RC1"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>Pre-release 24.12.0-RC1</p>"
+                }
+            ],
+            "summary": "<p>Pre-release 24.12.0-RC1</p>",
+            "authors": [
+                {
+                    "name": "usmansaleem"
+                }
+            ],
+            "author_detail": {
+                "name": "usmansaleem"
+            },
+            "author": "usmansaleem",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/669527?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/241277774/24.6.0",
+            "guidislink": true,
+            "link": "https://github.com/Consensys/web3signer/releases/tag/24.6.0",
+            "updated": "2024-06-12T01:05:40Z",
+            "updated_parsed": [
+                2024,
+                6,
+                12,
+                1,
+                5,
+                40,
+                2,
+                164,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/Consensys/web3signer/releases/tag/24.6.0"
+                }
+            ],
+            "title": "24.6.0",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "24.6.0"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>This release contains various libraries updates and is recommended for all users.</p>\n<h2>Highlights</h2>\n<h3>Upcoming Breaking Changes</h3>\n<ul>\n<li>This is the last Web3Signer release to use Java 17. Web3Signer will start mandating Java 21 for build and runtime after<br />\nthis release. The Web3Signer docker image will also use Java 21, however, binary distributions (.tar.gz/.zip) will<br />\nrequire Java 21 to be available on the host machine.</li>\n<li>This is the last Web3Signer release to use the \"filecoin\" mode. The \"filecoin\" mode will be removed in a future release.</li>\n</ul>\n<h3>Features Added</h3>\n<ul>\n<li>Added endpoint <code>/api/v1/eth2/ext/sign/:identifier</code> which is enabled using cli option <code>--Xsigning-ext-enabled=true</code>.<br />\nThis endpoint allows signing of additional data not covered by the remoting API specs. <a href=\"https://github.com/Consensys/web3signer/pull/982\">#982</a></li>\n</ul>\n<h3>Bugs fixed</h3>\n<ul>\n<li>Update transitive dependency threetenbp and google cloud secretmanager library to fix <a href=\"https://github.com/advisories/GHSA-rgx7-8wqv-m224\" title=\"CVE-2024-23082\">CVE-2024-23082</a>, <a href=\"https://github.com/advisories/GHSA-fhx3-mxf6-jxpv\" title=\"CVE-2024-23081\">CVE-2024-23081</a></li>\n<li>Update bouncycastle libraries to fix <a href=\"https://github.com/advisories/GHSA-8xfc-gm6g-vgpv\" title=\"CVE-2024-29857\">CVE-2024-29857</a>, <a href=\"https://github.com/advisories/GHSA-v435-xc8x-wvr9\" title=\"CVE-2024-30171\">CVE-2024-30171</a>, <a href=\"https://github.com/advisories/GHSA-m44j-cfrm-g8qc\" title=\"CVE-2024-30172\">CVE-2024-30172</a></li>\n<li>Update Teku libraries to 24.3.1</li>\n<li>Update Vert.x to 4.5.7 (which include fixes for <a href=\"https://github.com/advisories/GHSA-5667-3wch-7q7w\" title=\"CVE-2024-1023\">CVE-2024-1023</a>)</li>\n<li>Fix Host Allow List handler to handle empty host header</li>\n<li>Update Postgresql JDBC driver to fix <a href=\"https://github.com/advisories/GHSA-24rp-q3w6-vc56\" title=\"CVE-2024-1597\">CVE-2024-1597</a></li>\n<li>Fix cached gvr to be thread-safe during first boot. <a href=\"https://github.com/Consensys/web3signer/issues/978\">#978</a></li>\n</ul>\n<hr />\n<h3>Downloads</h3>\n<table>\n<thead>\n<tr>\n<th align=\"center\">File</th>\n<th align=\"center\">Checksum (sha256)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\"><a href=\"https://artifacts.consensys.net/public/web3signer/raw/names/web3signer.tar.gz/versions/24.6.0/web3signer-24.6.0.tar.gz\" rel=\"nofollow\">web3signer.tar.gz</a></td>\n<td align=\"center\"><code>5f5d833e86b138a94681597075153fee28fd7f4742e67183e199d29db675b15b</code></td>\n</tr>\n<tr>\n<td align=\"center\"><a href=\"https://artifacts.consensys.net/public/web3signer/raw/names/web3signer.zip/versions/24.6.0/web3signer-24.6.0.zip\" rel=\"nofollow\">web3signer.zip</a></td>\n<td align=\"center\"><code>8e7063d8f9902320f4c3a8379ed35a663b5712c005697c17835dca701347c217</code></td>\n</tr>\n</tbody>\n</table>\n<h4>Docker</h4>\n<ul>\n<li><code>docker pull consensys/web3signer:24.6.0</code></li>\n</ul>\n<hr />\n<h2>What's Changed</h2>\n<ul>\n<li>upgrade postgres to 42.5.5 to fix CVE by <a class=\"user-mention notranslate\" href=\"https://github.com/gfukushima\">@gfukushima</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/973\">#973</a></li>\n<li>Upgrade postgres jdbc driver to 42.7.2 by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/975\">#975</a></li>\n<li>fix: Make cached GVR thread-safe by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/980\">#980</a></li>\n<li>build - suppress unrelated owasp warnings and update azure libraries by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/981\">#981</a></li>\n<li>fix: Update Vert.x dependency version to 4.4.9 by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/983\">#983</a></li>\n<li>Upgrade vertx to 4.5.7 by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/986\">#986</a></li>\n<li>minor: Update Teku libraries to 24.3.1 by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/987\">#987</a></li>\n<li>fix!: Fix Host Allow List Handler by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/985\">#985</a></li>\n<li>Libraries upgrade to fix reported CVE by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/989\">#989</a></li>\n<li>fix - Add adduser in docker image via apt by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/992\">#992</a></li>\n<li>fix - Update .openapidoc gh-pages version by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/993\">#993</a></li>\n<li>Extension Signing request endpoint by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/982\">#982</a></li>\n<li>chore: Update changelog for Java21 upcoming changes by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/996\">#996</a></li>\n<li>fix: Update Teku version to 24.4.0 by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/998\">#998</a></li>\n<li>fix: Update Besu version to 24.5.2 by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/997\">#997</a></li>\n<li>Update changelog for 24.6.0 by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/1000\">#1000</a></li>\n<li>changelog: Update changelog with filecoin change by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/1001\">#1001</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/Consensys/web3signer/compare/24.2.0...24.6.0\"><tt>24.2.0...24.6.0</tt></a></p>"
+                }
+            ],
+            "summary": "<p>This release contains various libraries updates and is recommended for all users.</p>\n<h2>Highlights</h2>\n<h3>Upcoming Breaking Changes</h3>\n<ul>\n<li>This is the last Web3Signer release to use Java 17. Web3Signer will start mandating Java 21 for build and runtime after<br />\nthis release. The Web3Signer docker image will also use Java 21, however, binary distributions (.tar.gz/.zip) will<br />\nrequire Java 21 to be available on the host machine.</li>\n<li>This is the last Web3Signer release to use the \"filecoin\" mode. The \"filecoin\" mode will be removed in a future release.</li>\n</ul>\n<h3>Features Added</h3>\n<ul>\n<li>Added endpoint <code>/api/v1/eth2/ext/sign/:identifier</code> which is enabled using cli option <code>--Xsigning-ext-enabled=true</code>.<br />\nThis endpoint allows signing of additional data not covered by the remoting API specs. <a href=\"https://github.com/Consensys/web3signer/pull/982\">#982</a></li>\n</ul>\n<h3>Bugs fixed</h3>\n<ul>\n<li>Update transitive dependency threetenbp and google cloud secretmanager library to fix <a href=\"https://github.com/advisories/GHSA-rgx7-8wqv-m224\" title=\"CVE-2024-23082\">CVE-2024-23082</a>, <a href=\"https://github.com/advisories/GHSA-fhx3-mxf6-jxpv\" title=\"CVE-2024-23081\">CVE-2024-23081</a></li>\n<li>Update bouncycastle libraries to fix <a href=\"https://github.com/advisories/GHSA-8xfc-gm6g-vgpv\" title=\"CVE-2024-29857\">CVE-2024-29857</a>, <a href=\"https://github.com/advisories/GHSA-v435-xc8x-wvr9\" title=\"CVE-2024-30171\">CVE-2024-30171</a>, <a href=\"https://github.com/advisories/GHSA-m44j-cfrm-g8qc\" title=\"CVE-2024-30172\">CVE-2024-30172</a></li>\n<li>Update Teku libraries to 24.3.1</li>\n<li>Update Vert.x to 4.5.7 (which include fixes for <a href=\"https://github.com/advisories/GHSA-5667-3wch-7q7w\" title=\"CVE-2024-1023\">CVE-2024-1023</a>)</li>\n<li>Fix Host Allow List handler to handle empty host header</li>\n<li>Update Postgresql JDBC driver to fix <a href=\"https://github.com/advisories/GHSA-24rp-q3w6-vc56\" title=\"CVE-2024-1597\">CVE-2024-1597</a></li>\n<li>Fix cached gvr to be thread-safe during first boot. <a href=\"https://github.com/Consensys/web3signer/issues/978\">#978</a></li>\n</ul>\n<hr />\n<h3>Downloads</h3>\n<table>\n<thead>\n<tr>\n<th align=\"center\">File</th>\n<th align=\"center\">Checksum (sha256)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\"><a href=\"https://artifacts.consensys.net/public/web3signer/raw/names/web3signer.tar.gz/versions/24.6.0/web3signer-24.6.0.tar.gz\" rel=\"nofollow\">web3signer.tar.gz</a></td>\n<td align=\"center\"><code>5f5d833e86b138a94681597075153fee28fd7f4742e67183e199d29db675b15b</code></td>\n</tr>\n<tr>\n<td align=\"center\"><a href=\"https://artifacts.consensys.net/public/web3signer/raw/names/web3signer.zip/versions/24.6.0/web3signer-24.6.0.zip\" rel=\"nofollow\">web3signer.zip</a></td>\n<td align=\"center\"><code>8e7063d8f9902320f4c3a8379ed35a663b5712c005697c17835dca701347c217</code></td>\n</tr>\n</tbody>\n</table>\n<h4>Docker</h4>\n<ul>\n<li><code>docker pull consensys/web3signer:24.6.0</code></li>\n</ul>\n<hr />\n<h2>What's Changed</h2>\n<ul>\n<li>upgrade postgres to 42.5.5 to fix CVE by <a class=\"user-mention notranslate\" href=\"https://github.com/gfukushima\">@gfukushima</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/973\">#973</a></li>\n<li>Upgrade postgres jdbc driver to 42.7.2 by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/975\">#975</a></li>\n<li>fix: Make cached GVR thread-safe by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/980\">#980</a></li>\n<li>build - suppress unrelated owasp warnings and update azure libraries by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/981\">#981</a></li>\n<li>fix: Update Vert.x dependency version to 4.4.9 by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/983\">#983</a></li>\n<li>Upgrade vertx to 4.5.7 by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/986\">#986</a></li>\n<li>minor: Update Teku libraries to 24.3.1 by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/987\">#987</a></li>\n<li>fix!: Fix Host Allow List Handler by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/985\">#985</a></li>\n<li>Libraries upgrade to fix reported CVE by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/989\">#989</a></li>\n<li>fix - Add adduser in docker image via apt by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/992\">#992</a></li>\n<li>fix - Update .openapidoc gh-pages version by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/993\">#993</a></li>\n<li>Extension Signing request endpoint by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/982\">#982</a></li>\n<li>chore: Update changelog for Java21 upcoming changes by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/996\">#996</a></li>\n<li>fix: Update Teku version to 24.4.0 by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/998\">#998</a></li>\n<li>fix: Update Besu version to 24.5.2 by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/997\">#997</a></li>\n<li>Update changelog for 24.6.0 by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/1000\">#1000</a></li>\n<li>changelog: Update changelog with filecoin change by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/1001\">#1001</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/Consensys/web3signer/compare/24.2.0...24.6.0\"><tt>24.2.0...24.6.0</tt></a></p>",
+            "authors": [
+                {
+                    "name": "usmansaleem"
+                }
+            ],
+            "author_detail": {
+                "name": "usmansaleem"
+            },
+            "author": "usmansaleem",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/669527?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/241277774/24.6.0-RC1",
+            "guidislink": true,
+            "link": "https://github.com/Consensys/web3signer/releases/tag/24.6.0-RC1",
+            "updated": "2024-06-06T23:52:14Z",
+            "updated_parsed": [
+                2024,
+                6,
+                6,
+                23,
+                52,
+                14,
+                3,
+                158,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/Consensys/web3signer/releases/tag/24.6.0-RC1"
+                }
+            ],
+            "title": "24.6.0-RC1",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "24.6.0-RC1"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>Release 24.6.0-RC1</p>"
+                }
+            ],
+            "summary": "<p>Release 24.6.0-RC1</p>",
+            "authors": [
+                {
+                    "name": "usmansaleem"
+                }
+            ],
+            "author_detail": {
+                "name": "usmansaleem"
+            },
+            "author": "usmansaleem",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/669527?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/241277774/24.2.0",
+            "guidislink": true,
+            "link": "https://github.com/Consensys/web3signer/releases/tag/24.2.0",
+            "updated": "2024-02-19T07:56:43Z",
+            "updated_parsed": [
+                2024,
+                2,
+                19,
+                7,
+                56,
+                43,
+                0,
+                50,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/Consensys/web3signer/releases/tag/24.2.0"
+                }
+            ],
+            "title": "24.2.0",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "24.2.0"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>This is a required update for Mainnet users containing the configuration for the Deneb upgrade on March 13th. This update is required for Gnosis Deneb network upgrade on March 11th. For all other networks, this update is optional.</p>\n<p>Ethereum Mainnet configuration with Deneb fork scheduled for epoch 269568 (March 13, 2024, 13:55:35 UTC)<br />\nGnosis configuration with Deneb fork scheduled for epoch 889856 (March 11, 2024, 18:30:20 UTC)</p>\n<h2>Highlights</h2>\n<h3>Upcoming Breaking Changes</h3>\n<ul>\n<li>--Xworker-pool-size cli option will be removed in a future release. This option has been replaced with --vertx-worker-pool-size</li>\n</ul>\n<h3>Features Added</h3>\n<ul>\n<li>Add Deneb configuration for Mainnet <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/971\">#971</a></li>\n<li>Improve Key Manager API import operation to use parallel processing instead of serial processing. Note, if you import a large number of keys while running as a signer, then this may degrade the signing performance for the duration of the import process. It is recommended to import large numbers of keys in batches. <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/968\">#968</a></li>\n</ul>\n<h2>Bugs fixed</h2>\n<ul>\n<li>Ensure that Web3Signer stops the http server when a sigterm is received</li>\n</ul>\n<hr />\n<h3>Downloads</h3>\n<table>\n<thead>\n<tr>\n<th align=\"center\">File</th>\n<th align=\"center\">Checksum (sha256)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\"><a href=\"https://artifacts.consensys.net/public/web3signer/raw/names/web3signer.tar.gz/versions/24.2.0/web3signer-24.2.0.tar.gz\" rel=\"nofollow\">web3signer.tar.gz</a></td>\n<td align=\"center\"><code>a1637bac774a38699a42f0c48706b9c08bed83cf8c8470e11ad6a6dd7280364d</code></td>\n</tr>\n<tr>\n<td align=\"center\"><a href=\"https://artifacts.consensys.net/public/web3signer/raw/names/web3signer.zip/versions/24.2.0/web3signer-24.2.0.zip\" rel=\"nofollow\">web3signer.zip</a></td>\n<td align=\"center\"><code>cd0c2d05dddc663b568c6715096f557e7e9ee07a5cf9f3600e315e986b8fe69e</code></td>\n</tr>\n</tbody>\n</table>\n<h4>Docker</h4>\n<ul>\n<li><code>docker pull consensys/web3signer:24.2.0</code></li>\n</ul>\n<hr />\n<h2>What's Changed</h2>\n<ul>\n<li>Shutdown Vertx as part shutdown hook by <a class=\"user-mention notranslate\" href=\"https://github.com/jframe\">@jframe</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/967\">#967</a></li>\n<li>Fix typos by <a class=\"user-mention notranslate\" href=\"https://github.com/Thabokani\">@Thabokani</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/966\">#966</a></li>\n<li>Upgrade nimbus-jose-jwt version to avoid <a href=\"https://github.com/advisories/GHSA-gvpg-vgmx-xg6w\" title=\"CVE-2023-52428\">CVE-2023-52428</a> by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/969\">#969</a></li>\n<li>Improve KeyManager API import operation by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/968\">#968</a></li>\n<li>Upgrade teku to 24.2.0 and prep for release by <a class=\"user-mention notranslate\" href=\"https://github.com/siladu\">@siladu</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/971\">#971</a></li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/Thabokani\">@Thabokani</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/966\">#966</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/Consensys/web3signer/compare/24.1.1...24.2.0\"><tt>24.1.1...24.2.0</tt></a></p>"
+                }
+            ],
+            "summary": "<p>This is a required update for Mainnet users containing the configuration for the Deneb upgrade on March 13th. This update is required for Gnosis Deneb network upgrade on March 11th. For all other networks, this update is optional.</p>\n<p>Ethereum Mainnet configuration with Deneb fork scheduled for epoch 269568 (March 13, 2024, 13:55:35 UTC)<br />\nGnosis configuration with Deneb fork scheduled for epoch 889856 (March 11, 2024, 18:30:20 UTC)</p>\n<h2>Highlights</h2>\n<h3>Upcoming Breaking Changes</h3>\n<ul>\n<li>--Xworker-pool-size cli option will be removed in a future release. This option has been replaced with --vertx-worker-pool-size</li>\n</ul>\n<h3>Features Added</h3>\n<ul>\n<li>Add Deneb configuration for Mainnet <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/971\">#971</a></li>\n<li>Improve Key Manager API import operation to use parallel processing instead of serial processing. Note, if you import a large number of keys while running as a signer, then this may degrade the signing performance for the duration of the import process. It is recommended to import large numbers of keys in batches. <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/968\">#968</a></li>\n</ul>\n<h2>Bugs fixed</h2>\n<ul>\n<li>Ensure that Web3Signer stops the http server when a sigterm is received</li>\n</ul>\n<hr />\n<h3>Downloads</h3>\n<table>\n<thead>\n<tr>\n<th align=\"center\">File</th>\n<th align=\"center\">Checksum (sha256)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\"><a href=\"https://artifacts.consensys.net/public/web3signer/raw/names/web3signer.tar.gz/versions/24.2.0/web3signer-24.2.0.tar.gz\" rel=\"nofollow\">web3signer.tar.gz</a></td>\n<td align=\"center\"><code>a1637bac774a38699a42f0c48706b9c08bed83cf8c8470e11ad6a6dd7280364d</code></td>\n</tr>\n<tr>\n<td align=\"center\"><a href=\"https://artifacts.consensys.net/public/web3signer/raw/names/web3signer.zip/versions/24.2.0/web3signer-24.2.0.zip\" rel=\"nofollow\">web3signer.zip</a></td>\n<td align=\"center\"><code>cd0c2d05dddc663b568c6715096f557e7e9ee07a5cf9f3600e315e986b8fe69e</code></td>\n</tr>\n</tbody>\n</table>\n<h4>Docker</h4>\n<ul>\n<li><code>docker pull consensys/web3signer:24.2.0</code></li>\n</ul>\n<hr />\n<h2>What's Changed</h2>\n<ul>\n<li>Shutdown Vertx as part shutdown hook by <a class=\"user-mention notranslate\" href=\"https://github.com/jframe\">@jframe</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/967\">#967</a></li>\n<li>Fix typos by <a class=\"user-mention notranslate\" href=\"https://github.com/Thabokani\">@Thabokani</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/966\">#966</a></li>\n<li>Upgrade nimbus-jose-jwt version to avoid <a href=\"https://github.com/advisories/GHSA-gvpg-vgmx-xg6w\" title=\"CVE-2023-52428\">CVE-2023-52428</a> by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/969\">#969</a></li>\n<li>Improve KeyManager API import operation by <a class=\"user-mention notranslate\" href=\"https://github.com/usmansaleem\">@usmansaleem</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/968\">#968</a></li>\n<li>Upgrade teku to 24.2.0 and prep for release by <a class=\"user-mention notranslate\" href=\"https://github.com/siladu\">@siladu</a> in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/971\">#971</a></li>\n</ul>\n<h2>New Contributors</h2>\n<ul>\n<li><a class=\"user-mention notranslate\" href=\"https://github.com/Thabokani\">@Thabokani</a> made their first contribution in <a class=\"issue-link js-issue-link\" href=\"https://github.com/Consensys/web3signer/pull/966\">#966</a></li>\n</ul>\n<p><strong>Full Changelog</strong>: <a class=\"commit-link\" href=\"https://github.com/Consensys/web3signer/compare/24.1.1...24.2.0\"><tt>24.1.1...24.2.0</tt></a></p>",
+            "authors": [
+                {
+                    "name": "siladu"
+                }
+            ],
+            "author_detail": {
+                "name": "siladu"
+            },
+            "author": "siladu",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/2893793?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/241277774/24.2.0-RC1",
+            "guidislink": true,
+            "link": "https://github.com/Consensys/web3signer/releases/tag/24.2.0-RC1",
+            "updated": "2024-02-16T05:12:00Z",
+            "updated_parsed": [
+                2024,
+                2,
+                16,
+                5,
+                12,
+                0,
+                4,
+                47,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/Consensys/web3signer/releases/tag/24.2.0-RC1"
+                }
+            ],
+            "title": "24.2.0-RC1",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "24.2.0-RC1"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>Release 24.2.0-RC1</p>"
+                }
+            ],
+            "summary": "<p>Release 24.2.0-RC1</p>",
+            "authors": [
+                {
+                    "name": "siladu"
+                }
+            ],
+            "author_detail": {
+                "name": "siladu"
+            },
+            "author": "siladu",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/2893793?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/241277774/24.1.1",
+            "guidislink": true,
+            "link": "https://github.com/Consensys/web3signer/releases/tag/24.1.1",
+            "updated": "2024-01-25T07:24:42Z",
+            "updated_parsed": [
+                2024,
+                1,
+                25,
+                7,
+                24,
+                42,
+                3,
+                25,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/Consensys/web3signer/releases/tag/24.1.1"
+                }
+            ],
+            "title": "24.1.1",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "24.1.1"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<h2>24.1.1</h2>\n<p>This is an optional release for mainnet Ethereum and it includes the updated network configuration for the Sepolia, Holesky and Chiado Deneb forks.</p>\n<ul>\n<li>Sepolia is scheduled for 2024-01-30 22:51:12 UTC</li>\n<li>Chiado is scheduled for 2024-01-31 18:15:40 UTC</li>\n<li>Holesky is scheduled for 2024-02-07 11:34:24 UTC</li>\n</ul>\n<h3>Features Added</h3>\n<ul>\n<li>Add Deneb configuration for Sepolia, Holesky and Chiado forks</li>\n</ul>\n<hr />\n<h3>Downloads</h3>\n<table>\n<thead>\n<tr>\n<th align=\"center\">File</th>\n<th align=\"center\">Checksum (sha256)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\"><a href=\"https://artifacts.consensys.net/public/web3signer/raw/names/web3signer.tar.gz/versions/24.1.1/web3signer-24.1.1.tar.gz\" rel=\"nofollow\">web3signer.tar.gz</a></td>\n<td align=\"center\"><code>a4041cfdb40e6b7cc3f3da101fedd4aa50b935ec92f1bd842fa81054ce65c17a</code></td>\n</tr>\n<tr>\n<td align=\"center\"><a href=\"https://artifacts.consensys.net/public/web3signer/raw/names/web3signer.zip/versions/24.1.1/web3signer-24.1.1.zip\" rel=\"nofollow\">web3signer.zip</a></td>\n<td align=\"center\"><code>2efeb0330583011e89374613a90b5d67181c556625ab0639b8adcedeae86fab0</code></td>\n</tr>\n</tbody>\n</table>\n<h4>Docker</h4>\n<ul>\n<li><code>docker pull consensys/web3signer:24.1.1</code></li>\n</ul>"
+                }
+            ],
+            "summary": "<h2>24.1.1</h2>\n<p>This is an optional release for mainnet Ethereum and it includes the updated network configuration for the Sepolia, Holesky and Chiado Deneb forks.</p>\n<ul>\n<li>Sepolia is scheduled for 2024-01-30 22:51:12 UTC</li>\n<li>Chiado is scheduled for 2024-01-31 18:15:40 UTC</li>\n<li>Holesky is scheduled for 2024-02-07 11:34:24 UTC</li>\n</ul>\n<h3>Features Added</h3>\n<ul>\n<li>Add Deneb configuration for Sepolia, Holesky and Chiado forks</li>\n</ul>\n<hr />\n<h3>Downloads</h3>\n<table>\n<thead>\n<tr>\n<th align=\"center\">File</th>\n<th align=\"center\">Checksum (sha256)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\"><a href=\"https://artifacts.consensys.net/public/web3signer/raw/names/web3signer.tar.gz/versions/24.1.1/web3signer-24.1.1.tar.gz\" rel=\"nofollow\">web3signer.tar.gz</a></td>\n<td align=\"center\"><code>a4041cfdb40e6b7cc3f3da101fedd4aa50b935ec92f1bd842fa81054ce65c17a</code></td>\n</tr>\n<tr>\n<td align=\"center\"><a href=\"https://artifacts.consensys.net/public/web3signer/raw/names/web3signer.zip/versions/24.1.1/web3signer-24.1.1.zip\" rel=\"nofollow\">web3signer.zip</a></td>\n<td align=\"center\"><code>2efeb0330583011e89374613a90b5d67181c556625ab0639b8adcedeae86fab0</code></td>\n</tr>\n</tbody>\n</table>\n<h4>Docker</h4>\n<ul>\n<li><code>docker pull consensys/web3signer:24.1.1</code></li>\n</ul>",
+            "authors": [
+                {
+                    "name": "jframe"
+                }
+            ],
+            "author_detail": {
+                "name": "jframe"
+            },
+            "author": "jframe",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/909467?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/241277774/24.1.1-RC1",
+            "guidislink": true,
+            "link": "https://github.com/Consensys/web3signer/releases/tag/24.1.1-RC1",
+            "updated": "2024-01-25T00:02:45Z",
+            "updated_parsed": [
+                2024,
+                1,
+                25,
+                0,
+                2,
+                45,
+                3,
+                25,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/Consensys/web3signer/releases/tag/24.1.1-RC1"
+                }
+            ],
+            "title": "24.1.1-RC1",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "24.1.1-RC1"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>Release 24.1.1-RC1</p>"
+                }
+            ],
+            "summary": "<p>Release 24.1.1-RC1</p>",
+            "authors": [
+                {
+                    "name": "jframe"
+                }
+            ],
+            "author_detail": {
+                "name": "jframe"
+            },
+            "author": "jframe",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/909467?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/241277774/24.1.0",
+            "guidislink": true,
+            "link": "https://github.com/Consensys/web3signer/releases/tag/24.1.0",
+            "updated": "2024-01-11T01:56:31Z",
+            "updated_parsed": [
+                2024,
+                1,
+                11,
+                1,
+                56,
+                31,
+                3,
+                11,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/Consensys/web3signer/releases/tag/24.1.0"
+                }
+            ],
+            "title": "24.1.0",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "24.1.0"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<h2>24.1.0</h2>\n<p>This is an optional release for mainnet Ethereum, required for the upcoming Goerli Deneb fork.</p>\n<p>The Goerli upgrade is scheduled on 2024-01-17 06:32:00 UTC (timestamp 1705473120).</p>\n<h3>Bugs fixed</h3>\n<ul>\n<li>Update reactor-netty-http to fix <a href=\"https://github.com/advisories/GHSA-xjhv-p3fv-x24r\" title=\"CVE-2023-34062\">CVE-2023-34062</a></li>\n</ul>\n<h3>Features Added</h3>\n<ul>\n<li>Add Deneb configuration for Goerli <a href=\"https://github.com/Consensys/web3signer/pull/960\">#960</a></li>\n</ul>\n<hr />\n<h3>Downloads</h3>\n<table>\n<thead>\n<tr>\n<th align=\"center\">File</th>\n<th align=\"center\">Checksum (sha256)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\"><a href=\"https://artifacts.consensys.net/public/web3signer/raw/names/web3signer.tar.gz/versions/24.1.0/web3signer-24.1.0.tar.gz\" rel=\"nofollow\">web3signer.tar.gz</a></td>\n<td align=\"center\"><code>6fb520db5f0ad54d0be897fb139a0cb808dbcf7960f14d822fa647f781163d07</code></td>\n</tr>\n<tr>\n<td align=\"center\"><a href=\"https://artifacts.consensys.net/public/web3signer/raw/names/web3signer.zip/versions/24.1.0/web3signer-24.1.0.zip\" rel=\"nofollow\">web3signer.zip</a></td>\n<td align=\"center\"><code>e599f67bf32b7a4ab269fce62e4179436caefbe6f707d64f8765ef79a063c86a</code></td>\n</tr>\n</tbody>\n</table>\n<h4>Docker</h4>\n<ul>\n<li><code>docker pull consensys/web3signer:24.1.0</code></li>\n</ul>"
+                }
+            ],
+            "summary": "<h2>24.1.0</h2>\n<p>This is an optional release for mainnet Ethereum, required for the upcoming Goerli Deneb fork.</p>\n<p>The Goerli upgrade is scheduled on 2024-01-17 06:32:00 UTC (timestamp 1705473120).</p>\n<h3>Bugs fixed</h3>\n<ul>\n<li>Update reactor-netty-http to fix <a href=\"https://github.com/advisories/GHSA-xjhv-p3fv-x24r\" title=\"CVE-2023-34062\">CVE-2023-34062</a></li>\n</ul>\n<h3>Features Added</h3>\n<ul>\n<li>Add Deneb configuration for Goerli <a href=\"https://github.com/Consensys/web3signer/pull/960\">#960</a></li>\n</ul>\n<hr />\n<h3>Downloads</h3>\n<table>\n<thead>\n<tr>\n<th align=\"center\">File</th>\n<th align=\"center\">Checksum (sha256)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\"><a href=\"https://artifacts.consensys.net/public/web3signer/raw/names/web3signer.tar.gz/versions/24.1.0/web3signer-24.1.0.tar.gz\" rel=\"nofollow\">web3signer.tar.gz</a></td>\n<td align=\"center\"><code>6fb520db5f0ad54d0be897fb139a0cb808dbcf7960f14d822fa647f781163d07</code></td>\n</tr>\n<tr>\n<td align=\"center\"><a href=\"https://artifacts.consensys.net/public/web3signer/raw/names/web3signer.zip/versions/24.1.0/web3signer-24.1.0.zip\" rel=\"nofollow\">web3signer.zip</a></td>\n<td align=\"center\"><code>e599f67bf32b7a4ab269fce62e4179436caefbe6f707d64f8765ef79a063c86a</code></td>\n</tr>\n</tbody>\n</table>\n<h4>Docker</h4>\n<ul>\n<li><code>docker pull consensys/web3signer:24.1.0</code></li>\n</ul>",
+            "authors": [
+                {
+                    "name": "jframe"
+                }
+            ],
+            "author_detail": {
+                "name": "jframe"
+            },
+            "author": "jframe",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/909467?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/241277774/24.1.0-RC1",
+            "guidislink": true,
+            "link": "https://github.com/Consensys/web3signer/releases/tag/24.1.0-RC1",
+            "updated": "2024-01-10T03:02:31Z",
+            "updated_parsed": [
+                2024,
+                1,
+                10,
+                3,
+                2,
+                31,
+                2,
+                10,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/Consensys/web3signer/releases/tag/24.1.0-RC1"
+                }
+            ],
+            "title": "24.1.0-RC1",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "24.1.0-RC1"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<p>Release 24.1.0-RC1</p>"
+                }
+            ],
+            "summary": "<p>Release 24.1.0-RC1</p>",
+            "authors": [
+                {
+                    "name": "jframe"
+                }
+            ],
+            "author_detail": {
+                "name": "jframe"
+            },
+            "author": "jframe",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/909467?s=60&v=4"
+                }
+            ],
+            "href": ""
+        },
+        {
+            "id": "tag:github.com,2008:Repository/241277774/23.11.0",
+            "guidislink": true,
+            "link": "https://github.com/Consensys/web3signer/releases/tag/23.11.0",
+            "updated": "2023-11-14T20:20:38Z",
+            "updated_parsed": [
+                2023,
+                11,
+                14,
+                20,
+                20,
+                38,
+                1,
+                318,
+                0
+            ],
+            "links": [
+                {
+                    "rel": "alternate",
+                    "type": "text/html",
+                    "href": "https://github.com/Consensys/web3signer/releases/tag/23.11.0"
+                }
+            ],
+            "title": "23.11.0",
+            "title_detail": {
+                "type": "text/plain",
+                "language": "en-US",
+                "base": "",
+                "value": "23.11.0"
+            },
+            "content": [
+                {
+                    "type": "text/html",
+                    "language": "en-US",
+                    "base": "",
+                    "value": "<h2>23.11.0</h2>\n<p>This release patches a vulnerable dependency and is recommended for all users.</p>\n<h3>Upcoming Breaking Changes</h3>\n<ul>\n<li><code>--Xworker-pool-size</code> cli option will be removed in a future release. This option has been replaced with <code>--vertx-worker-pool-size</code>.</li>\n</ul>\n<h3>Bugs fixed</h3>\n<ul>\n<li>Update netty to fix <a href=\"https://github.com/advisories/GHSA-qppj-fm5r-hxr3\" title=\"CVE-2023-44487\">CVE-2023-44487</a></li>\n</ul>\n<h3>Features Added</h3>\n<ul>\n<li>Google Cloud Secret Manager bulk loading support for BLS keys in eth2 mode via PR <a href=\"https://github.com/Consensys/web3signer/pull/928\">#928</a> contributed by <a href=\"https://github.com/skisel-bt\">Sergey Kisel</a>.</li>\n<li>Removed hidden option <code>--Xtrusted-setup</code> as Web3Signer does not need KZG trusted setup file anymore.</li>\n<li>Make Vert.x worker pool size configurable using cli option <code>--vertx-worker-pool-size</code> (replaces the now deprecated: <code>--Xworker-pool-size</code>). <a href=\"https://github.com/Consensys/web3signer/pull/920\">#920</a></li>\n</ul>\n<hr />\n<h3>Downloads</h3>\n<table>\n<thead>\n<tr>\n<th align=\"center\">File</th>\n<th align=\"center\">Checksum (sha256)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\"><a href=\"https://artifacts.consensys.net/public/web3signer/raw/names/web3signer.tar.gz/versions/23.11.0/web3signer-23.11.0.tar.gz\" rel=\"nofollow\">web3signer.tar.gz</a></td>\n<td align=\"center\"><code>e7643a6aa32efd859e96a82cb3ea03a294fd92c22fffeab987e5ec97500867a8</code></td>\n</tr>\n<tr>\n<td align=\"center\"><a href=\"https://artifacts.consensys.net/public/web3signer/raw/names/web3signer.zip/versions/23.11.0/web3signer-23.11.0.zip\" rel=\"nofollow\">web3signer.zip</a></td>\n<td align=\"center\"><code>9ba56683228ca356326c087b5f1e576e7d2081fc90450f049d9b869020ee929a</code></td>\n</tr>\n</tbody>\n</table>\n<h4>Docker</h4>\n<ul>\n<li><code>docker pull consensys/web3signer:23.11.0</code></li>\n</ul>"
+                }
+            ],
+            "summary": "<h2>23.11.0</h2>\n<p>This release patches a vulnerable dependency and is recommended for all users.</p>\n<h3>Upcoming Breaking Changes</h3>\n<ul>\n<li><code>--Xworker-pool-size</code> cli option will be removed in a future release. This option has been replaced with <code>--vertx-worker-pool-size</code>.</li>\n</ul>\n<h3>Bugs fixed</h3>\n<ul>\n<li>Update netty to fix <a href=\"https://github.com/advisories/GHSA-qppj-fm5r-hxr3\" title=\"CVE-2023-44487\">CVE-2023-44487</a></li>\n</ul>\n<h3>Features Added</h3>\n<ul>\n<li>Google Cloud Secret Manager bulk loading support for BLS keys in eth2 mode via PR <a href=\"https://github.com/Consensys/web3signer/pull/928\">#928</a> contributed by <a href=\"https://github.com/skisel-bt\">Sergey Kisel</a>.</li>\n<li>Removed hidden option <code>--Xtrusted-setup</code> as Web3Signer does not need KZG trusted setup file anymore.</li>\n<li>Make Vert.x worker pool size configurable using cli option <code>--vertx-worker-pool-size</code> (replaces the now deprecated: <code>--Xworker-pool-size</code>). <a href=\"https://github.com/Consensys/web3signer/pull/920\">#920</a></li>\n</ul>\n<hr />\n<h3>Downloads</h3>\n<table>\n<thead>\n<tr>\n<th align=\"center\">File</th>\n<th align=\"center\">Checksum (sha256)</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td align=\"center\"><a href=\"https://artifacts.consensys.net/public/web3signer/raw/names/web3signer.tar.gz/versions/23.11.0/web3signer-23.11.0.tar.gz\" rel=\"nofollow\">web3signer.tar.gz</a></td>\n<td align=\"center\"><code>e7643a6aa32efd859e96a82cb3ea03a294fd92c22fffeab987e5ec97500867a8</code></td>\n</tr>\n<tr>\n<td align=\"center\"><a href=\"https://artifacts.consensys.net/public/web3signer/raw/names/web3signer.zip/versions/23.11.0/web3signer-23.11.0.zip\" rel=\"nofollow\">web3signer.zip</a></td>\n<td align=\"center\"><code>9ba56683228ca356326c087b5f1e576e7d2081fc90450f049d9b869020ee929a</code></td>\n</tr>\n</tbody>\n</table>\n<h4>Docker</h4>\n<ul>\n<li><code>docker pull consensys/web3signer:23.11.0</code></li>\n</ul>",
+            "authors": [
+                {
+                    "name": "gfukushima"
+                }
+            ],
+            "author_detail": {
+                "name": "gfukushima"
+            },
+            "author": "gfukushima",
+            "media_thumbnail": [
+                {
+                    "height": "30",
+                    "width": "30",
+                    "url": "https://avatars.githubusercontent.com/u/25556862?s=60&v=4"
+                }
+            ],
+            "href": ""
+        }
+    ],
+    "feed": {
+        "language": "en-US",
+        "id": "tag:github.com,2008:https://github.com/Consensys/web3signer/releases",
+        "guidislink": true,
+        "link": "https://github.com/Consensys/web3signer/releases",
+        "links": [
+            {
+                "type": "text/html",
+                "rel": "alternate",
+                "href": "https://github.com/Consensys/web3signer/releases"
+            },
+            {
+                "type": "application/atom+xml",
+                "rel": "self",
+                "href": "https://github.com/Consensys/web3signer/releases.atom"
+            }
+        ],
+        "title": "Release notes from web3signer",
+        "title_detail": {
+            "type": "text/plain",
+            "language": "en-US",
+            "base": "",
+            "value": "Release notes from web3signer"
+        },
+        "updated": "2024-12-02T09:45:33Z",
+        "updated_parsed": [
+            2024,
+            12,
+            2,
+            9,
+            45,
+            33,
+            0,
+            337,
+            0
+        ]
+    },
+    "headers": {},
+    "encoding": "utf-8",
+    "version": "atom10",
+    "namespaces": {
+        "": "http://www.w3.org/2005/Atom",
+        "media": "http://search.yahoo.com/mrss/"
+    }
+}
