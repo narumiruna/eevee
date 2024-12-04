@@ -7,7 +7,7 @@ from pydantic import BaseModel
 
 from .hardfork import Hardfork
 
-MAX_SUMMARY_LENGTH: Final[int] = 100
+MAX_SUMMARY_LENGTH: Final[int] = 500
 
 
 class Result(BaseModel):
@@ -43,14 +43,16 @@ class EntryResult(BaseModel):
     summary: str
     hardfork: Hardfork
 
-    def trim_summary(self) -> str:
-        s = md(self.summary)
-        return s[:MAX_SUMMARY_LENGTH] + "..." if len(s) > MAX_SUMMARY_LENGTH else s
+    def format_summary_for_display(self) -> str:
+        s = md(self.summary)  # Convert to markdown
+        s = s[:MAX_SUMMARY_LENGTH] + "..." if len(s) > MAX_SUMMARY_LENGTH else s  # Trim to max length
+        s = "```" + s + "```"  # Wrap in code block
+        return s
 
     def to_markdown(self) -> str:
         lines = [
             f"### {self.title} ({self.updated})",
-            self.trim_summary(),
+            self.format_summary_for_display(),
             "",
             f"- 🔗 Link: {self.link}",
             self.hardfork.to_markdown(),
@@ -61,7 +63,7 @@ class EntryResult(BaseModel):
     def to_slack(self, feed_title: str | None = None) -> str:
         lines = [
             f"*{feed_title}*: *{self.title}* ({self.updated})" if feed_title else f"*{self.title}* ({self.updated})",
-            self.trim_summary(),
+            self.format_summary_for_display(),
             "",
             f"- 🔗 Link: {self.link}",
             self.hardfork.to_slack(),
