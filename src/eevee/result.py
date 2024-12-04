@@ -1,8 +1,12 @@
 from __future__ import annotations
 
+from typing import Final
+
 from pydantic import BaseModel
 
 from .hardfork import Hardfork
+
+MAX_SUMMARY_LENGTH: Final[int] = 100
 
 
 class Result(BaseModel):
@@ -26,11 +30,14 @@ class EntryResult(BaseModel):
     link: str
     title: str
     updated: str
+    summary: str
     hardfork: Hardfork
 
     def to_markdown(self) -> str:
         lines = [
             f"### {self.title} ({self.updated})",
+            self.summary[:MAX_SUMMARY_LENGTH] + "..." if len(self.summary) > MAX_SUMMARY_LENGTH else self.summary,
+            "",
             f"- 🔗 Link: {self.link}",
             self.hardfork.to_markdown(),
             "",

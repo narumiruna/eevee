@@ -15,7 +15,7 @@ def parse_datetime(s: str) -> datetime:
 
 
 def get_entry_key(entry: dict) -> str:
-    return f"eevee:dev:{entry["id"]}:{entry['updated']}"
+    return f"eevee:{entry["id"]}:{entry['updated']}"
 
 
 class App:
@@ -54,6 +54,7 @@ class App:
                     link=entry["link"],
                     title=entry["title"],
                     updated=entry["updated"],
+                    summary=entry["summary"],
                     hardfork=predict_hardfork(str(entry)),
                 )
                 logger.debug(f"Entry result: {entry_result}")
