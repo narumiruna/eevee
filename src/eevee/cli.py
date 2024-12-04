@@ -14,7 +14,12 @@ from .result import to_markdown
 from .rss import fetch_feed
 
 
-@click.command()
+@click.group()
+def cli() -> None:
+    pass
+
+
+@cli.command()
 @click.option(
     "-c",
     "--config-file",
@@ -29,9 +34,9 @@ from .rss import fetch_feed
     default="output.md",
     help="Path to the output markdown file",
 )
-def main(config_file: Path, output_file: Path) -> None:
+def export(config_file: Path, output_file: Path) -> None:
     """
-    Main function to process RSS feeds and save the results to a file.
+    Process RSS feeds and save the results to a file.
 
     This function reads the content of RSS feeds specified in a configuration file,
     processes each feed to determine if it contains a hardfork, and saves the results

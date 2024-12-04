@@ -21,7 +21,7 @@ dependencies = [
 ]
 
 [project.scripts]
-eevee = "eevee.cli:main"
+eevee = "eevee.cli:cli"
 
 [build-system]
 requires = ["hatchling"]
