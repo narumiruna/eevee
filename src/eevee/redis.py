@@ -4,7 +4,6 @@ from typing import Any
 from typing import cast
 
 import redis
-import redis.connection
 
 
 @functools.cache
