@@ -11,5 +11,5 @@ rss_urls:
   # - https://github.com/Consensys/web3signer/releases.atom
   # - https://status.arbitrum.io/history.rss
   # - https://github.com/ava-labs/coreth/releases.atom
-  # - https://github.com/flashbots/mev-boost/releases.atom
+  - https://github.com/flashbots/mev-boost/releases.atom
   - https://github.com/ava-labs/avalanchego/releases.atom
