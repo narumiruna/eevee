@@ -1,5 +1,6 @@
 from datetime import datetime
 
+import dateparser
 from loguru import logger
 
 from . import redis
@@ -11,7 +12,11 @@ from .slack import post_slack_message
 
 
 def parse_datetime(s: str) -> datetime:
-    return datetime.strptime(s, "%Y-%m-%dT%H:%M:%SZ")
+    # return datetime.strptime(s, "%Y-%m-%dT%H:%M:%SZ")
+    dt = dateparser.parse(s)
+    if dt is None:
+        raise ValueError(f"Could not parse datetime: {s}")
+    return dt
 
 
 def get_entry_key(entry: dict) -> str:

@@ -13,6 +13,7 @@ MAX_SUMMARY_LENGTH: Final[int] = 500
 
 def format_datetime(s: str) -> str:
     return datetime.strptime(s, "%Y-%m-%dT%H:%M:%SZ").strftime("%Y-%m-%d %H:%M:%S")
+    # return dateparser.parse(s).strftime("%Y-%m-%d %H:%M:%S")
 
 
 class Result(BaseModel):
