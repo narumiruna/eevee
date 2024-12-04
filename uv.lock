@@ -371,7 +371,7 @@ requires-dist = [
     { name = "click", specifier = ">=8.1.7" },
     { name = "feedparser", specifier = ">=6.0.11" },
     { name = "httpx", specifier = ">=0.28.0" },
-    { name = "lazyopenai", specifier = ">=0.3.0" },
+    { name = "lazyopenai", specifier = ">=0.3.3" },
     { name = "loguru", specifier = ">=0.7.2" },
     { name = "markdownify", specifier = ">=0.14.1" },
     { name = "pydantic", specifier = ">=2.10.2" },
@@ -877,14 +877,15 @@ wheels = [
 
 [[package]]
 name = "lazyopenai"
-version = "0.3.0"
+version = "0.3.3"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
+    { name = "loguru" },
     { name = "openai" },
     { name = "pydantic-settings" },
 ]
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/67/d0/fffe233aff6f9dc2b7003f276a39bd897a5a5d9565e5771a5deac1618481/lazyopenai-0.3.0-py3-none-any.whl", hash = "sha256:2edb0d49c97df05a4cfd2e6c6641cba82551492a440d8f1cba3401ab7dcba246", size = 8603 },
+    { url = "https://files.pythonhosted.org/packages/74/bc/60d61bc3f72db629e7d1b26d058a01a3f01c29cef40be2bebdc5a1f3c42c/lazyopenai-0.3.3-py3-none-any.whl", hash = "sha256:495cafec01ce522d7af95eaef354557af75d16b5c4dfc45d8b01199cac724433", size = 8683 },
 ]
 
 [[package]]
@@ -1120,7 +1121,7 @@ wheels = [
 
 [[package]]
 name = "openai"
-version = "1.56.0"
+version = "1.56.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
@@ -1132,9 +1133,9 @@ dependencies = [
     { name = "tqdm" },
     { name = "typing-extensions" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/1c/7e/109c73d81018f3b993ca08c06fb2850ee151120a391fa9aeb857f34e0caf/openai-1.56.0.tar.gz", hash = "sha256:f7fa159c8e18e7f9a8d71ff4b8052452ae70a4edc6b76a6e97eda00d5364923f", size = 315175 }
+sdist = { url = "https://files.pythonhosted.org/packages/b7/8f/9235cc14f16f24efb9ee7dd95f8cf1c4fb782d30e5b668f5f183de7735ad/openai-1.56.1.tar.gz", hash = "sha256:8b0449f22a0c318441eae8a8a789753c3b2cac86542be51ca45df788e26aa180", size = 315316 }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ec/ac/2d716e5fdae7f28b5cb4144bf55d0c782538350f7ad916ed2956268370b3/openai-1.56.0-py3-none-any.whl", hash = "sha256:0751a6e139a09fca2e9cbbe8a62bfdab901b5865249d2555d005decf966ef9c3", size = 389819 },
+    { url = "https://files.pythonhosted.org/packages/57/31/22681ac17756f5274d978688640710572cdc53eae8e96a2d1572a50c7d40/openai-1.56.1-py3-none-any.whl", hash = "sha256:38e61183c2a98fedebbbb04a909a052d9f897358b070483fc0caff17300a227c", size = 389847 },
 ]
 
 [[package]]
