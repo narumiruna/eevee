@@ -1,19 +1,14 @@
 from __future__ import annotations
 
-from datetime import datetime
 from typing import Final
 
 from markdownify import markdownify as md
 from pydantic import BaseModel
 
 from .hardfork import HardforkAnalysis
+from .utils import format_datetime
 
 MAX_SUMMARY_LENGTH: Final[int] = 500
-
-
-def format_datetime(s: str) -> str:
-    return datetime.strptime(s, "%Y-%m-%dT%H:%M:%SZ").strftime("%Y-%m-%d %H:%M:%S")
-    # return dateparser.parse(s).strftime("%Y-%m-%d %H:%M:%S")
 
 
 class Result(BaseModel):

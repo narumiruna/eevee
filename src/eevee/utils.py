@@ -1,8 +1,23 @@
 import json
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+import dateparser
 import yaml
+
+
+def parse_datetime(s: str) -> datetime:
+    # return datetime.strptime(s, "%Y-%m-%dT%H:%M:%SZ")
+    dt = dateparser.parse(s)
+    if dt is None:
+        raise ValueError(f"Could not parse datetime: {s}")
+    return dt
+
+
+def format_datetime(s: str) -> str:
+    # return datetime.strptime(s, "%Y-%m-%dT%H:%M:%SZ").strftime("%Y-%m-%d %H:%M:%S")
+    return parse_datetime(s).strftime("%Y-%m-%d %H:%M:%S")
 
 
 def load_yaml(f: str | Path) -> Any:
