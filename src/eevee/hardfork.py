@@ -50,15 +50,24 @@ class Hardfork(BaseModel):
 
     def to_slack(self) -> str:
         hardfork_emoji = "🔴" if self.hardfork else "🟢"
+
         lines = [
             f"- {hardfork_emoji} *Hardfork*: {self.hardfork}",
             f"- 📊 *Confidence*: {self.confidence * 100}%",
             f"- 📝 *Explanation*: {self.explanation}",
-            f"- 🔢 *Block Number*: {self.block_number}",
-            f"- ⬆️ *Must Upgrade*: {self.must_upgrade}",
-            f"- 🌐 *Testnet Names*: {', '.join(self.testnet_names)}",
-            f"- 📅 *Upgrade Deadline*: {self.upgrade_deadline}",
         ]
+
+        if self.block_number is not None:
+            lines += [f"- 🔢 *Block Number*: {self.block_number}"]
+
+        lines += [f"- ⬆️ *Must Upgrade*: {self.must_upgrade}"]
+
+        if self.testnet_names:
+            lines += [f"- 🌐 *Testnet Names*: {', '.join(self.testnet_names)}"]
+
+        if self.upgrade_deadline is not None:
+            lines += [f"- 📅 *Upgrade Deadline*: {self.upgrade_deadline}"]
+
         return "\n".join(lines)
 
 
