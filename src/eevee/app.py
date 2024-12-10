@@ -1,6 +1,3 @@
-from datetime import datetime
-
-import dateparser
 from loguru import logger
 
 from . import redis
@@ -9,14 +6,7 @@ from .hardfork import predict_hardfork
 from .result import EntryResult
 from .rss import fetch_feed
 from .slack import post_slack_message
-
-
-def parse_datetime(s: str) -> datetime:
-    # return datetime.strptime(s, "%Y-%m-%dT%H:%M:%SZ")
-    dt = dateparser.parse(s)
-    if dt is None:
-        raise ValueError(f"Could not parse datetime: {s}")
-    return dt
+from .utils import parse_datetime
 
 
 def get_entry_key(entry: dict) -> str:
