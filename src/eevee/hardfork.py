@@ -6,7 +6,21 @@ from pydantic import BaseModel
 from pydantic import Field
 
 
+class ThoughtStep(BaseModel):
+    context: str = Field(..., description="The specific context or condition being evaluated in this step.")
+    reasoning: str = Field(..., description="Explanation of the reasoning process at this step.")
+    inference: str = Field(..., description="Intermediate inference or conclusion reached at this step.")
+
+
+class ChainOfThought(BaseModel):
+    steps: list[ThoughtStep] = Field(..., description="A list of reasoning steps leading to the final conclusion.")
+    final_conclusion: str = Field(..., description="The final conclusion reached after all reasoning steps.")
+
+
 class Hardfork(BaseModel):
+    chain_of_thought: ChainOfThought = Field(
+        ..., description="The chain of thought leading to the hardfork prediction."
+    )
     hardfork: bool = Field(..., description="Indicates if this is a hardfork.")
     confidence: float = Field(..., description="Confidence in the hardfork prediction, between 0 and 1.")
     explanation: str = Field(..., description="Explanation of why this is a hardfork or not, in Traditional Chinese.")
