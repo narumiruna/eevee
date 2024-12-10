@@ -6,7 +6,7 @@ from typing import Final
 from markdownify import markdownify as md
 from pydantic import BaseModel
 
-from .hardfork import Hardfork
+from .hardfork import HardforkAnalysis
 
 MAX_SUMMARY_LENGTH: Final[int] = 500
 
@@ -47,7 +47,7 @@ class EntryResult(BaseModel):
     title: str
     updated: str
     summary: str
-    hardfork: Hardfork
+    hardfork: HardforkAnalysis
 
     def format_summary_for_display(self) -> str:
         s = md(self.summary)  # Convert to markdown

@@ -17,7 +17,7 @@ class ChainOfThought(BaseModel):
     final_conclusion: str = Field(..., description="The final conclusion reached after all reasoning steps.")
 
 
-class Hardfork(BaseModel):
+class HardforkAnalysis(BaseModel):
     chain_of_thought: ChainOfThought = Field(
         ..., description="The chain of thought leading to the hardfork prediction."
     )
@@ -72,5 +72,5 @@ class Hardfork(BaseModel):
 
 
 @functools.cache
-def predict_hardfork(text: str) -> Hardfork:
-    return cast(Hardfork, generate(text, response_format=Hardfork))
+def predict_hardfork(text: str) -> HardforkAnalysis:
+    return cast(HardforkAnalysis, generate(text, response_format=HardforkAnalysis))
