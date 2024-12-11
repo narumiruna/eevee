@@ -1,4 +1,5 @@
 import functools
+from typing import Literal
 from typing import cast
 
 from lazyopenai import generate
@@ -21,7 +22,7 @@ class HardforkAnalysis(BaseModel):
     chain_of_thought: ChainOfThought = Field(
         ..., description="The chain of thought leading to the hardfork prediction."
     )
-    hardfork: bool = Field(..., description="Indicates if this is a hardfork.")
+    hardfork: Literal["yes", "no", "unknown"] = Field(..., description="Indicates if this is a hardfork.")
     confidence: float = Field(..., description="Confidence in the hardfork prediction, between 0 and 1.")
     explanation: str = Field(..., description="Explanation of why this is a hardfork or not, in Traditional Chinese.")
     block_number: int | None = Field(
@@ -35,10 +36,21 @@ class HardforkAnalysis(BaseModel):
         None, description="The specific date and time by which the upgrade must be completed (ISO8601 format)."
     )
 
+    @property
+    def hardfork_emoji(self) -> str:
+        match self.hardfork:
+            case "yes":
+                return "🔴"
+            case "no":
+                return "🟢"
+            case "unknown":
+                return "🟡"
+            case _:
+                raise ValueError(f"Invalid hardfork value: {self.hardfork}")
+
     def to_markdown(self) -> str:
-        hardfork_emoji = "🔴" if self.hardfork else "🟢"
         lines = [
-            f"- {hardfork_emoji} Hardfork: {self.hardfork}",
+            f"- {self.hardfork_emoji} Hardfork: {self.hardfork}",
             f"- 📊 Confidence: {self.confidence * 100}%",
             f"- 📝 Explanation: {self.explanation}",
             f"- 🔢 Block Number: {self.block_number}",
@@ -49,10 +61,8 @@ class HardforkAnalysis(BaseModel):
         return "\n".join(lines)
 
     def to_slack(self) -> str:
-        hardfork_emoji = "🔴" if self.hardfork else "🟢"
-
         lines = [
-            f"- {hardfork_emoji} *Hardfork*: {self.hardfork}",
+            f"- {self.hardfork_emoji} *Hardfork*: {self.hardfork}",
             f"- 📊 *Confidence*: {self.confidence * 100}%",
             f"- 📝 *Explanation*: {self.explanation}",
         ]
