@@ -10,7 +10,7 @@ from pydantic import Field
 class ThoughtStep(BaseModel):
     context: str = Field(..., description="The specific context or condition being evaluated in this step.")
     reasoning: str = Field(..., description="Explanation of the reasoning process at this step.")
-    inference: str = Field(..., description="Intermediate inference or conclusion reached at this step.")
+    conclusion: str = Field(..., description="Intermediate conclusion reached at this step.")
 
 
 class ChainOfThought(BaseModel):
@@ -20,7 +20,7 @@ class ChainOfThought(BaseModel):
 
 class HardforkAnalysis(BaseModel):
     chain_of_thought: ChainOfThought = Field(
-        ..., description="The chain of thought leading to the hardfork prediction."
+        ..., description="The chain of thought leading to the hardfork analysis."
     )
     hardfork: Literal["yes", "no", "unknown"] = Field(..., description="Indicates if this is a hardfork.")
     confidence: float = Field(..., description="Confidence in the hardfork prediction, between 0 and 1.")
