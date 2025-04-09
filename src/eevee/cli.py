@@ -5,6 +5,7 @@ from pathlib import Path
 import click
 from dotenv import find_dotenv
 from dotenv import load_dotenv
+from loguru import logger
 
 from .app import App
 from .config import Config
@@ -64,7 +65,11 @@ def export(config_file: Path, output_file: Path) -> None:
 
     results: list[Result] = []
     for url in cfg.rss_urls:
-        rss = fetch_feed(url)
+        try:
+            rss = fetch_feed(url)
+        except Exception as e:
+            logger.error(f"Failed to fetch RSS feed from {url}: {e}")
+            continue
 
         result = Result(url=url, title=rss["feed"]["title"])
         results.append(result)
