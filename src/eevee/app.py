@@ -16,7 +16,14 @@ def get_entry_key(entry: dict) -> str:
 class App:
     def __init__(self, config: Config) -> None:
         self.config = config
-        self.feeds = {url: fetch_feed(url) for url in self.config.rss_urls}
+        # self.feeds = {url: fetch_feed(url) for url in self.config.rss_urls}
+        self.feeds = {}
+        for url in self.config.rss_urls:
+            try:
+                self.feeds[url] = fetch_feed(url)
+            except Exception as e:
+                logger.error(f"Failed to fetch RSS feed from {url}: {e}")
+                continue
 
         logger.debug(f"App initialized with config: {self.config}")
 
